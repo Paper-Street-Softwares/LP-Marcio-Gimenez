@@ -1,7 +1,7 @@
 import logo from "../assets/imgs/logo/logo.webp";
 import heroImgPhone from "../assets/imgs/hero/personImg.png";
 import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.jpeg";
-import bgHeroImg from "../assets/imgs/hero/bgHeroInfluencer.jpg";
+import bgHeroImg from "../assets/imgs/hero/bgHeroInfluencer.jpeg";
 import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
 import backgroundPersonMobile from "../assets/imgs/hero/bgHeroMobile.jpg";
 
@@ -29,6 +29,8 @@ import featuresImg1 from "../assets/imgs/features/imgFeatures1.jpg";
 import featuresImg2 from "../assets/imgs/features/imgFeatures2.jpg";
 import featuresImg3 from "../assets/imgs/features/imgFeatures3.jpg";
 import featuresImg4 from "../assets/imgs/features/imgFeatures4.jpg";
+import featuresImg5 from "../assets/imgs/features/imgFeatures5.jpg";
+import featuresImg6 from "../assets/imgs/features/imgFeatures6.jpg";
 
 import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.jpg";
 import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.jpg";
@@ -150,7 +152,7 @@ const content = {
       heroImg: bgHeroImg, //fundo da Hero
       heroDefaultImage: heroDefaultImg, //imagem da heroDefault Mobile
       backgroundPerson: backgroundPersonMobile,
-      ctaButtonText: "Descubra como atuamos",
+      ctaButtonText: "Entrar em contato",
       obsHero: {
         icon: (
           <svg
@@ -339,7 +341,7 @@ const content = {
         buttonLabel: "Saiba Mais",
       },
       card5: {
-        img: featuresImg4,
+        img: featuresImg5,
         title: "Direito do Trabalho",
         subtitle: "Defesa técnica em demandas trabalhistas complexas.",
         description: (
@@ -373,7 +375,7 @@ const content = {
         buttonLabel: "Saiba Mais",
       },
       card6: {
-        img: featuresImg4,
+        img: featuresImg6,
         title: "Imigração e Mobilidade Internacional",
         subtitle: "Assessoria legal para vistos e residência no exterior.",
         description: (
