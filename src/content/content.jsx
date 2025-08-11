@@ -17,7 +17,7 @@ import imgAbout5 from "../assets/imgs/about/aboutImg5.jpg";
 import aboutSocialImg from "../assets/imgs/about/aboutSocial.png";
 import aboutInstagram from "../assets/imgs/about/imgAboutInstagram.jpg";
 
-import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
+import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
 import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.jpg";
 
