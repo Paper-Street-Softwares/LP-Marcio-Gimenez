@@ -16,14 +16,12 @@ export default function NavbarSocial({ colorMode }) {
   const [showMenuIcon, setShowMenuIcon] = useState(true);
   const [showSidebarContent, setShowSidebarContent] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [navbarBgWhite, setNavbarBgWhite] = useState(false);
 
   const sidebarRef = useRef(null);
 
   const handleScroll = () => {
     const isScrolling = window.scrollY > 0;
     setScrolling(isScrolling);
-    setNavbarBgWhite(isScrolling);
   };
 
   const toggleSidebar = () => {
@@ -62,10 +60,6 @@ export default function NavbarSocial({ colorMode }) {
     setShowMenuIcon(true);
   };
 
-  const handleSidebarItemClick = () => {
-    handleCloseSidebar();
-  };
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
@@ -89,7 +83,6 @@ export default function NavbarSocial({ colorMode }) {
         ? "bg-gradient-to-b from-black to-bgFixedDark shadow-lg border-b-[1px] border-primary"
         : "bg-gradient-to-b from-black to-transparent border-b-[1px] border-none";
     }
-    // default
     return scrolling
       ? "bg-gradient-to-b from-black to-bgSectionDark bg-opacity-100 shadow-lg border-b-[1px] border-primary"
       : "bg-gradient-to-b from-black to-transparent border-b-[1px] border-none";
@@ -98,12 +91,12 @@ export default function NavbarSocial({ colorMode }) {
   return (
     <div className="w-full">
       <div
-        className={`fixed z-20 w-full transition-colors duration-1000 ${getNavbarClasses()}`}
+        className={`fixed z-20 w-full transition-colors duration-1000 overflow-visible ${getNavbarClasses()}`}
       >
         <Navbar>
           <ScrollLink
             to="home"
-            className="cursor-pointer w-[300px]"
+            className="cursor-pointer w-[300px] relative z-30"
             spy={true}
             smooth={true}
             duration={500}
@@ -113,11 +106,11 @@ export default function NavbarSocial({ colorMode }) {
             <img
               src={content.texts.navbar.logo.img}
               alt={content.texts.navbar.logo.alt}
-              className={`bg-transparent ${
+              className={`bg-transparent transition-all duration-1000 relative z-30 ${
                 scrolling
-                  ? " w-[30%] phone3:w-[30%] tablet1:w-[40%] tablet2:w-[40%] desktop1:w-[40%] desktop2:w-[40%]"
-                  : "my-[20px] w-[50%] phone2:w-[40%] phone3:w-[40%] tablet1:w-[45%] tablet2:w-[45%] desktop1:w-[50%] desktop2:w-[50%]"
-              } transition-all duration-1000`}
+                  ? "w-[30%] phone3:w-[30%] tablet1:w-[40%] tablet2:w-[40%] desktop1:w-[40%] desktop2:w-[40%] -mb-[90px]"
+                  : "w-[50%] phone2:w-[40%] phone3:w-[40%] tablet1:w-[45%] tablet2:w-[45%] desktop1:w-[50%] desktop2:w-[50%] -mb-[40px]"
+              }`}
             />
           </ScrollLink>
 

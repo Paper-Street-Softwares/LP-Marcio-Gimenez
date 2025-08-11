@@ -5,17 +5,17 @@ export const theme = {
     colors: {
       // Principais
 
-      primary: "#DBB14C",
-      buttonColor: "#DBB14C",
-      minititleDark: "#DBB14C", //bg minitag de seções claras
-      minititle: "#DBB14C", //bg minitag de seções escuras
+      primary: "#AFAFAF",
+      buttonColor: "#AFAFAF",
+      minititleDark: "#AFAFAF", //bg minitag de seções claras
+      minititle: "#AFAFAF", //bg minitag de seções escuras
 
       secondary: "#000000",
 
       // Fundos de Seção
 
       bgSectionLight: "#FFFFFF",
-      bgSectionDark: "#141414",
+      bgSectionDark: "#192436",
       bgSectionOpacityLight: "#F7F7F7",
       bgFixedLight: "#E8E8E8",
       bgSectionOpacityDark: "#111111",
