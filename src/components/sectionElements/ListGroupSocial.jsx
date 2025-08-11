@@ -5,39 +5,60 @@ import Button from "../interactives/Button";
 
 export default function ListGroupSocial({ colorMode = "default" }) {
   const [visibleSections, setVisibleSections] = useState([]);
+  const [scrolling, setScrolling] = useState(false);
 
+  // Detecta rolagem
   useEffect(() => {
-    // Pega os IDs e Labels direto do content
+    const handleScroll = () => {
+      setScrolling(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Mapeia IDs e Labels do content
+  useEffect(() => {
     const allIds = content.texts.navbar.menuId || [];
     const allLabels = content.texts.navbar.menuItems || [];
 
-    // Cria pares {id, label} baseado nos arrays
     const paired = allIds.map((id, index) => ({
       id,
-      label: allLabels[index] || id, // fallback para id se label faltar
+      label: allLabels[index] || id,
     }));
 
-    // Filtra só os que existem no DOM
     const filtered = paired.filter(({ id }) => !!document.getElementById(id));
     setVisibleSections(filtered);
   }, []);
 
+  // Funções de estilo
   const getTextColor = () => {
-    if (colorMode === "light") return "text-black";
-    if (colorMode === "dark") return "text-white";
-    return "text-white";
+    if (colorMode === "light") {
+      return scrolling ? "text-black" : "text-black";
+    }
+    if (colorMode === "dark") {
+      return scrolling ? "text-white" : "text-white";
+    }
+    return scrolling ? "text-black" : "text-white";
   };
 
   const getHoverTextColor = () => {
-    if (colorMode === "light") return "hover:text-black";
-    if (colorMode === "dark") return "hover:text-white";
-    return "hover:text-white";
+    if (colorMode === "light") {
+      return scrolling ? "hover:text-black" : "hover:text-black";
+    }
+    if (colorMode === "dark") {
+      return scrolling ? "hover:text-white" : "hover:text-white";
+    }
+    return scrolling ? "hover:text-black" : "hover:text-white";
   };
 
   const getBorderColor = () => {
-    if (colorMode === "light") return "bg-black";
-    if (colorMode === "dark") return "bg-white";
-    return "bg-white";
+    if (colorMode === "light") {
+      return scrolling ? "bg-black" : "bg-black";
+    }
+    if (colorMode === "dark") {
+      return scrolling ? "bg-white" : "bg-white";
+    }
+    return scrolling ? "bg-black" : "bg-white";
   };
 
   const textShadow =
@@ -59,7 +80,9 @@ export default function ListGroupSocial({ colorMode = "default" }) {
             duration={500}
             offset={-50}
           >
-            <span className={`h-[24px] inline-block ${getHoverTextColor()} ${textShadow}`}>
+            <span
+              className={`h-[24px] inline-block ${getHoverTextColor()} ${textShadow}`}
+            >
               {label}
             </span>
             <div

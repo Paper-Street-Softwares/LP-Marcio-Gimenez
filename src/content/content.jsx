@@ -1,7 +1,7 @@
 import logo from "../assets/imgs/logo/logo.webp";
 import heroImgPhone from "../assets/imgs/hero/personImg.png";
-import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.jpg";
-import bgHeroImg from "../assets/imgs/hero/bgHeroInfluencer.jpg";
+import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.jpeg";
+import bgHeroImg from "../assets/imgs/hero/bgHeroInfluencer.jpeg";
 import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
 import backgroundPersonMobile from "../assets/imgs/hero/bgHeroMobile.jpg";
 
@@ -17,7 +17,7 @@ import imgAbout5 from "../assets/imgs/about/aboutImg5.jpg";
 import aboutSocialImg from "../assets/imgs/about/aboutSocial.png";
 import aboutInstagram from "../assets/imgs/about/imgAboutInstagram.jpg";
 
-import imgSteps from "../assets/imgs/steps/imgSteps.jpg";
+import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
 import numbersImgBg from "../assets/imgs/paralaxe/bgParalaxe1.jpg";
 
@@ -29,6 +29,8 @@ import featuresImg1 from "../assets/imgs/features/imgFeatures1.jpg";
 import featuresImg2 from "../assets/imgs/features/imgFeatures2.jpg";
 import featuresImg3 from "../assets/imgs/features/imgFeatures3.jpg";
 import featuresImg4 from "../assets/imgs/features/imgFeatures4.jpg";
+import featuresImg5 from "../assets/imgs/features/imgFeatures5.jpg";
+import featuresImg6 from "../assets/imgs/features/imgFeatures6.jpg";
 
 import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.jpg";
 import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.jpg";
@@ -150,7 +152,7 @@ const content = {
       heroImg: bgHeroImg, //fundo da Hero
       heroDefaultImage: heroDefaultImg, //imagem da heroDefault Mobile
       backgroundPerson: backgroundPersonMobile,
-      ctaButtonText: "Descubra como atuamos",
+      ctaButtonText: "Entrar em contato",
       obsHero: {
         icon: (
           <svg
@@ -339,7 +341,7 @@ const content = {
         buttonLabel: "Saiba Mais",
       },
       card5: {
-        img: featuresImg4,
+        img: featuresImg5,
         title: "Direito do Trabalho",
         subtitle: "Defesa técnica em demandas trabalhistas complexas.",
         description: (
@@ -373,7 +375,7 @@ const content = {
         buttonLabel: "Saiba Mais",
       },
       card6: {
-        img: featuresImg4,
+        img: featuresImg6,
         title: "Imigração e Mobilidade Internacional",
         subtitle: "Assessoria legal para vistos e residência no exterior.",
         description: (
@@ -449,36 +451,24 @@ const content = {
           escritório Marcio Gimenez Advocacia surgiu da experiência de mais de
           duas décadas de dedicação técnica e estratégica ao Direito.
           <br />
-          Desde o início, nosso foco é oferecer soluções jurídicas
-          personalizadas para clientes com demandas patrimoniais relevantes.
-        </div>
-      ),
-      buttonModalLabelAbout: "Continuar lendo",
-      modal: (
-        <p>
-          Com raízes em São Paulo e atuação nacional e internacional, o
-          escritório Marcio Gimenez Advocacia surgiu da experiência de mais de
-          duas décadas de dedicação técnica e estratégica ao Direito.
-          <br />
           <br />
           Desde o início, nosso foco é oferecer soluções jurídicas
           personalizadas para clientes com demandas patrimoniais relevantes.
           <br />
-          <br />
-          O que nos diferencia é a sofisticação intelectual aplicada a cada
-          caso. Traduzimos questões complexas em estratégias claras, eficazes e
-          seguras, com discrição, autoridade e uma abordagem adaptada a cada
-          cliente — nunca em modelos genéricos ou fórmulas prontas.
+          <br />O que nos diferencia é a sofisticação intelectual aplicada a
+          cada caso. Traduzimos questões complexas em estratégias claras,
+          eficazes e seguras, com discrição, autoridade e uma abordagem adaptada
+          a cada cliente — nunca em modelos genéricos ou fórmulas prontas.
           <br />
           <br />
           Muitos que nos procuram já enfrentaram frustrações com abordagens
           simplistas. Aqui, cada demanda é tratada com profundidade, estratégia
           e linguagem madura, sempre com o compromisso de proteger o patrimônio
           e orientar decisões com inteligência e responsabilidade.
-          <br />
-          <br />
-        </p>
+        </div>
       ),
+      buttonModalLabelAbout: "Continuar lendo",
+      modal: <p></p>,
       ctaButtonAriaLabel: "Botão para entrar em contato",
       ctaButtonText: "Entre em contato",
 
