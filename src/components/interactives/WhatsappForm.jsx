@@ -111,7 +111,7 @@ const WhatsappForm = () => {
         {/* Botão */}
         <button
           type="button"
-          className="flex items-center justify-center w-full font-medium text-bgSectionDark bg-white transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
+          className="flex items-center justify-center w-full font-medium text-white bg-bgSectionDark transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
           onClick={sendToWhatsapp}
         >
           <img
