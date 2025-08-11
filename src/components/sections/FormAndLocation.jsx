@@ -25,9 +25,9 @@ export default function FormAndLocation() {
     <SectionArea className="bg-bgSectionDark " paddingtop={true}>
       <SectionHeader
         className="text-center desktop1:flex justify-center desktop1:w-full"
-        miniTitle="A_Definir"
-        sectionHeaderTitle="A_Definir"
-        sectionHeaderSubtitle="A_Definir"
+        miniTitle="CONTATO"
+        sectionHeaderTitle="Entre em Contato"
+        sectionHeaderSubtitle="Preencha o formulário abaixo e responderemos o mais breve possível."
         color=""
         type=""
       />
