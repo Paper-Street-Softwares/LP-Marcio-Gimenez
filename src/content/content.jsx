@@ -451,36 +451,24 @@ const content = {
           escritório Marcio Gimenez Advocacia surgiu da experiência de mais de
           duas décadas de dedicação técnica e estratégica ao Direito.
           <br />
-          Desde o início, nosso foco é oferecer soluções jurídicas
-          personalizadas para clientes com demandas patrimoniais relevantes.
-        </div>
-      ),
-      buttonModalLabelAbout: "Continuar lendo",
-      modal: (
-        <p>
-          Com raízes em São Paulo e atuação nacional e internacional, o
-          escritório Marcio Gimenez Advocacia surgiu da experiência de mais de
-          duas décadas de dedicação técnica e estratégica ao Direito.
-          <br />
           <br />
           Desde o início, nosso foco é oferecer soluções jurídicas
           personalizadas para clientes com demandas patrimoniais relevantes.
           <br />
-          <br />
-          O que nos diferencia é a sofisticação intelectual aplicada a cada
-          caso. Traduzimos questões complexas em estratégias claras, eficazes e
-          seguras, com discrição, autoridade e uma abordagem adaptada a cada
-          cliente — nunca em modelos genéricos ou fórmulas prontas.
+          <br />O que nos diferencia é a sofisticação intelectual aplicada a
+          cada caso. Traduzimos questões complexas em estratégias claras,
+          eficazes e seguras, com discrição, autoridade e uma abordagem adaptada
+          a cada cliente — nunca em modelos genéricos ou fórmulas prontas.
           <br />
           <br />
           Muitos que nos procuram já enfrentaram frustrações com abordagens
           simplistas. Aqui, cada demanda é tratada com profundidade, estratégia
           e linguagem madura, sempre com o compromisso de proteger o patrimônio
           e orientar decisões com inteligência e responsabilidade.
-          <br />
-          <br />
-        </p>
+        </div>
       ),
+      buttonModalLabelAbout: "Continuar lendo",
+      modal: <p></p>,
       ctaButtonAriaLabel: "Botão para entrar em contato",
       ctaButtonText: "Entre em contato",
 

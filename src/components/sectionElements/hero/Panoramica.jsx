@@ -185,10 +185,10 @@ export default function Panoramica({ appDownloadButtons }) {
                           />
                         </div>
                         <MotionDivDownToUp>
-                          <div className="flex justify-center desktop1:justify-start">
+                          <div className="flex justify-start">
                             <div className="flex flex-col items-center desktop1:flex-row text-primary">
                               {content.texts.hero.obsHero.icon}
-                              <p className="text-white  ml-[10px] text-center mt-[12px] desktop1:mt-0">
+                              <p className="text-white ml-[10px] text-start mt-[12px] desktop1:mt-0">
                                 {content.texts.hero.obsHero.text}
                               </p>
                             </div>

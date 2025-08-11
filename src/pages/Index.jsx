@@ -14,6 +14,7 @@ import Maps from "../components/sections/Maps";
 import TeamCards from "../components/sections/TeamCards";
 import BlogPosts from "../components/sections/BlogPosts";
 import CtaSecondary from "../components/sections/CtaSecondary";
+import FormAndLocation from "../components/sections/FormAndLocation";
 
 export default function Index() {
   // Altere esta constante para: 'default', 'light' ou 'dark'
@@ -30,6 +31,8 @@ export default function Index() {
         influencer={false}
         mesclado={true}
       />
+      <About modal={false} showGallery={false} colorMode={colorMode} />
+
       <Features
         colorMode={colorMode}
         defaultFeature={false}
@@ -39,7 +42,7 @@ export default function Index() {
         sixCards={false}
         paragraphsModal={false}
       />
-      <About modal={true} showGallery={false} colorMode={colorMode} />
+      <FormAndLocation />
       {/* <AboutInstagram
         colorMode={colorMode}
         instagram={true}
