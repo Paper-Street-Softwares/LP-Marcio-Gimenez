@@ -58,9 +58,9 @@ export const infos = {
   name: "Marcio Gimenez Advocacia | Direito Empresarial e Patrimonial em São Paulo - SP",
   email: "contato", // Email desejado pelo cliente
   emailTwo: "financeiro@marciogimenez.com.br", // Email desejado pelo cliente
-  emailThree: "financeiro@marciogimenez.com.br", // Email desejado pelo cliente
-  emailFour: "financeiro@marciogimenez.com.br", // Email desejado pelo cliente
-  emailFive: "financeiro@marciogimenez.com.br", // Email desejado pelo cliente
+  emailThree: "juridico@marciogimenez.com.br", // Email desejado pelo cliente
+  emailFour: "secretaria@marciogimenez.com.br", // Email desejado pelo cliente
+  emailFive: "marcio@marciogimenez.com.br", // Email desejado pelo cliente
 
   domain: "marciogimenez.com.br", // Sem "www"
   phone: {
