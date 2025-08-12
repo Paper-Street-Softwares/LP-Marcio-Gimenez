@@ -42,7 +42,6 @@ export default function Index() {
         sixCards={false}
         paragraphsModal={false}
       />
-      <FormAndLocation />
       {/* <AboutInstagram
         colorMode={colorMode}
         instagram={true}
@@ -55,6 +54,8 @@ export default function Index() {
       <BlogPosts />
       <Faq colorMode={colorMode} />
       {/* <Maps colorMode={colorMode} /> */}
+      <FormAndLocation />
+
       <FooterSocial
         colorMode={colorMode}
         addresSecundario={false}
