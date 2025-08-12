@@ -7,9 +7,9 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
       <MotionDivDownToUp>
         <div
           id="cardBlog"
-          className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] font-mainFont flex flex-col desktop1:max-w-[285px] desktop3:max-w-[375px] shadow-custom-opacity shadow-shadowBlogs/30 bg-bgSectionLight rounded-2xl p-[20px]"
+          className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[210px] font-mainFont flex flex-col desktop1:max-w-[300px] desktop1:w-[280px] desktop3:max-w-[375px] shadow-custom-opacity shadow-shadowBlogs/30 bg-bgSectionLight rounded-2xl p-[20px]"
         >
-          <div className="w-full max-h-[220px] tablet1:h-[300px] flex justify-center items-center overflow-hidden rounded-2xl">
+          <div className="w-full max-h-[220px] tablet1:h-[300px] tablet2:h-auto flex justify-center items-center overflow-hidden rounded-2xl">
             <div className="w-full">{img}</div>
           </div>
           <h1
