@@ -1,4 +1,6 @@
 import logo from "../assets/imgs/logo/logo.webp";
+import logoFooter from "../assets/imgs/logo/logoFooter.webp";
+
 import heroImgPhone from "../assets/imgs/hero/personImg.png";
 import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.webp";
 import bgHeroImg from "../assets/imgs/hero/bgHeroInfluencer.jpeg";
@@ -122,6 +124,10 @@ const content = {
       },
       solidLogo: {
         img: logo,
+        alt: `Logomarca ${infos.name}`,
+      },
+      logoFooter: {
+        img: logoFooter,
         alt: `Logomarca ${infos.name}`,
       },
       menuItems: [

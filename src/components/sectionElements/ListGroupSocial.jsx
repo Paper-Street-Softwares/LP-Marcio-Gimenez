@@ -38,7 +38,7 @@ export default function ListGroupSocial({ colorMode = "default" }) {
     if (colorMode === "dark") {
       return scrolling ? "text-white" : "text-white";
     }
-    return scrolling ? "text-black" : "text-white";
+    return scrolling ? "text-black" : "text-black";
   };
 
   const getHoverTextColor = () => {
@@ -48,7 +48,7 @@ export default function ListGroupSocial({ colorMode = "default" }) {
     if (colorMode === "dark") {
       return scrolling ? "hover:text-white" : "hover:text-white";
     }
-    return scrolling ? "hover:text-black" : "hover:text-white";
+    return scrolling ? "hover:text-black" : "hover:text-black";
   };
 
   const getBorderColor = () => {
@@ -58,7 +58,7 @@ export default function ListGroupSocial({ colorMode = "default" }) {
     if (colorMode === "dark") {
       return scrolling ? "bg-white" : "bg-white";
     }
-    return scrolling ? "bg-black" : "bg-white";
+    return scrolling ? "bg-black" : "bg-black";
   };
 
   const textShadow =
