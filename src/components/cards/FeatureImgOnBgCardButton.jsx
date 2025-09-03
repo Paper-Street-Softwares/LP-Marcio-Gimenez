@@ -33,10 +33,10 @@ export default function FeatureImgOnBgCardButton(props) {
       >
         <div className="flex items-end w-full h-full bg-colorBlack bg-opacity-10 rounded-2xl">
           <MotionDivDownToUp className="w-full h-auto bg-bgSectionLight rounded-2xl p-[20px] mx-[10px] mb-[10px] flex flex-col">
-            <h1 className="font-mainFont font-medium text-[18px] desktop1:text-paragraph5 desktop2:text-[20px] mb-[10px]">
+            <h1 className="font-mainFont font-medium text-[18px] text-gray-800 desktop1:text-paragraph5 desktop2:text-[20px] mb-[10px]">
               {title}
             </h1>
-            <p className="font-secondFont text-paragraph3 desktop1:text-paragraph4 text-quaternary">
+            <p className="font-secondFont text-paragraph3 desktop1:text-paragraph4 text-gray-800">
               {description}
             </p>
             <div>

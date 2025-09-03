@@ -32,7 +32,7 @@ export default function FeaturesButton({ colorMode }) {
   const textClasses = {
     dark: "text-white",
     light: "text-black",
-    default: "bg-transparent",
+    default: "text-gray-600",
   };
   const bgClass = bgClasses[colorMode] || bgClasses.default;
   const textClass = textClasses[colorMode] || textClasses.default;

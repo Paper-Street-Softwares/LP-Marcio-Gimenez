@@ -29,11 +29,12 @@ export default function About({
   const textClasses = {
     dark: "text-white",
     light: "text-black",
-    default: "text-black",
+    default: "text-primary",
   };
   const bgClass = bgClasses[colorMode] || bgClasses.default;
   const titleColor = textClasses[colorMode] || textClasses.default;
-  const subtitleColor = colorMode === "light" ? "text-black/80" : "text-black/80";
+  const subtitleColor =
+    colorMode === "light" ? "text-gray-600" : "text-gray-600";
 
   const images = [
     {
@@ -56,15 +57,15 @@ export default function About({
       className={`${bgClass} transition-colors duration-1000`}
     >
       <SectionWrapper className="flex flex-col desktop1:flex-row-reverse gap-[40px] desktop1:gap-x-[40px] desktop2:gap-0 desktop1:justify-between">
-        <MotionDivDownToUp className="relative w-[90%] desktop1:w-[415px] desktop2:w-[450px] flex justify-center rounded-xl">
+        <MotionDivDownToUp className="relative w-[90%] desktop1:w-[415px] desktop2:w-[450px] flex justify-center">
           <img
             src={content.texts.about.imagem.img}
             alt={content.texts.about.imagem.alt}
-            className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl shadow-custom-opacity shadow-shadowAbouts/30"
+            className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] "
           />
         </MotionDivDownToUp>
         {/* <MotionDivDownToUp className=" w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
-          <div className="shadow-custom-opacity shadow-secondary/25 relative bg-center bg-no-repeat bg-cover h-[350px] w-[90%] tablet1:w-full tablet1:h-auto desktop1:h-[467px] rounded-xl">
+          <div className="shadow-custom-opacity shadow-secondary/25 relative bg-center bg-no-repeat bg-cover h-[350px] w-[90%] tablet1:w-full tablet1:h-auto desktop1:h-[467px]">
             <ImageGallery
               items={images}
               showNav={false} // Ativando a navegação
@@ -115,7 +116,7 @@ export default function About({
             color={colorMode}
             type="article"
             titleColorSet={titleColor}
-            subtitleColorSet={subtitleColor}
+            subtitleColorSet="text-gray-800"
           />
           <MotionDivDownToUp>
             {modal ? (

@@ -40,14 +40,14 @@ export default function AccordionExpandDefault() {
           id="panel1-header"
         >
           <Typography>
-            <h1 className="font-bold font-secondFont">
+            <h1 className="font-bold font-secondFont text-gray-600">
               {content.texts.faq.questions.question1.question}
             </h1>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <p className="font-secondFont text-paragraph4 text-paragraphLight ">
+            <p className="font-secondFont text-paragraph4 text-gray-800 ">
               {content.texts.faq.questions.question1.answer}
             </p>
           </Typography>
@@ -67,14 +67,14 @@ export default function AccordionExpandDefault() {
           id="panel2-header"
         >
           <Typography>
-            <h1 className="font-bold font-secondFont">
+            <h1 className="font-bold font-secondFont text-gray-600">
               {content.texts.faq.questions.question2.question}
             </h1>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <p className="font-secondFont text-paragraph4 text-paragraphLight ">
+            <p className="font-secondFont text-paragraph4 text-gray-800 ">
               {content.texts.faq.questions.question2.answer}
             </p>
           </Typography>
@@ -94,14 +94,14 @@ export default function AccordionExpandDefault() {
           id="panel3-header"
         >
           <Typography>
-            <h1 className="font-bold font-secondFont">
+            <h1 className="font-bold font-secondFont text-gray-600">
               {content.texts.faq.questions.question3.question}
             </h1>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <p className="font-secondFont text-paragraph4 text-paragraphLight ">
+            <p className="font-secondFont text-paragraph4 text-gray-800 ">
               {content.texts.faq.questions.question3.answer}
             </p>
           </Typography>
@@ -121,14 +121,14 @@ export default function AccordionExpandDefault() {
           id="panel4-header"
         >
           <Typography>
-            <h1 className="font-bold font-secondFont">
+            <h1 className="font-bold font-secondFont text-gray-600">
               {content.texts.faq.questions.question4.question}
             </h1>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <p className="font-secondFont text-paragraph4 text-paragraphLight ">
+            <p className="font-secondFont text-paragraph4 text-gray-800 ">
               {content.texts.faq.questions.question4.answer}
             </p>
           </Typography>

@@ -13,13 +13,13 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
             <div className="w-full">{img}</div>
           </div>
           <h1
-            className="mt-4 text-title1 leading-[25px] font-medium mb-[12px]"
+            className="mt-4 text-title1 text-gray-600 leading-[25px] font-medium mb-[12px]"
             title="blogTitle"
           >
             {title}
           </h1>
           <h2
-            className="text-paragraph2 desktop2:text-paragraph3 mb-[32px] text-colorBlack/60 leading-[18px] desktop1:leading-[21px]  "
+            className="text-paragraph2 desktop2:text-paragraph3 mb-[32px] text-gray-600 leading-[18px] desktop1:leading-[21px]  "
             title="blogSubtitle"
           >
             {subtitle}
@@ -29,7 +29,7 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
               removeAnchor={true}
               label="Ver matéria completa"
               buttonLink={link}
-              className="text-colorBlack"
+              className="text-white"
               size="small"
               icon={
                 <svg

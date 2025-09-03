@@ -31,8 +31,8 @@ export const theme = {
       links: "#0189BB",
       iconButtons: "#000",
       labelButtons: "#000",
-      minititleLightLabel: "#000", //label das minitag de seções claras
-      minititleDarkLabel: "#000", //label minitag de seções escuras
+      minititleLightLabel: "#1f2937", //label das minitag de seções claras
+      minititleDarkLabel: "#1f2937", //label minitag de seções escuras
 
       // Sombras
 
@@ -55,9 +55,12 @@ export const theme = {
     fontFamily: {
       mainFont: ["Merriweather", "sans-serif"],
       // mainFont: ["Poppins", "sans-serif"],
-      secondFont: ["Merriweather", "sans-serif"],
+      // secondFont: ["Merriweather", "sans-serif"],
+      mainFont: ["Times New Romance", "sans-serif"],
+      secondFont: ["Times New Romance", "sans-serif"],
       league: ["League Gothic"],
       barlow: ["Barlow Condensed"],
+      times: ["Times New Romance", "sans-serif"],
     },
     fontSize: {
       paragraph1: "0.625rem",

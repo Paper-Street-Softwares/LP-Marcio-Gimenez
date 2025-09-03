@@ -71,7 +71,7 @@ export const theme = {
       title4: "1.875rem",
       title5: "2.25rem",
       title6: "3rem",
-      title7: "3.5rem", // 55px
+      title7: "3.5rem", 
     },
     spacing: {
       112: "28rem",

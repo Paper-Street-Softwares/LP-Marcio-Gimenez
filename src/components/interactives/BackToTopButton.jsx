@@ -33,7 +33,7 @@ const BackToTopButton = () => {
       } fixed bottom-8 left-8 p-4 bg-primary text-white border-black rounded-full z-10 focus:outline-none hover:scale-125 transition`}
       onClick={scrollToTop}
     >
-      <FaArrowUp className="text-labelButtons" />
+      <FaArrowUp className="text-gray-800" />
     </button>
   );
 };

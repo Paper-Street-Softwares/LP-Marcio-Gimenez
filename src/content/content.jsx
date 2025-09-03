@@ -131,12 +131,12 @@ const content = {
         alt: `Logomarca ${infos.name}`,
       },
       menuItems: [
-        "Início",
-        "Serviços",
-        "Sobre Nós",
-        "Blog",
-        "Perguntas Frequentes",
-        "Mapa",
+        "HOME",
+        "ÁREAS DE ATUAÇÃO",
+        "QUEM SOMOS",
+        "ARTIGOS",
+        "PERGUNTAS FREQUENTES",
+        "MAPA",
       ],
       menuId: ["home", "service", "about", "blog", "faq", "maps"],
 
@@ -508,18 +508,18 @@ const content = {
       // miniTag: "FALE CONOSCO",
       title: (
         <h1>
-          <span className="text-bgSectionDark">Dúvidas?</span> Entre em contato
+          <span className="text-gray-600">Dúvidas?</span> Entre em contato
           conosco para podermos lhe ajudar,{" "}
-          <span className="text-bgSectionDark">estamos te esperando.</span>
+          <span className="text-text-gray-600">estamos te esperando.</span>
         </h1>
       ),
       subtitleDireita: (
-        <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+        <p className="gap-3 flex font-mainFont opacity-60 mt-1 text-gray-600">
           <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
         </p>
       ),
       titleDireita: (
-        <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+        <h1 className="text-title5 my-3 font-mainFont text-gray-600">WhatsApp</h1>
       ),
       ctaButtonText: "Falar agora",
     },
