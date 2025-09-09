@@ -68,7 +68,7 @@ export default function FeaturesButton({ colorMode }) {
                       card.title,
                       <div>
                         <ServiceDetailCard
-                          img={card.img}
+                          img={card.imgModal}
                           description={card.description}
                           buttonIcon={card.icon}
                           buttonLabel={card.buttonLabelModal}
