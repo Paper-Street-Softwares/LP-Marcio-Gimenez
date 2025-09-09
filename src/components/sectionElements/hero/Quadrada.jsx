@@ -3,6 +3,12 @@ import content from "../../../content/content";
 import Button from "../../interactives/Button";
 import { FaWhatsapp } from "react-icons/fa";
 import "../../../styles/shapeDivs.css";
+import ImageGallery from "react-image-gallery";
+import heroImg1 from "../../../assets/imgs/hero/imgHero2.webp";
+import heroImg2 from "../../../assets/imgs/hero/imgHero3.webp";
+import heroImg3 from "../../../assets/imgs/hero/imgHero4.webp";
+import heroImg4 from "../../../assets/imgs/hero/imgHero5.webp";
+import heroImg5 from "../../../assets/imgs/hero/imgHero6.webp";
 
 export default function Quadrada({ appDownloadButtons, colorMode }) {
   // Definindo cores de fundo com base no tema
@@ -17,6 +23,29 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
   const subtitleColor = colorMode === "light" ? "text-black" : "text-white";
   const obsTextColor = colorMode === "light" ? "text-black" : "text-white";
   const descriptionColor = colorMode === "light" ? "text-black" : "text-white";
+
+  const images = [
+    {
+      original: heroImg1,
+      thumbnail: heroImg1,
+    },
+    {
+      original: heroImg2,
+      thumbnail: heroImg2,
+    },
+    {
+      original: heroImg3,
+      thumbnail: heroImg3,
+    },
+    {
+      original: heroImg4,
+      thumbnail: heroImg4,
+    },
+    {
+      original: heroImg5,
+      thumbnail: heroImg5,
+    },
+  ];
 
   return (
     <div
@@ -121,13 +150,41 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
 
             {/* Imagem principal */}
             <div className="flex justify-center w-full tablet1:w-[450px] desktop1:w-[42%] desktop2:w-[42.8%]">
-              <MotionDivDownToUp className="relative flex justify-center w-full">
-                <div
-                  className="bg-top mt-[20px] desktop1:mt-0 rounded-xl w-full phone1:h-[300px] phone1:max-w-[300px] phone2:h-[355px] phone2:max-w-[355px] phone3:h-[405px] phone3:max-w-[405px] tablet1:h-[576px] tablet1:min-w-[576px] tablet2:h-[690px] tablet2:min-w-[690px] desktop1:h-[400px] desktop1:min-w-[200px] desktop2:h-[400px] desktop2:min-w-[400px] bg-cover bg-no-repeat shadow-custom-opacity shadow-shadowAbouts/30"
+              <MotionDivDownToUp className="relative flex justify-center w-full ">
+                {/* <div
+                  className="bg-top rounded-xl w-full h-[350px] tablet1:h-[380px] desktop1:h-[500px] desktop1:w-[500px] bg-cover bg-no-repeat shadow-custom-opacity shadow-black/30"
                   style={{
-                    backgroundImage: `url(${content.texts.hero.heroDefaultImage})`,
+                    backgroundImage: `url(${content.texts.hero.heroImg})`,
+                    backgroundSize: "",
                   }}
-                />
+                ></div> */}
+                <div className="w-full">
+                  <ImageGallery
+                    items={images}
+                    showNav={false} // Ativando a navegação
+                    showFullscreenButton={false} // Desativando botão de tela cheia
+                    useBrowserFullscreen={false} // Desativando o uso de tela cheia do navegador
+                    showBullets={false}
+                    showPlayButton={false} // Remove o botão de play
+                    showThumbnails={false} // Remove as miniaturas
+                    autoPlay={true}
+                    additionalClass="custom-gallery"
+                  />
+                  <style>
+                    {`
+                    .custom-gallery .image-gallery-slide img {
+                      height: auto; 
+                      width: 100%;
+                    }
+
+                    .custom-gallery .image-gallery-thumbnails img {
+                      height: 60px;  
+                      width: 100px;  
+                      object-fit: cover; 
+                    }
+                  `}
+                  </style>
+                </div>
               </MotionDivDownToUp>
             </div>
           </div>
