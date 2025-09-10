@@ -26,11 +26,11 @@ function LinksNavegationFooter() {
 
   return (
     <MotionDivDownToUp>
-      <div className="flex justify-between full opacity-90">
+      <div className="flex justify-between full opacity-90 text-paragraph3 ">
         {/* Primeira coluna */}
-        <div className="w-[46%] flex flex-col gap-y-[16px]">
+        <div className="w-[46%] flex flex-col gap-y-[30px]">
           {firstHalf.map(({ id, label }) => (
-            <div key={id} className="h-[36px] hover:underline">
+            <div key={id} className="max-h-auto hover:underline">
               <Link
                 to={id}
                 className="cursor-pointer"
@@ -39,7 +39,7 @@ function LinksNavegationFooter() {
                 duration={500}
                 offset={-50}
               >
-                <span className="inline-block h-[48px] hover:underline hover:scale-110 transition">
+                <span className="inline-block h-auto hover:underline hover:scale-110 transition">
                   {label}
                 </span>
               </Link>
