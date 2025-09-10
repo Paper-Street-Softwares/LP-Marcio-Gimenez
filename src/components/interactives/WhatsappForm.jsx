@@ -55,11 +55,11 @@ const WhatsappForm = () => {
   };
 
   return (
-    <div className="bg-primary p-6 rounded-[10px] w-full desktop1:w-full h-auto">
+    <div className="bg-white p-6 w-full desktop1:w-full h-auto">
       <div className="w-full text-paragraph3 phone3:text-paragraph4">
         {/* Nome completo */}
         <div className="mb-6">
-          <label className="block mb-1 text-white">Nome completo:</label>
+          <label className="block mb-1 text-secondary">Nome completo:</label>
           <input
             className="w-full px-3 py-2 border rounded"
             type="text"
@@ -72,7 +72,7 @@ const WhatsappForm = () => {
 
         {/* E-mail */}
         <div className="mb-6">
-          <label className="block mb-1 text-white">E-mail:</label>
+          <label className="block mb-1 text-secondary">E-mail:</label>
           <input
             className="w-full px-3 py-2 border rounded"
             type="email"
@@ -85,7 +85,7 @@ const WhatsappForm = () => {
 
         {/* Assunto */}
         <div className="mb-6">
-          <label className="block mb-1 text-white">Assunto:</label>
+          <label className="block mb-1 text-secondary">Assunto:</label>
           <input
             className="w-full px-3 py-2 border rounded"
             type="text"
@@ -98,7 +98,7 @@ const WhatsappForm = () => {
 
         {/* Mensagem */}
         <div className="mb-6">
-          <label className="block mb-1 text-white">Mensagem:</label>
+          <label className="block mb-1 text-secondary">Mensagem:</label>
           <textarea
             className="w-full px-3 py-2 border rounded"
             value={message}

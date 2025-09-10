@@ -30,6 +30,8 @@ export default function Steps() {
             sectionHeaderSubtitle="O primeiro passo para a solução jurídica do seu caso começa aqui. Escolha o canal de sua preferência e inicie sua estratégia conosco."
             color=""
             type=""
+            miniTitleBgColor="bg-white"
+            miniTitleTextColor="text-secondary"
           />
           <WhatsappForm />
         </MotionDivDownToUp>
@@ -42,6 +44,8 @@ export default function Steps() {
             sectionHeaderSubtitle={content.texts.maps.subtitle}
             color=""
             type=""
+            miniTitleBgColor="bg-white"
+            miniTitleTextColor="text-secondary"
           />
           <div className="relative w-full h-auto bg-no-repeat bg-cover desktop1:bg-center tablet1:w-full ">
             {/* <p className="font-bold mt-[32px] mb-[16px]">
