@@ -1,5 +1,6 @@
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import BlogButton from "../interactives/BlogButton";
+import Button from "../interactives/BlogButton";
 
 export default function WordPressBlogCard({ img, title, subtitle, link }) {
   return (
@@ -25,11 +26,12 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
             {subtitle}
           </h2>
           <div className="flex ">
-            <BlogButton
+            <Button
               removeAnchor={true}
+              color="bg-buttonColor"
               label="Ver matéria completa"
               buttonLink={link}
-              className="text-white"
+              className="text-labelButtons"
               size="small"
               icon={
                 <svg
