@@ -1,5 +1,6 @@
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import BlogButton from "../interactives/BlogButton";
+import Button from "../interactives/BlogButton";
 
 export default function WordPressBlogCard({ img, title, subtitle, link }) {
   return (
@@ -7,29 +8,30 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
       <MotionDivDownToUp>
         <div
           id="cardBlog"
-          className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[210px] font-mainFont flex flex-col desktop1:max-w-[300px] desktop1:w-[280px] desktop3:max-w-[375px] shadow-custom-opacity shadow-shadowBlogs/30 bg-bgSectionLight rounded-2xl p-[20px]"
+          className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[210px] font-mainFont flex flex-col desktop1:max-w-[300px] desktop1:w-[280px] desktop3:max-w-[375px] shadow-custom-opacity shadow-shadowBlogs/30 bg-bgSectionLight rounded-sm p-[20px]"
         >
-          <div className="w-full max-h-[220px] tablet1:h-[300px] tablet2:h-auto flex justify-center items-center overflow-hidden rounded-2xl">
+          <div className="w-full max-h-[220px] tablet1:h-[300px] tablet2:h-auto flex justify-center items-center overflow-hidden">
             <div className="w-full">{img}</div>
           </div>
           <h1
-            className="mt-4 text-title1 leading-[25px] font-medium mb-[12px]"
+            className="mt-4 text-title1 text-gray-600 leading-[25px] font-medium mb-[12px]"
             title="blogTitle"
           >
             {title}
           </h1>
           <h2
-            className="text-paragraph2 desktop2:text-paragraph3 mb-[32px] text-colorBlack/60 leading-[18px] desktop1:leading-[21px]  "
+            className="text-paragraph2 desktop2:text-paragraph3 mb-[32px] text-gray-600 leading-[18px] desktop1:leading-[21px]  "
             title="blogSubtitle"
           >
             {subtitle}
           </h2>
           <div className="flex ">
-            <BlogButton
+            <Button
               removeAnchor={true}
+              color="bg-buttonColor"
               label="Ver matéria completa"
               buttonLink={link}
-              className="text-colorBlack"
+              className="text-labelButtons"
               size="small"
               icon={
                 <svg

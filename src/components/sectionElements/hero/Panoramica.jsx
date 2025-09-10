@@ -34,7 +34,7 @@ export default function Panoramica({ appDownloadButtons }) {
         <div className="w-full bg-top bg-repeat font-mainFont bg-gradient-to-b from-darker to-bgSectionDark desktop1:hidden">
           <div className="relative z-10 flex w-full bg-colorBlack bg-opacity-0 items-left">
             <div className="w-full text-secondary justify-evenly">
-              <div className="h-[125px] desktop3:h-[140px]" />
+              <div className="h-[150px] phone2:h-[160px] tablet1:h-[200px] desktop3:h-[140px]" />
               <div className="flex flex-col-reverse gap-[40px]  desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[64px] pt-[40px] desktop1:pt-[68px] desktop1:pb-[96px]">
                 <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
                   <MotionDivDownToUp>
@@ -123,7 +123,7 @@ export default function Panoramica({ appDownloadButtons }) {
                 <div className="flex justify-center w-full tablet1:w-[450px] desktop1:w-[42%] desktop2:w-[42.8%]">
                   <MotionDivDownToUp className="relative flex justify-end w-full ">
                     <div
-                      className=" bg-top rounded-xl w-full h-[350px] tablet1:h-[380px] desktop1:h-[500px] desktop1:w-[500px] bg-cover bg-no-repeat tablet1:shadow-custom-opacity tablet1:shadow-shadowHero"
+                      className=" bg-top w-full h-[350px] tablet1:h-[380px] desktop1:h-[500px] desktop1:w-[500px] bg-cover bg-no-repeat "
                       style={{
                         backgroundImage: `url(${content.texts.hero.heroDefaultImage})`,
                         backgroundSize: "",

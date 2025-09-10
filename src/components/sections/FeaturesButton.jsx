@@ -9,6 +9,7 @@ import ServiceDetailCard from "../cards/ServiceDetailCard";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import FeatureImgOnBgCardButton from "../cards/FeatureImgOnBgCardButton";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function FeaturesButton({ colorMode }) {
   const [visible, setVisible] = useState(false);
@@ -27,12 +28,12 @@ export default function FeaturesButton({ colorMode }) {
   const bgClasses = {
     dark: "bg-bgSectionOpacityDark",
     light: "bg-bgSectionOpacityLight",
-    default: "squares",
+    default: "bg-bgSectionDark",
   };
   const textClasses = {
     dark: "text-white",
     light: "text-black",
-    default: "bg-transparent",
+    default: "text-white",
   };
   const bgClass = bgClasses[colorMode] || bgClasses.default;
   const textClass = textClasses[colorMode] || textClasses.default;
@@ -50,6 +51,8 @@ export default function FeaturesButton({ colorMode }) {
           sectionHeaderSubtitle={content.texts.features.subtitle}
           titleColorSet={textClass}
           subtitleColorSet={textClass}
+          miniTitleBgColor="bg-white"
+          miniTitleTextColor="text-secondary"
         />
         <SectionWrapper>
           <div className="flex flex-wrap justify-center desktop1:justify-evenly w-full gap-[36px] tablet1:gap-[24px] desktop1:w-[90%]">
@@ -68,9 +71,9 @@ export default function FeaturesButton({ colorMode }) {
                       card.title,
                       <div>
                         <ServiceDetailCard
-                          img={card.img}
+                          img={card.imgModal}
                           description={card.description}
-                          buttonIcon={card.icon}
+                          buttonIcon={<FaWhatsapp size={24} color="white" />}
                           buttonLabel={card.buttonLabelModal}
                           buttonLink={content.texts.links.ctaWhatsapp}
                           bgPosition="bg-top"

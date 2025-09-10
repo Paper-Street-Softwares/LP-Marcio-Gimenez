@@ -7,9 +7,9 @@ function LogoFooter() {
     <MotionDivDownToUp>
       <div className="h-[115px] flex justify-start items-center">
         <img
-          src={content.texts.navbar.logo.img}
-          alt={content.texts.navbar.logo.alt}
-          className="max-h-[88px] w-auto "
+          src={content.texts.navbar.logoFooter.img}
+          alt={content.texts.navbar.logoFooter.alt}
+          className="max-h-[100px] w-auto "
         ></img>
       </div>
     </MotionDivDownToUp>

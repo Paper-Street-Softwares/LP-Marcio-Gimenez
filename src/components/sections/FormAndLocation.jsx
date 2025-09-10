@@ -26,10 +26,12 @@ export default function Steps() {
           <SectionHeader
             className="text-center desktop1:flex desktop1:w-full"
             miniTitle="CONTATO"
-            sectionHeaderTitle="Entre em Contato"
-            sectionHeaderSubtitle="Preencha o formulário abaixo e responderemos o mais breve possível."
+            sectionHeaderTitle="Nossos canais de atendimento"
+            sectionHeaderSubtitle="O primeiro passo para a solução jurídica do seu caso começa aqui. Escolha o canal de sua preferência e inicie sua estratégia conosco."
             color=""
             type=""
+            miniTitleBgColor="bg-white"
+            miniTitleTextColor="text-secondary"
           />
           <WhatsappForm />
         </MotionDivDownToUp>
@@ -42,8 +44,10 @@ export default function Steps() {
             sectionHeaderSubtitle={content.texts.maps.subtitle}
             color=""
             type=""
+            miniTitleBgColor="bg-white"
+            miniTitleTextColor="text-secondary"
           />
-          <div className="relative w-full h-auto bg-no-repeat bg-cover shadow-custom-opacity shadow-darker/25 desktop1:bg-center tablet1:w-full rounded-xl">
+          <div className="relative w-full h-auto bg-no-repeat bg-cover desktop1:bg-center tablet1:w-full ">
             {/* <p className="font-bold mt-[32px] mb-[16px]">
               Nos encontre no Google Maps
             </p> */}
@@ -56,7 +60,7 @@ export default function Steps() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-[10px] h-[350px] desktop1:h-[420px]"
+                className=" h-[350px] desktop1:h-[420px]"
               />
             </div>
             {/* <img

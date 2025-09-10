@@ -27,6 +27,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Times New Romance";
+  src: url("/src/assets/fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -197,4 +204,3 @@
   height: 50px !important;
   flex-shrink: 0 !important; /* Impede que o botão diminua se o tooltip aumentar */
 }
-

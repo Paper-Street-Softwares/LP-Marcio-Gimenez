@@ -6,7 +6,7 @@ import "primeicons/primeicons.css";
 import content from "../../../content/content";
 export default function ParagraphSemFading() {
   return (
-    <Paragraphs className="text-black text-opacity-80">
+    <Paragraphs className="text-gray-800 text-opacity-80">
       {content.texts.about.paragraph}
     </Paragraphs>
   );

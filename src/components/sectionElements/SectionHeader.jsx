@@ -64,7 +64,7 @@ export default function SectionHeader({
           </div>
         </div>
         <h1
-          className={`${titleColor} ${titleOrientation} text-title4 bg-transparent leading-[34px] tablet1:leading-[42px] tablet1:text-title5 font-mainFont font-bold mb-[16px]`}
+          className={`${titleColor} ${titleOrientation} text-title2 bg-transparent leading-[22px] tablet1:leading-[24px] tablet1:text-title2 font-mainFont font-bold mb-[12px]`}
         >
           {sectionHeaderTitle}
         </h1>

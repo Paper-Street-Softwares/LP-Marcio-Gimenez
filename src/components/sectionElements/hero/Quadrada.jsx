@@ -3,6 +3,12 @@ import content from "../../../content/content";
 import Button from "../../interactives/Button";
 import { FaWhatsapp } from "react-icons/fa";
 import "../../../styles/shapeDivs.css";
+import ImageGallery from "react-image-gallery";
+import heroImg1 from "../../../assets/imgs/hero/imgHero2.webp";
+import heroImg2 from "../../../assets/imgs/hero/imgHero3.webp";
+import heroImg3 from "../../../assets/imgs/hero/imgHero4.webp";
+import heroImg4 from "../../../assets/imgs/hero/imgHero5.webp";
+import heroImg5 from "../../../assets/imgs/hero/imgHero6.webp";
 
 export default function Quadrada({ appDownloadButtons, colorMode }) {
   // Definindo cores de fundo com base no tema
@@ -18,6 +24,29 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
   const obsTextColor = colorMode === "light" ? "text-black" : "text-white";
   const descriptionColor = colorMode === "light" ? "text-black" : "text-white";
 
+  const images = [
+    {
+      original: heroImg1,
+      thumbnail: heroImg1,
+    },
+    {
+      original: heroImg2,
+      thumbnail: heroImg2,
+    },
+    {
+      original: heroImg3,
+      thumbnail: heroImg3,
+    },
+    {
+      original: heroImg4,
+      thumbnail: heroImg4,
+    },
+    {
+      original: heroImg5,
+      thumbnail: heroImg5,
+    },
+  ];
+
   return (
     <div
       className={`w-full bg-center bg-repeat font-mainFont bg-gradient-to-b ${bgGradient}`}
@@ -25,13 +54,13 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
     >
       <div className="relative z-10 flex w-full items-left">
         <div className="w-full text-secondary justify-evenly">
-          <div className="h-[140px] phone2:h-[140px] phone3:h-[140px] tablet1:h-[150px] desktop3:h-[120px] " />{" "}
+          <div className="h-[160px] phone2:h-[200px] phone3:h-[140px] tablet1:h-[150px] desktop3:h-[120px] " />{" "}
           <div className="flex flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[64px]  desktop1:pt-[68px] desktop1:pb-[96px]">
             <div className="flex flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
               {/* MiniTag preta */}
               <MotionDivDownToUp>
-                <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4 text-labelButtons">
-                  <p className="mb-[16px] bg-minititle text-paragraph2 rounded-md px-[16px] py-[6px] inline-block">
+                <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4 text-secondary">
+                  <p className="mb-[16px] text-paragraph2 rounded-md px-[16px] py-[6px] inline-block bg-white">
                     {content.texts.hero.miniTag}
                   </p>
                 </div>
@@ -62,8 +91,10 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                     label={content.texts.hero.ctaButtonText}
                     animation
                     className="w-[100%]"
-                    icon={<FaWhatsapp size={24} />}
+                    icon={<FaWhatsapp size={24} color="black" />}
                     colorMode={colorMode}
+                    color="bg-white"
+                    textclassName="text-secondary"
                   />
                 </div>
 
@@ -121,13 +152,41 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
 
             {/* Imagem principal */}
             <div className="flex justify-center w-full tablet1:w-[450px] desktop1:w-[42%] desktop2:w-[42.8%]">
-              <MotionDivDownToUp className="relative flex justify-center w-full">
-                <div
-                  className="bg-top mt-[20px] desktop1:mt-0 rounded-xl w-full phone1:h-[300px] phone1:max-w-[300px] phone2:h-[355px] phone2:max-w-[355px] phone3:h-[405px] phone3:max-w-[405px] tablet1:h-[576px] tablet1:min-w-[576px] tablet2:h-[690px] tablet2:min-w-[690px] desktop1:h-[400px] desktop1:min-w-[200px] desktop2:h-[400px] desktop2:min-w-[400px] bg-cover bg-no-repeat shadow-custom-opacity shadow-shadowAbouts/30"
+              <MotionDivDownToUp className="relative flex justify-center w-full ">
+                {/* <div
+                  className="bg-top rounded-xl w-full h-[350px] tablet1:h-[380px] desktop1:h-[500px] desktop1:w-[500px] bg-cover bg-no-repeat shadow-custom-opacity shadow-black/30"
                   style={{
-                    backgroundImage: `url(${content.texts.hero.heroDefaultImage})`,
+                    backgroundImage: `url(${content.texts.hero.heroImg})`,
+                    backgroundSize: "",
                   }}
-                />
+                ></div> */}
+                <div className="w-full">
+                  <ImageGallery
+                    items={images}
+                    showNav={false} // Ativando a navegação
+                    showFullscreenButton={false} // Desativando botão de tela cheia
+                    useBrowserFullscreen={false} // Desativando o uso de tela cheia do navegador
+                    showBullets={false}
+                    showPlayButton={false} // Remove o botão de play
+                    showThumbnails={false} // Remove as miniaturas
+                    autoPlay={true}
+                    additionalClass="custom-gallery"
+                  />
+                  <style>
+                    {`
+                    .custom-gallery .image-gallery-slide img {
+                      height: auto; 
+                      width: 100%;
+                    }
+
+                    .custom-gallery .image-gallery-thumbnails img {
+                      height: 60px;  
+                      width: 100px;  
+                      object-fit: cover; 
+                    }
+                  `}
+                  </style>
+                </div>
               </MotionDivDownToUp>
             </div>
           </div>

@@ -1,4 +1,6 @@
 import logo from "../assets/imgs/logo/logo.webp";
+import logoFooter from "../assets/imgs/logo/logoFooter.webp";
+
 import heroImgPhone from "../assets/imgs/hero/personImg.png";
 import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.webp";
 import bgHeroImg from "../assets/imgs/hero/bgHeroInfluencer.jpeg";
@@ -29,13 +31,15 @@ import featuresImg1 from "../assets/imgs/features/imgFeatures1.webp";
 import featuresImg2 from "../assets/imgs/features/imgFeatures2.webp";
 import featuresImg3 from "../assets/imgs/features/imgFeatures3.webp";
 import featuresImg4 from "../assets/imgs/features/imgFeatures4.webp";
-import featuresImg5 from "../assets/imgs/features/imgFeatures5.webp";
-import featuresImg6 from "../assets/imgs/features/imgFeatures6.webp";
+import featuresImg5 from "../assets/imgs/features/imgFeatures6.webp";
+import featuresImg6 from "../assets/imgs/features/imgFeatures5.webp";
 
-import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.jpg";
-import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.jpg";
-import imgFeaturesCardModal3 from "../assets/imgs/features/imgFeaturesCardModal3.jpg";
-import imgFeaturesCardModal4 from "../assets/imgs/features/imgFeaturesCardModal4.jpg";
+import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.webp";
+import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.webp";
+import imgFeaturesCardModal3 from "../assets/imgs/features/imgFeaturesCardModal3.webp";
+import imgFeaturesCardModal4 from "../assets/imgs/features/imgFeaturesCardModal4.webp";
+import imgFeaturesCardModal5 from "../assets/imgs/features/imgFeaturesCardModal6.webp";
+import imgFeaturesCardModal6 from "../assets/imgs/features/imgFeaturesCardModal5.webp";
 
 import ctaWhatsappImgBg from "../assets/imgs/paralaxe/bgParalaxe2.jpg";
 
@@ -124,13 +128,17 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
+      logoFooter: {
+        img: logoFooter,
+        alt: `Logomarca ${infos.name}`,
+      },
       menuItems: [
-        "Início",
-        "Serviços",
-        "Sobre Nós",
-        "Blog",
-        "Perguntas Frequentes",
-        "Mapa",
+        "HOME",
+        "ÁREAS DE ATUAÇÃO",
+        "QUEM SOMOS",
+        "ARTIGOS",
+        "PERGUNTAS FREQUENTES",
+        "MAPA",
       ],
       menuId: ["home", "service", "about", "blog", "faq", "maps"],
 
@@ -198,22 +206,59 @@ const content = {
       },
     },
     features: {
-      miniTag: "ESPECIALIDADES",
+      miniTag: "ÁREAS DE ATUAÇÃO",
       title: "Soluções jurídicas com profundidade e estratégia",
-      subtitle:
-        "Atuação que reflete inteligência, técnica e visão personalizada.",
+      subtitle: "",
       imgFeatures: imgFeatures,
       imgDivisor: imgDivisor,
       card1: {
         img: featuresImg1,
         title: "Direito Empresarial",
-        subtitle: "Soluções jurídicas para negócios e gestão societária.",
+        subtitle:
+          " O escritório oferece soluções jurídicas estratégicas para empresas de todos os portes, com foco em contratos, governança societária, disputas complexas e expansão de negócios. Nossa atuação combina técnica, visão prática e experiência em setores regulados, garantindo segurança e competitividade.",
         description: (
           <div>
-            A_Definir
+            O Direito Empresarial é um dos pilares do nosso escritório,
+            desenvolvido para apoiar empresas na tomada de decisões seguras e na
+            expansão de seus negócios em cenários desafiadores. Nossa prática
+            foi moldada por mais de duas décadas de experiência em setores
+            estratégicos — da construção civil e infraestrutura à indústria de
+            transformação, logística e serviços.
             <br />
             <br />
-            A_Definir
+            Atuamos em todos os aspectos da vida empresarial, oferecendo suporte
+            desde a constituição e organização societária até a negociação de
+            contratos complexos e a resolução de litígios estratégicos. Essa
+            atuação vai além do suporte jurídico tradicional: transformamos
+            riscos em clareza e incertezas em estratégia.
+            <br />
+            <br />
+            Nossa prática empresarial é pautada por confidencialidade, visão
+            crítica da realidade e compromisso com resultados concretos. Atuamos
+            lado a lado com o cliente, integrando o Direito ao processo de
+            gestão e ao planejamento corporativo de longo prazo.
+            <br />
+            <br />
+            <br />
+            <strong>
+              Entre os principais serviços prestados em Direito Empresarial
+              estão:
+            </strong>
+            <br />
+            <br />
+            - Elaboração, revisão e negociação de contratos nacionais e
+            internacionais;
+            <br />
+            - Estruturação de operações de fusões, aquisições e reestruturações
+            societárias;
+            <br />
+            - Governança corporativa e resolução de conflitos entre sócios;
+            <br />
+            - Consultoria permanente ou sob demanda em assuntos estratégicos;
+            <br />
+            - Contencioso empresarial de alta complexidade;
+            <br />- Apoio jurídico em projetos de infraestrutura, expansão de
+            negócios e relações contratuais de grande porte
           </div>
         ),
         imgModal: imgFeaturesCardModal1,
@@ -242,13 +287,53 @@ const content = {
       card2: {
         img: featuresImg2,
         title: "Direito Administrativo",
-        subtitle: "Atuação estratégica em relações com o Poder Público.",
+        subtitle:
+          "Com experiência consolidada em licitações, contratos administrativos e defesa de gestores, o escritório alia a vivência prática dentro da Administração Pública à visão estratégica do setor privado. Atuamos com precisão técnica e discrição em temas que envolvem a máquina estatal e seus impactos no setor empresarial.",
         description: (
           <div>
-            A_Definir
+            O Direito Administrativo é uma das áreas em que o escritório possui
+            autoridade consolidada, fruto de mais de 14 anos de atuação direta
+            dentro da Administração Pública. Essa vivência proporciona uma
+            compreensão profunda das engrenagens estatais e de como a legalidade
+            se equilibra com a viabilidade prática, conferindo ao escritório uma
+            posição diferenciada na assessoria a empresas e gestores.
             <br />
             <br />
-            A_Definir
+            Atuamos em todos os aspectos do Direito Administrativo, combinando
+            consultoria preventiva e contencioso estratégico. Essa atuação
+            envolve desde a análise de editais e estruturação de contratos até a
+            defesa de clientes perante Tribunais de Contas e o Poder Judiciário.
+            Nosso papel é oferecer soluções jurídicas seguras, que permitam ao
+            cliente se relacionar com o poder público de forma eficaz, ética e
+            sustentável.
+            <br />
+            <br />
+            A prática administrativa do escritório é pautada por clareza, sigilo
+            e rigor técnico, com foco em reduzir riscos, prevenir litígios e
+            assegurar que as decisões de nossos clientes sejam juridicamente
+            sólidas.
+            <br />
+            <br />
+            <br />
+            <strong>
+              Entre os principais serviços prestados em Direito Administrativo
+              estão:
+            </strong>
+            <br />
+            <br />
+            - Consultoria em licitações e contratos administrativos;
+            <br />
+            - Impugnações, recursos e defesa em sanções aplicadas pela
+            Administração Pública;
+            <br />
+            - Elaboração e revisão de editais e contratos de grande relevância;
+            <br />
+            - Pareceres técnicos para gestores públicos e privados;
+            <br />
+            - Defesa de gestores em ações civis públicas e processos perante
+            Tribunais de Contas;
+            <br />- Demandas indenizatórias, regulatórias e de nulidade
+            contratual contra o Estado.
           </div>
         ),
         imgModal: imgFeaturesCardModal2,
@@ -278,12 +363,56 @@ const content = {
       card3: {
         img: featuresImg3,
         title: "Direito Imobiliário",
-        subtitle: "Segurança jurídica em negócios e disputas imobiliárias.",
+        subtitle:
+          "O escritório atua na proteção patrimonial e na gestão de riscos de operações imobiliárias, oferecendo suporte em incorporações, contratos, regularizações e litígios. Nossa prática alia precisão técnica e visão estratégica para garantir segurança em negócios e disputas.",
         description: (
           <div>
-            A_Definir <br />
+            O Direito Imobiliário exige atenção rigorosa aos detalhes e clareza
+            na condução de operações que envolvem alto valor econômico e impacto
+            patrimonial. No escritório, a prática imobiliária foi moldada a
+            partir de experiências com construtoras, incorporadoras,
+            investidores e adquirentes, permitindo uma visão abrangente de todos
+            os lados da relação.
             <br />
-            A_Definir
+            <br />
+            Atuamos em todas as fases do ciclo imobiliário, desde a análise
+            documental e urbanística até a elaboração de contratos de compra e
+            venda, permuta, locação e distrato. Também prestamos suporte em
+            incorporações, loteamentos e regularizações fundiárias, oferecendo
+            soluções que conciliam segurança jurídica com viabilidade prática.
+            <br />
+            <br />
+            Nosso compromisso é prevenir litígios e proteger o patrimônio do
+            cliente, mas, quando o conflito é inevitável, conduzimos disputas
+            com rigor técnico e visão estratégica, assegurando consistência nas
+            decisões e resultados efetivos.
+            <br />
+            <br />
+            <br />
+            <strong>
+              Entre os principais serviços prestados em Direito Imobiliário
+              estão:
+            </strong>
+            <br />
+            <br />
+            - Estruturação jurídica de incorporações e empreendimentos
+            imobiliários;
+            <br />
+            - Due diligence documental, registral e urbanística;
+            <br />
+            - Elaboração e revisão de contratos de compra e venda, permuta,
+            locação e distrato;
+            <br />
+            - Regularização de imóveis, retificação de registros e usucapião
+            (judicial e extrajudicial);
+            <br />
+            - Ações possessórias, reivindicatórias, revisionais e
+            indenizatórias;
+            <br />
+            - Contencioso envolvendo vícios construtivos, atrasos na entrega e
+            cláusulas abusivas;
+            <br />- Apoio em inventários, partilhas e divórcios com bens
+            imobiliários relevantes
           </div>
         ),
         imgModal: imgFeaturesCardModal3,
@@ -311,13 +440,54 @@ const content = {
       card4: {
         img: featuresImg4,
         title: "Direito de Família e Sucessões",
-        subtitle: "Gestão jurídica de conflitos e planejamento sucessório.",
+        subtitle:
+          "O escritório conduz demandas familiares e sucessórias com técnica, sigilo e estratégia, assegurando proteção patrimonial e prevenindo decisões impulsivas. Atuamos em divórcios, alimentos, guarda, inventários e partilhas de alta complexidade.",
         description: (
           <div>
-            A_Definir
+            O Direito de Família e Sucessões exige uma combinação rara: técnica
+            refinada, sensibilidade e firmeza estratégica. No escritório,
+            tratamos essas demandas como parte de um contexto mais amplo, em que
+            decisões jurídicas impactam não apenas vínculos pessoais, mas também
+            patrimônios de grande relevância.
             <br />
-            A_Definir
             <br />
+            Atuamos em todas as dimensões do Direito de Família e Sucessões,
+            desde divórcios e dissoluções de união estável até disputas
+            sucessórias e partilhas de bens em múltiplas jurisdições. Nosso
+            compromisso é blindar o cliente contra decisões precipitadas,
+            preservando tanto a integridade emocional quanto a posição
+            patrimonial em jogo.
+            <br />
+            <br />
+            A prática é conduzida com absoluto sigilo, racionalidade e visão
+            estratégica. Entendemos que o cliente precisa de previsibilidade e
+            proteção — e não de atalhos jurídicos. Nosso papel é assegurar
+            soluções consistentes, que resistam ao tempo e à complexidade das
+            relações familiares e sucessórias.
+            <br />
+            <br />
+            <br />
+            <strong>
+              Entre os principais serviços prestados em Família e Sucessões
+              estão:
+            </strong>
+            <br />
+            <br />
+            - Divórcios e dissoluções de união estável, com ou sem partilha de
+            bens;
+            <br />
+            - Ações de alimentos, revisões, exonerações e execuções;
+            <br />
+            - Conflitos relacionados à guarda, convivência e autoridade
+            parental;
+            <br />
+            - Inventários e partilhas, inclusive com bens no exterior ou via
+            holdings;
+            <br />
+            - Disputas sucessórias complexas e de alta sensibilidade
+            patrimonial;
+            <br />- Planejamento sucessório e reorganização patrimonial
+            preventiva.
           </div>
         ),
         imgModal: imgFeaturesCardModal4,
@@ -343,16 +513,72 @@ const content = {
       card5: {
         img: featuresImg5,
         title: "Direito do Trabalho",
-        subtitle: "Defesa técnica em demandas trabalhistas complexas.",
+        subtitle:
+          "O escritório assessora clientes em imigração, cidadania e mobilidade internacional, com parcerias nos Estados Unidos e Europa. Atuamos em green cards, cidadania italiana e planejamento patrimonial internacional, além de apoiar estrangeiros que desejam investir e residir no Brasil.",
         description: (
           <div>
-            A_Definir
+            O Direito Internacional e a Mobilidade Global são áreas que exigem
+            mais do que conhecimento jurídico: pedem planejamento, visão
+            estratégica e compreensão das diferenças culturais, normativas e
+            patrimoniais que atravessam fronteiras. O escritório atua nesse
+            campo com uma abordagem que integra técnica jurídica e sensibilidade
+            prática, em parceria com escritórios especializados nos Estados
+            Unidos e na Europa.
             <br />
             <br />
-            A_Definir
+            Prestamos assessoria em imigração e cidadania, incluindo a obtenção
+            de green cards americanos por vias profissionais e de investimento
+            (EB-1, EB-2 NIW, EB-5), bem como análise e consultoria para
+            cidadania italiana por direito de sangue, à luz das recentes
+            alterações legislativas. Também estruturamos estratégias jurídicas
+            para planejamento patrimonial e sucessório internacional,
+            assegurando proteção e estabilidade em diferentes jurisdições.
+            <br /> <br />
+            Além de assessorar brasileiros que buscam oportunidades no exterior,
+            o escritório também apoia estrangeiros que desejam constituir
+            negócios ou residir no Brasil. Desenvolvemos soluções para a
+            abertura de empresas, estruturação societária, regularização
+            migratória e obtenção de vistos de residência e trabalho. Essa
+            atuação integra o Direito Empresarial e a Mobilidade Internacional,
+            oferecendo segurança jurídica a investidores estrangeiros que buscam
+            expandir suas atividades no mercado brasileiro.
+            <br /> <br />
+            Nossa prática é pautada por rigor técnico, sigilo e clareza.
+            Tratamos cada projeto de mobilidade como uma decisão de vida e,
+            muitas vezes, de legado. O compromisso do escritório é oferecer
+            caminhos juridicamente seguros, eliminando incertezas e
+            possibilitando que nossos clientes vivam, invistam e prosperem além
+            — ou aquém — das fronteiras.
+            <br />
+            <br />
+            <br />
+            <strong>
+              Entre os principais serviços prestados em Direito Internacional e
+              Mobilidade Global estão:
+            </strong>
+            <br />
+            <br />
+            - Consultoria para obtenção de green cards americanos (EB-1, EB-2
+            NIW, EB-5);
+            <br />
+            - Assessoria em processos de cidadania italiana por direito de
+            sangue;
+            <br />
+            - Análise de estratégias jurídicas diante das recentes alterações
+            legislativas italianas;
+            <br />
+            - Planejamento sucessório e patrimonial internacional;
+            <br />
+            - Consultoria em mobilidade global e estruturação de investimentos
+            no exterior;
+            <br />
+            - Apoio jurídico a estrangeiros que desejam investir e constituir
+            empresas no Brasil;
+            <br />- Regularização migratória, vistos de residência e
+            autorizações de trabalho.
           </div>
         ),
-        imgModal: imgFeaturesCardModal4,
+        imgModal: imgFeaturesCardModal5,
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -377,16 +603,70 @@ const content = {
       card6: {
         img: featuresImg6,
         title: "Imigração e Mobilidade Internacional",
-        subtitle: "Assessoria legal para vistos e residência no exterior.",
+        subtitle:
+          "O escritório atua na defesa de empresas em matéria trabalhista, com foco em prevenção de litígios, gestão de passivos e conformidade. Estruturamos políticas internas, assessoramos negociações coletivas, acompanhamos fiscalizações e conduzimos contencioso estratégico. Também realizamos auditorias/due diligence, treinamentos e ajustes de rotinas (jornadas, teletrabalho, terceirização), alinhando segurança jurídica, eficiência operacional e custos.",
         description: (
           <div>
-            A_Definir
+            A prática trabalhista do escritório é orientada à empresa e integra
+            consultoria, negociação e contencioso com um objetivo claro: reduzir
+            riscos, controlar passivos e dar previsibilidade às decisões.
+            Partimos da compreensão de que o tema trabalhista é um vetor
+            sensível de risco jurídico, financeiro e reputacional; por isso,
+            priorizamos a prevenção sem abdicar de uma atuação firme quando o
+            litígio é inevitável.
+            <br /> <br />
+            Atuamos em todos os aspectos do Direito do Trabalho empresarial:
+            diagnóstico e auditoria, políticas internas e compliance
+            trabalhista, negociação coletiva, adequação operacional (jornadas,
+            banco de horas, teletrabalho, remuneração variável), relação com
+            sindicatos e defesa em processos individuais e coletivos. No campo
+            administrativo, acompanhamos fiscalizações, procedimentos no
+            Ministério do Trabalho e inquéritos civis no MPT, negociando TACs
+            quando estrategicamente indicado.
+            <br /> <br />
+            Nossa condução é pautada por confidencialidade, pragmatismo e
+            precisão técnica. Trabalhamos lado a lado com a gestão e com o
+            jurídico interno para padronizar fluxos, treinar lideranças e
+            prepostos e estruturar respostas rápidas a incidentes, sempre
+            alinhando segurança jurídica e viabilidade operacional.
+            <br /> <br /> <br />
+            <strong>
+              Principais serviços em Direito do Trabalho (empresas):
+            </strong>
             <br />
             <br />
-            A_Definir
+            - Diagnóstico e auditoria trabalhista (due diligence): mapeamento de
+            riscos e contingências, inclusive em M&A e reestruturações.
+            <br />
+            - Compliance trabalhista e políticas internas: códigos de conduta,
+            canais e investigações internas (assédio, discriminação), ajustes
+            alinhados a privacidade/LGPD quando aplicável.
+            <br />
+            - Adequação de rotinas: jornadas, banco de horas,
+            teletrabalho/híbrido, terceirização, contratos com parceiros e
+            responsabilidade subsidiária/solidária.
+            <br />
+            - Remuneração e incentivos: estruturação de PLR, bônus e modelos de
+            remuneração variável com segurança jurídica.
+            <br />
+            - Negociação coletiva e sindical: ACT/CCT, mediações, gestão de
+            conflitos e greves.
+            <br />
+            - Fiscalizações e âmbito administrativo: acompanhamento perante o
+            Ministério do Trabalho e o MPT, respostas a autos de infração e
+            TACs.
+            <br />
+            - Contencioso estratégico: defesa em reclamações individuais e ações
+            coletivas, gestão de acordos, recursos a TRTs e TST, e
+            audiências/perícias.
+            <br />
+            - Treinamentos: líderes, RH e prepostos; manuais e checklists
+            operacionais.
+            <br />- Programas de desligamento e acordos: PDV/PDI e acordos
+            extrajudiciais quando recomendáveis.
           </div>
         ),
-        imgModal: imgFeaturesCardModal4,
+        imgModal: imgFeaturesCardModal6,
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -437,38 +717,109 @@ const content = {
         img: aboutImg1,
         alt: "Imagem profissional de escritório/advogado(a)",
       },
-      miniTag: "QUEM É MARCIO GIMENEZ ADVOCACIA",
-      title: "Nossa Trajetória",
-      subtitle:
-        "Mais de 20 anos traduzindo o Direito em soluções seguras e sob medida",
+      miniTag: "",
+      title: "Trajetória",
+      subtitle: "Marcio Gimenez Advocacia",
       labelInstagram: "Siga-nos no Instagram",
       labelFacebook: "Siga-nos no Facebook",
       labelLinkedin: "Siga-nos no LinkedIn",
       labelX: "Siga-nos no X",
       paragraph: (
         <div>
-          Com raízes em São Paulo e atuação nacional e internacional, o
-          escritório Marcio Gimenez Advocacia surgiu da experiência de mais de
-          duas décadas de dedicação técnica e estratégica ao Direito.
+          Com mais de duas décadas de atuação, o escritório se destaca pela
+          combinação de rigor técnico e visão estratégica, oferecendo soluções
+          jurídicas que aliam experiência administrativa e prática empresarial.
           <br />
           <br />
-          Desde o início, nosso foco é oferecer soluções jurídicas
-          personalizadas para clientes com demandas patrimoniais relevantes.
+          O mesmo rigor que orienta nossa prática junto a empresas e
+          instituições também se aplica ao atendimento de pessoas físicas.
+          Demandas familiares, sucessórias e imobiliárias recebem tratamento
+          estratégico e sensível, sempre com foco em preservar patrimônios,
+          prevenir litígios e garantir soluções de longo prazo.
           <br />
-          <br />O que nos diferencia é a sofisticação intelectual aplicada a
-          cada caso. Traduzimos questões complexas em estratégias claras,
-          eficazes e seguras, com discrição, autoridade e uma abordagem adaptada
-          a cada cliente — nunca em modelos genéricos ou fórmulas prontas.
-          <br />
-          <br />
-          Muitos que nos procuram já enfrentaram frustrações com abordagens
-          simplistas. Aqui, cada demanda é tratada com profundidade, estratégia
-          e linguagem madura, sempre com o compromisso de proteger o patrimônio
-          e orientar decisões com inteligência e responsabilidade.
+          <br /> Nosso propósito é transformar complexidade em clareza,
+          conduzindo clientes com segurança nas relações legais e operações de
+          grande relevância. Atuamos para proteger patrimônios, fortalecer
+          empresas e oferecer estabilidade jurídica em um mundo em constante
+          transformação.
         </div>
       ),
       buttonModalLabelAbout: "Continuar lendo",
-      modal: <p></p>,
+      modal: (
+        <p>
+          Toda trajetória sólida nasce da combinação entre vivência prática e
+          rigor técnico. Foi assim que Marcio Gimenez consolidou sua carreira
+          jurídica, marcada pela clareza em meio à complexidade, pela crítica
+          refinada da realidade e pela convicção de que o Direito é, antes de
+          tudo, um instrumento de estratégia e proteção patrimonial.
+          <br />
+          <br />
+          Durante 14 anos, trabalhou dentro da Administração Pública,
+          assessorando prefeitos, secretários e presidentes de câmaras
+          legislativas. Exerceu funções como pregoeiro e presidente de comissões
+          de licitação, elaborando pareceres técnicos, contratos e editais de
+          grande relevância. Nessa vivência, destacou-se pela atuação perante o
+          Tribunal de Contas do Estado de São Paulo, conduzindo defesas e
+          estruturando estratégias em processos de controle externo que exigiam
+          precisão e altivez.
+          <br />
+          <br />
+          Essa experiência na área pública permitiu a compreensão das
+          engrenagens administrativas por dentro: como o Estado decide, como
+          aplica suas normas e como tensiona a relação entre legalidade,
+          interesse público e viabilidade prática. Conhecimento que hoje se
+          converte em diferencial estratégico para empresas e clientes que
+          precisam atuar em licitações, contratos administrativos ou em demandas
+          que envolvem a máquina estatal.
+          <br />
+          <br />
+          Ao lado dessa experiência, desenvolveu uma prática sólida no setor
+          privado. Foram mais de duas décadas assessorando empresas de grande
+          porte, grupos multinacionais e construtoras em projetos de alta
+          complexidade, que incluíram desde obras de infraestrutura e transporte
+          público até incorporações imobiliárias e contratos internacionais.
+          Essa atuação proporcionou contato direto com setores regulados como
+          construção civil, logística, indústria alimentícia, metalurgia e
+          empresas de tecnologia, garantindo ao escritório uma visão ampla do
+          ambiente corporativo.
+          <br />
+          <br />
+          O mesmo rigor técnico aplicado na assessoria a empresas e instituições
+          também orienta o atendimento de pessoas físicas. Questões familiares,
+          sucessórias e patrimoniais são conduzidas com sensibilidade e
+          estratégia, sempre com foco em preservar bens, prevenir litígios e
+          garantir soluções duradouras. Esse equilíbrio assegura que tanto
+          indivíduos quanto organizações contem com um suporte jurídico sólido,
+          discreto e eficiente.
+          <br />
+          <br />
+          No contencioso, conduziu disputas judiciais de alta complexidade,
+          sempre com enfoque estratégico e resultados expressivos em instâncias
+          superiores. Na consultoria, elaborou e revisou contratos empresariais
+          e administrativos de grande relevância, estruturando operações e
+          prevenindo litígios com precisão técnica. Ao longo desse caminho,
+          integrou práticas modernas, como programas de compliance corporativo e
+          adequação à LGPD, reforçando a conexão entre Direito, governança e
+          competitividade.
+          <br />
+          <br />
+          Dessa soma de vivências nasce o Marcio Gimenez Advocacia, um
+          escritório moldado para oferecer soluções jurídicas de alto nível,
+          unindo a visão institucional adquirida na Administração Pública à
+          experiência prática consolidada no setor privado. O escritório traduz
+          a consolidação de uma trajetória pautada em rigor técnico, visão
+          estratégica e autoridade institucional.
+          <br />
+          <br />
+          Mais do que oferecer respostas jurídicas, o escritório entrega visão
+          estratégica, proteção patrimonial e segurança de longo prazo. Porque,
+          para nós, o Direito não é mero instrumento de reação: é ferramenta de
+          poder, clareza e sofisticação para quem precisa conduzir seus
+          interesses com solidez e inteligência.
+          <br />
+          <br />
+        </p>
+      ),
       ctaButtonAriaLabel: "Botão para entrar em contato",
       ctaButtonText: "Entre em contato",
 
@@ -501,19 +852,21 @@ const content = {
       backgroundImg: ctaWhatsappImgBg,
       // miniTag: "FALE CONOSCO",
       title: (
-        <h1>
-          <span className="text-bgSectionDark">Dúvidas?</span> Entre em contato
+        <h1 className="">
+          <span className="text-gray-600">Dúvidas?</span> Entre em contato
           conosco para podermos lhe ajudar,{" "}
-          <span className="text-bgSectionDark">estamos te esperando.</span>
+          <span className="text-text-gray-600">estamos te esperando.</span>
         </h1>
       ),
       subtitleDireita: (
-        <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+        <p className="gap-3 flex font-mainFont opacity-60 mt-1 text-gray-600">
           <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
         </p>
       ),
       titleDireita: (
-        <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+        <h1 className="text-title5 my-3 font-mainFont text-gray-600">
+          WhatsApp
+        </h1>
       ),
       ctaButtonText: "Falar agora",
     },
@@ -943,7 +1296,8 @@ const content = {
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
       footerNavegacaoText: "NAVEGAÇÃO",
-      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
+      footerDivulgacaoText:
+        "© 2025 – Todos os direitos reservados | Desenvolvido por Paper Street Softwares",
     },
   },
 };
