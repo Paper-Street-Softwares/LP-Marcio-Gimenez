@@ -54,8 +54,8 @@ export default function FooterSocial({
       break;
     default:
       footerBackground =
-        "bg-gradient-to-b from-bgSectionDark to-black bg-cover bg-center bg-no-repeat";
-      textColor = "text-white";
+        "bg-gradient-to-b from-white to-white bg-cover bg-center bg-no-repeat";
+      textColor = "text-secondary";
       break;
   }
 

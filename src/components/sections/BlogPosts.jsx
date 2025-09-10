@@ -19,7 +19,7 @@ function BlogPosts() {
 
   return (
     <div>
-      <SectionArea className="bg-bgSectionDark" id="blog">
+      <SectionArea className="bg-bgSectionDark" id="blog" paddingbot={false}>
         <SectionWrapper>
           <SectionHeader
             className="text-center"
