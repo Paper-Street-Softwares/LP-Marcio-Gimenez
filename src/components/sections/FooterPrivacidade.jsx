@@ -26,9 +26,9 @@ import InstagramSecundaryFooter from "../sectionElements/footer/InstagramSecunda
 import Button from "../../components/interactives/Button.jsx";
 import { useNavigate } from "react-router-dom";
 
-export default function FooterSocial({
+export default function FooterPrivacidade({
   colorMode,
-  addres,
+  addres = true,
   obs,
   instagram,
   facebook,
@@ -96,15 +96,6 @@ export default function FooterSocial({
                     {facebook && <FacebookFooter />}
                     {x && <XFooter />}
                     {linkedin && <LinkedinFooter />}
-                    <Button
-                      aria-label="Política de Privacidade"
-                      label="Política de Privacidade"
-                      onClick={() => navigate("/privacidade")}
-                      animation
-                      className="w-[100%]"
-                      // icon={<FaWhatsapp size={24} color="black" />}
-                      colorMode={colorMode}
-                    />
                   </div>
                 </div>
               </MotionDivDownToUp>
@@ -112,7 +103,9 @@ export default function FooterSocial({
 
             <div className="flex flex-col gap-y-[16px] desktop1:w-[290px]">
               <NavegationTextFooter />
-              <LinksNavegationFooter />
+              <p className="cursor-pointer w-[50px] hover:underline hover:transition-all" onClick={() => navigate("/")}>
+                Home
+              </p>
             </div>
           </div>
           <CopyrightFooter />
