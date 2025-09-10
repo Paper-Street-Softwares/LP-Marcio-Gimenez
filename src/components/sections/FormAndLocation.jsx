@@ -26,8 +26,8 @@ export default function Steps() {
           <SectionHeader
             className="text-center desktop1:flex desktop1:w-full"
             miniTitle="CONTATO"
-            sectionHeaderTitle="Entre em Contato"
-            sectionHeaderSubtitle="Preencha o formulário abaixo e responderemos o mais breve possível."
+            sectionHeaderTitle="Nossos canais de atendimento"
+            sectionHeaderSubtitle="O primeiro passo para a solução jurídica do seu caso começa aqui. Escolha o canal de sua preferência e inicie sua estratégia conosco."
             color=""
             type=""
           />

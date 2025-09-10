@@ -31,7 +31,7 @@ export default function Index() {
         influencer={false}
         mesclado={false}
       />
-      <About modal={false} showGallery={false} colorMode={colorMode} />
+      <About modal={true} showGallery={false} colorMode={colorMode} />
 
       <Features
         colorMode={colorMode}
@@ -50,9 +50,9 @@ export default function Index() {
       /> */}
       {/* <Cta colorMode={colorMode} /> */}
       <CtaSecondary />
-      <Steps colorMode={colorMode} />
+      {/* <Steps colorMode={colorMode} /> */}
       <BlogPosts />
-      <Faq colorMode={colorMode} />
+      {/* <Faq colorMode={colorMode} /> */}
       {/* <Maps colorMode={colorMode} /> */}
       <FormAndLocation />
 

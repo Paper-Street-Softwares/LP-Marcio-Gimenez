@@ -717,38 +717,109 @@ const content = {
         img: aboutImg1,
         alt: "Imagem profissional de escritório/advogado(a)",
       },
-      miniTag: "QUEM É MARCIO GIMENEZ ADVOCACIA",
-      title: "Nossa Trajetória",
-      subtitle:
-        "Mais de 20 anos traduzindo o Direito em soluções seguras e sob medida",
+      miniTag: "",
+      title: "Trajetória",
+      subtitle: "Marcio Gimenez Advocacia",
       labelInstagram: "Siga-nos no Instagram",
       labelFacebook: "Siga-nos no Facebook",
       labelLinkedin: "Siga-nos no LinkedIn",
       labelX: "Siga-nos no X",
       paragraph: (
         <div>
-          Com raízes em São Paulo e atuação nacional e internacional, o
-          escritório Marcio Gimenez Advocacia surgiu da experiência de mais de
-          duas décadas de dedicação técnica e estratégica ao Direito.
+          Com mais de duas décadas de atuação, o escritório se destaca pela
+          combinação de rigor técnico e visão estratégica, oferecendo soluções
+          jurídicas que aliam experiência administrativa e prática empresarial.
           <br />
           <br />
-          Desde o início, nosso foco é oferecer soluções jurídicas
-          personalizadas para clientes com demandas patrimoniais relevantes.
+          O mesmo rigor que orienta nossa prática junto a empresas e
+          instituições também se aplica ao atendimento de pessoas físicas.
+          Demandas familiares, sucessórias e imobiliárias recebem tratamento
+          estratégico e sensível, sempre com foco em preservar patrimônios,
+          prevenir litígios e garantir soluções de longo prazo.
           <br />
-          <br />O que nos diferencia é a sofisticação intelectual aplicada a
-          cada caso. Traduzimos questões complexas em estratégias claras,
-          eficazes e seguras, com discrição, autoridade e uma abordagem adaptada
-          a cada cliente — nunca em modelos genéricos ou fórmulas prontas.
-          <br />
-          <br />
-          Muitos que nos procuram já enfrentaram frustrações com abordagens
-          simplistas. Aqui, cada demanda é tratada com profundidade, estratégia
-          e linguagem madura, sempre com o compromisso de proteger o patrimônio
-          e orientar decisões com inteligência e responsabilidade.
+          <br /> Nosso propósito é transformar complexidade em clareza,
+          conduzindo clientes com segurança nas relações legais e operações de
+          grande relevância. Atuamos para proteger patrimônios, fortalecer
+          empresas e oferecer estabilidade jurídica em um mundo em constante
+          transformação.
         </div>
       ),
       buttonModalLabelAbout: "Continuar lendo",
-      modal: <p></p>,
+      modal: (
+        <p>
+          Toda trajetória sólida nasce da combinação entre vivência prática e
+          rigor técnico. Foi assim que Marcio Gimenez consolidou sua carreira
+          jurídica, marcada pela clareza em meio à complexidade, pela crítica
+          refinada da realidade e pela convicção de que o Direito é, antes de
+          tudo, um instrumento de estratégia e proteção patrimonial.
+          <br />
+          <br />
+          Durante 14 anos, trabalhou dentro da Administração Pública,
+          assessorando prefeitos, secretários e presidentes de câmaras
+          legislativas. Exerceu funções como pregoeiro e presidente de comissões
+          de licitação, elaborando pareceres técnicos, contratos e editais de
+          grande relevância. Nessa vivência, destacou-se pela atuação perante o
+          Tribunal de Contas do Estado de São Paulo, conduzindo defesas e
+          estruturando estratégias em processos de controle externo que exigiam
+          precisão e altivez.
+          <br />
+          <br />
+          Essa experiência na área pública permitiu a compreensão das
+          engrenagens administrativas por dentro: como o Estado decide, como
+          aplica suas normas e como tensiona a relação entre legalidade,
+          interesse público e viabilidade prática. Conhecimento que hoje se
+          converte em diferencial estratégico para empresas e clientes que
+          precisam atuar em licitações, contratos administrativos ou em demandas
+          que envolvem a máquina estatal.
+          <br />
+          <br />
+          Ao lado dessa experiência, desenvolveu uma prática sólida no setor
+          privado. Foram mais de duas décadas assessorando empresas de grande
+          porte, grupos multinacionais e construtoras em projetos de alta
+          complexidade, que incluíram desde obras de infraestrutura e transporte
+          público até incorporações imobiliárias e contratos internacionais.
+          Essa atuação proporcionou contato direto com setores regulados como
+          construção civil, logística, indústria alimentícia, metalurgia e
+          empresas de tecnologia, garantindo ao escritório uma visão ampla do
+          ambiente corporativo.
+          <br />
+          <br />
+          O mesmo rigor técnico aplicado na assessoria a empresas e instituições
+          também orienta o atendimento de pessoas físicas. Questões familiares,
+          sucessórias e patrimoniais são conduzidas com sensibilidade e
+          estratégia, sempre com foco em preservar bens, prevenir litígios e
+          garantir soluções duradouras. Esse equilíbrio assegura que tanto
+          indivíduos quanto organizações contem com um suporte jurídico sólido,
+          discreto e eficiente.
+          <br />
+          <br />
+          No contencioso, conduziu disputas judiciais de alta complexidade,
+          sempre com enfoque estratégico e resultados expressivos em instâncias
+          superiores. Na consultoria, elaborou e revisou contratos empresariais
+          e administrativos de grande relevância, estruturando operações e
+          prevenindo litígios com precisão técnica. Ao longo desse caminho,
+          integrou práticas modernas, como programas de compliance corporativo e
+          adequação à LGPD, reforçando a conexão entre Direito, governança e
+          competitividade.
+          <br />
+          <br />
+          Dessa soma de vivências nasce o Marcio Gimenez Advocacia, um
+          escritório moldado para oferecer soluções jurídicas de alto nível,
+          unindo a visão institucional adquirida na Administração Pública à
+          experiência prática consolidada no setor privado. O escritório traduz
+          a consolidação de uma trajetória pautada em rigor técnico, visão
+          estratégica e autoridade institucional.
+          <br />
+          <br />
+          Mais do que oferecer respostas jurídicas, o escritório entrega visão
+          estratégica, proteção patrimonial e segurança de longo prazo. Porque,
+          para nós, o Direito não é mero instrumento de reação: é ferramenta de
+          poder, clareza e sofisticação para quem precisa conduzir seus
+          interesses com solidez e inteligência.
+          <br />
+          <br />
+        </p>
+      ),
       ctaButtonAriaLabel: "Botão para entrar em contato",
       ctaButtonText: "Entre em contato",
 
@@ -1225,7 +1296,8 @@ const content = {
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
       footerNavegacaoText: "NAVEGAÇÃO",
-      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
+      footerDivulgacaoText:
+        "© 2025 – Todos os direitos reservados | Desenvolvido por Paper Street Softwares",
     },
   },
 };

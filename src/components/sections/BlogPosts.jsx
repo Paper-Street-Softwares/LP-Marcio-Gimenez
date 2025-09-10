@@ -19,17 +19,18 @@ function BlogPosts() {
 
   return (
     <div>
-      <SectionArea className="bg-bgSectionDark"  id="blog">
+      <SectionArea className="bg-bgSectionDark" id="blog">
         <SectionWrapper>
           <SectionHeader
             className="text-center"
-            miniTitle={content.texts.blog.miniTag}
+            // miniTitle={content.texts.blog.miniTag}
             sectionHeaderTitle={content.texts.blog.title}
             sectionHeaderSubtitle={content.texts.blog.subtitle}
             color=""
             titleColorSet="text-white"
             subtitleColorSet="text-white"
             type=""
+            miniTitleBgColor={false}
           />
           <ul className="flex flex-wrap gap-[30px] justify-center mb-[80px]">
             {posts.slice(0, 3).map((post) => (

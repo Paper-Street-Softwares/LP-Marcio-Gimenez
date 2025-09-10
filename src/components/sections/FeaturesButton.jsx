@@ -9,6 +9,7 @@ import ServiceDetailCard from "../cards/ServiceDetailCard";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import FeatureImgOnBgCardButton from "../cards/FeatureImgOnBgCardButton";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function FeaturesButton({ colorMode }) {
   const [visible, setVisible] = useState(false);
@@ -70,7 +71,7 @@ export default function FeaturesButton({ colorMode }) {
                         <ServiceDetailCard
                           img={card.imgModal}
                           description={card.description}
-                          buttonIcon={card.icon}
+                          buttonIcon={<FaWhatsapp size={24} color="white" />}
                           buttonLabel={card.buttonLabelModal}
                           buttonLink={content.texts.links.ctaWhatsapp}
                           bgPosition="bg-top"
