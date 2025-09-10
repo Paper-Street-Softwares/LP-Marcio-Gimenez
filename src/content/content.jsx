@@ -852,7 +852,7 @@ const content = {
       backgroundImg: ctaWhatsappImgBg,
       // miniTag: "FALE CONOSCO",
       title: (
-        <h1>
+        <h1 className="">
           <span className="text-gray-600">Dúvidas?</span> Entre em contato
           conosco para podermos lhe ajudar,{" "}
           <span className="text-text-gray-600">estamos te esperando.</span>
