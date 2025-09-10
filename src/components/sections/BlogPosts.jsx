@@ -41,7 +41,7 @@ function BlogPosts() {
                       <img
                         src={post.featured_image}
                         alt="Imagem do post"
-                        className="rounded-2xl"
+                        className=""
                       />
                     )
                   }

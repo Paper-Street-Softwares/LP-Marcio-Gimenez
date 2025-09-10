@@ -27,10 +27,10 @@ export default function FeatureImgOnBgCardButton(props) {
     <MotionDivDownToUp>
       <div
         id="featureCard"
-        className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[210px] font-mainFont flex flex-col desktop1:max-w-[300px] desktop1:w-[280px] desktop3:max-w-[375px] shadow-custom-opacity shadow-shadowBlogs/5 bg-bgSectionLight border rounded-2xl p-[20px] mb-4"
+        className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[210px] font-mainFont flex flex-col desktop1:max-w-[300px] desktop1:w-[280px] desktop3:max-w-[375px] shadow-custom-opacity shadow-shadowBlogs/5 bg-bgSectionLight border rounded-sm p-[20px] mb-4"
       >
         {/* Imagem */}
-        <div className="w-full max-h-[220px] tablet1:h-[300px] tablet2:h-auto flex justify-center items-center overflow-hidden rounded-2xl">
+        <div className="w-full max-h-[220px] tablet1:h-[300px] tablet2:h-auto flex justify-center items-center overflow-hidden">
           <img src={bgImg} alt={title} className="w-full object-cover" />
         </div>
 
