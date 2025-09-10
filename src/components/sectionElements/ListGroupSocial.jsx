@@ -71,10 +71,7 @@ export default function ListGroupSocial({ colorMode = "default" }) {
       className={`h-14 hidden desktop1:flex my-auto items-center justify-end tablet1:items-center desktop1:gap-4 desktop2:gap-6 w-auto font-normal text-paragraph3 font-times ${getTextColor()}`}
     >
       {visibleSections.map(({ id, label }, index) => (
-        <li
-          key={id}
-          className="transition group h-[24px] flex items-center gap-2"
-        >
+        <li key={id} className="transition group h-[24px] flex items-center">
           <Link
             to={id}
             className="relative font-semibold cursor-pointer"
@@ -94,9 +91,9 @@ export default function ListGroupSocial({ colorMode = "default" }) {
           </Link>
 
           {/* separador | só se não for o último */}
-          {index < visibleSections.length  && (
+          {index < visibleSections.length - 1 && (
             <span
-              className={`mx-2 select-none ${
+              className={`pl-6 flex items-center justify-center select-none ${
                 colorMode === "dark" ? "text-white/70" : "text-gray-800"
               }`}
             >

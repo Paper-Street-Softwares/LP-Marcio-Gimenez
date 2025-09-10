@@ -174,17 +174,15 @@ export default function Privacy() {
                 logotipos, gráficos e materiais de apoio, está protegido pelas
                 leis de Propriedade Intelectual e não pode ser reproduzido,
                 distribuído ou utilizado para fins comerciais sem a expressa
-                autorização prévia e por escrito de
-                <br />
-                <br />
-                <br />
+                autorização prévia e por escrito de{" "}
                 <strong className="text-black">
-                  <p className="mb-2">Marcio Gimenez Advocacia.</p>
+                  Marcio Gimenez Advocacia.
                 </strong>
+                <br />
+                <br />
                 O uso indevido de qualquer material aqui disponibilizado poderá
                 ensejar responsabilização civil e penal, nos termos da
                 legislação aplicável.
-                <br />
                 <br />
                 <br />
                 <strong className="text-black">
