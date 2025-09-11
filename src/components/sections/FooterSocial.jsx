@@ -58,8 +58,8 @@ export default function FooterSocial({
       break;
     default:
       footerBackground =
-        "bg-gradient-to-b from-white to-white bg-cover bg-center bg-no-repeat";
-      textColor = "text-secondary";
+        "bg-gradient-to-b from-bgSectionDark to-bgSectionDark bg-cover bg-center bg-no-repeat";
+      textColor = "text-white";
       break;
   }
 
@@ -104,6 +104,8 @@ export default function FooterSocial({
                       className="w-[100%]"
                       // icon={<FaWhatsapp size={24} color="black" />}
                       colorMode={colorMode}
+                      color="bg-white"
+                      textclassName="text-secondary"
                     />
                   </div>
                 </div>

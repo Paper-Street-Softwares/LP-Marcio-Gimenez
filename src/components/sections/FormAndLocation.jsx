@@ -20,8 +20,8 @@ export default function Steps() {
   const [modalTitle, setModalTitle] = useState("");
 
   return (
-    <SectionArea className="bg-bgSectionDark " id="maps">
-      <SectionWrapper className="flex flex-col desktop1:flex-row-reverse gap-[40px] desktop2:gap-0 desktop1:justify-between desktop1:items-start">
+    <SectionArea className="bg-white " id="maps">
+      <SectionWrapper className="flex flex-col desktop1:flex-row-reverse gap-[40px] desktop2:gap-0 desktop1:justify-between desktop1:items-center">
         <MotionDivDownToUp className="flex-col w-full desktop1:w-[415px] desktop2:w-[485px] flex justify-center items-center ">
           <SectionHeader
             className="text-center desktop1:flex desktop1:w-full"
@@ -30,8 +30,10 @@ export default function Steps() {
             sectionHeaderSubtitle="O primeiro passo para a solução jurídica do seu caso começa aqui. Escolha o canal de sua preferência e inicie sua estratégia conosco."
             color=""
             type=""
-            miniTitleBgColor="bg-white"
-            miniTitleTextColor="text-secondary"
+            miniTitleBgColor="bg-black"
+            miniTitleTextColor="text-white"
+            subtitleColorSet="text-black/60"
+            titleColorSet="text-secondary"
           />
           <WhatsappForm />
         </MotionDivDownToUp>
@@ -44,8 +46,10 @@ export default function Steps() {
             sectionHeaderSubtitle={content.texts.maps.subtitle}
             color=""
             type=""
-            miniTitleBgColor="bg-white"
-            miniTitleTextColor="text-secondary"
+            miniTitleBgColor="bg-black"
+            miniTitleTextColor="text-white"
+            subtitleColorSet="text-black/60"
+            titleColorSet="text-secondary"
           />
           <div className="relative w-full h-auto bg-no-repeat bg-cover desktop1:bg-center tablet1:w-full ">
             {/* <p className="font-bold mt-[32px] mb-[16px]">

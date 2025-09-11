@@ -17,7 +17,7 @@ function PhoneFooter({ colorMode }) {
       iconColor = "text-white";
       break;
     default:
-      iconColor = "text-black";
+      iconColor = "text-white";
       break;
   }
 
