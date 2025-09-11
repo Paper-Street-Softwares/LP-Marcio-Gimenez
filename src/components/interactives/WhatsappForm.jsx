@@ -55,11 +55,11 @@ const WhatsappForm = () => {
   };
 
   return (
-    <div className="bg-white p-6 w-full desktop1:w-full h-auto">
+    <div className="bg-bgSectionDark p-6 w-full desktop1:w-full h-auto rounded-sm">
       <div className="w-full text-paragraph3 phone3:text-paragraph4">
         {/* Nome completo */}
         <div className="mb-6">
-          <label className="block mb-1 text-secondary">Nome completo:</label>
+          <label className="block mb-1 text-white">Nome completo:</label>
           <input
             className="w-full px-3 py-2 border rounded"
             type="text"
@@ -72,7 +72,7 @@ const WhatsappForm = () => {
 
         {/* E-mail */}
         <div className="mb-6">
-          <label className="block mb-1 text-secondary">E-mail:</label>
+          <label className="block mb-1 text-white">E-mail:</label>
           <input
             className="w-full px-3 py-2 border rounded"
             type="email"
@@ -85,7 +85,7 @@ const WhatsappForm = () => {
 
         {/* Assunto */}
         <div className="mb-6">
-          <label className="block mb-1 text-secondary">Assunto:</label>
+          <label className="block mb-1 text-white">Assunto:</label>
           <input
             className="w-full px-3 py-2 border rounded"
             type="text"
@@ -98,7 +98,7 @@ const WhatsappForm = () => {
 
         {/* Mensagem */}
         <div className="mb-6">
-          <label className="block mb-1 text-secondary">Mensagem:</label>
+          <label className="block mb-1 text-white">Mensagem:</label>
           <textarea
             className="w-full px-3 py-2 border rounded"
             value={message}
@@ -111,7 +111,7 @@ const WhatsappForm = () => {
         {/* Botão */}
         <button
           type="button"
-          className="flex items-center justify-center w-full font-medium text-white bg-bgSectionDark transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
+          className="flex items-center justify-center w-full font-medium text-bgSectionDark bg-white transition-all rounded-lg h-10 phone2:h-12 hover:scale-105"
           onClick={sendToWhatsapp}
         >
           <img

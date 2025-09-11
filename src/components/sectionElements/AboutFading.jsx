@@ -5,12 +5,12 @@ export default function AboutFading({ colorMode = "default" }) {
   const textClasses = {
     dark: "text-white",
     light: "text-black",
-    default: "text-black",
+    default: "text-white",
   };
   const fadeClasses = {
     dark: "to-bgFixedDark",
     light: "to-bgFixedLight",
-    default: "to-white",
+    default: "to-bgSectionDark",
   };
 
   const textClass = textClasses[colorMode] || textClasses.default;

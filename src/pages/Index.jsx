@@ -31,8 +31,6 @@ export default function Index() {
         influencer={false}
         mesclado={false}
       />
-      <About modal={true} showGallery={false} colorMode={colorMode} />
-
       <Features
         colorMode={colorMode}
         defaultFeature={false}
@@ -42,6 +40,8 @@ export default function Index() {
         sixCards={false}
         paragraphsModal={false}
       />
+      <About modal={true} showGallery={false} colorMode={colorMode} />
+
       {/* <AboutInstagram
         colorMode={colorMode}
         instagram={true}

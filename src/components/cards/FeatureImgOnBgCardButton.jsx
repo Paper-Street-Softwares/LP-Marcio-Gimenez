@@ -36,7 +36,7 @@ export default function FeatureImgOnBgCardButton(props) {
 
         {/* Título */}
         <h1
-          className="mt-4 text-title1 text-gray-600 leading-[25px] font-medium mb-[12px]"
+          className="mt-4 text-title1 text-gray-600 leading-[25px]  mb-[12px] font-bold"
           title={title}
         >
           {title}
