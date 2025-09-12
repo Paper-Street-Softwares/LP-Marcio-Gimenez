@@ -99,7 +99,10 @@ export default function FooterSocial({
                     <Button
                       aria-label="Política de Privacidade"
                       label="Política de Privacidade"
-                      onClick={() => navigate("/privacidade")}
+                      onClick={() => {
+                        navigate("/privacidade");
+                        window.scrollTo(0, 0);
+                      }}
                       animation
                       className="w-[100%]"
                       // icon={<FaWhatsapp size={24} color="black" />}

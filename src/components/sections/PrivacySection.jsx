@@ -2,17 +2,39 @@ import React from "react";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import Button from "../interactives/Button";
+import { useNavigate } from "react-router-dom";
 
 export default function PrivacySection() {
+  const navigate = useNavigate();
+
   return (
-    <SectionArea id="Privacy" className={`transition-colors duration-1000 bg-bgSectionDark`}>
+    <SectionArea
+      id="Privacy"
+      className={`transition-colors duration-1000 bg-bgSectionDark`}
+    >
       <SectionWrapper className="flex flex-col desktop1:flex-row-reverse gap-[40px] desktop1:gap-x-[40px] desktop2:gap-0 desktop1:justify-between">
-        <div className="desktop1:w-full bg-bgSectionDark ">
+        <div className="desktop1:w-full bg-bgSectionDark pb-12 desktop1:pb-0">
           <div className="flex flex-col gap-8 desktop1:gap-0 desktop1:flex-row-reverse justify-between">
             <MotionDivDownToUp className="text-start desktop1:w-[50%] m-auto ">
-              <h1 className="text-title5 text-white">Política de privacidade:</h1>
+              <Button
+                aria-label="Voltar"
+                label="Voltar"
+                onClick={() => {
+                  navigate("/");
+                  window.scrollTo(0, 0);
+                }}
+                size="small"
+                animation
+                className="w-[100%] underline px-0"
+                color="bg-transparent"
+                textclassName="text-white"
+              />
+              <h1 className="text-title5 text-white">
+                Política de privacidade:
+              </h1>
               <br />
-              <p className="text-white/60">
+              <p className="text-white/60 mb-4">
                 <strong className="text-white">
                   Em vigor a partir de [data da publicação no site]
                 </strong>
@@ -223,6 +245,20 @@ export default function PrivacySection() {
                 que os usuários consultem regularmente esta página para
                 verificar eventuais modificações.
               </p>
+
+              <Button
+                aria-label="Voltar"
+                label="Voltar"
+                onClick={() => {
+                  navigate("/");
+                  window.scrollTo(0, 0);
+                }}
+                size="small"
+                animation
+                className="w-[100%] underline px-0"
+                color="bg-transparent"
+                textclassName="text-white"
+              />
             </MotionDivDownToUp>
           </div>
         </div>
