@@ -54,137 +54,35 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
     >
       <div className="relative z-10 flex w-full items-left">
         <div className="w-full text-secondary justify-evenly">
-          <div className="h-[160px] phone2:h-[200px] phone3:h-[140px] tablet1:h-[150px] desktop3:h-[120px] " />{" "}
-          <div className="flex flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[64px]  desktop1:pt-[68px] desktop1:pb-[96px]">
-            <div className="flex flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
-              {/* MiniTag preta */}
-              <MotionDivDownToUp>
-                <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4 text-secondary">
-                  <p className="mb-[16px] text-paragraph2 rounded-md px-[16px] py-[6px] inline-block bg-white">
-                    {content.texts.hero.miniTag}
-                  </p>
-                </div>
-              </MotionDivDownToUp>
-
-              <MotionDivDownToUp>
-                <div
-                  className={`flex justify-center desktop1:justify-start font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title6 ${titleColor}`}
-                >
-                  <h1>{content.texts.hero.title}</h1>
-                </div>
-              </MotionDivDownToUp>
-
-              {/* Subtítulo */}
-              <MotionDivDownToUp>
-                <div
-                  className={`flex justify-center w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5 ${subtitleColor}`}
-                >
-                  <p className="mb-[32px]">{content.texts.hero.subtitle}</p>
-                </div>
-              </MotionDivDownToUp>
-
-              {/* Botão */}
-              <div className="w-full phone2:w-full tablet2:w-auto">
-                <div className="flex justify-center w-full desktop1:justify-start mb-[32px]">
-                  <Button
-                    aria-label={content.texts.hero.ctaButtonAriaLabel}
-                    label={content.texts.hero.ctaButtonText}
-                    animation
-                    className="w-[100%]"
-                    icon={<FaWhatsapp size={24} color="black" />}
-                    colorMode={colorMode}
-                    color="bg-white"
-                    textclassName="text-secondary"
-                  />
-                </div>
-
-                {/* Observação */}
-                <MotionDivDownToUp>
-                  <div className="flex justify-center desktop1:justify-start">
-                    <div className="flex flex-col items-center desktop1:flex-row text-white">
-                      {content.texts.hero.obsHero.icon}
-
-                      <p
-                        className={`ml-[10px] text-center desktop1:text-start mt-[12px] desktop1:mt-0 ${obsTextColor}`}
-                      >
-                        {content.texts.hero.obsHero.text}
-                      </p>
-                    </div>
-                  </div>
-                </MotionDivDownToUp>
-
-                {/* Botões de download */}
-                {appDownloadButtons && (
-                  <MotionDivDownToUp>
-                    <div className="flex flex-col items-center desktop1:items-start">
-                      <p
-                        className={`mb-[20px] mt-[60px] text-center ${descriptionColor}`}
-                      >
-                        {content.texts.hero.app.description}
-                      </p>
-                      <div className="flex items-start gap-[20px]">
-                        <a
-                          href={content.texts.hero.app.imgs.appStore.link}
-                          target="_blank"
-                          className="transition hover:scale-110 invert"
-                        >
-                          <img
-                            src={content.texts.hero.app.imgs.appStore.img}
-                            alt={content.texts.hero.app.imgs.appStore.alt}
-                          />
-                        </a>
-                        <a
-                          href={content.texts.hero.app.imgs.playStore.link}
-                          target="_blank"
-                          className="transition hover:scale-110 invert"
-                        >
-                          <img
-                            src={content.texts.hero.app.imgs.playStore.img}
-                            alt={content.texts.hero.app.imgs.playStore.alt}
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </MotionDivDownToUp>
-                )}
-              </div>
-            </div>
-
+          <div className="h-[125px] phone2:h-[125px] phone3:h-[140px] tablet1:h-[150px] desktop1:h-[110px] desktop3:h-[120px] " />{" "}
+          <div className="flex desktop1:justify-between mx-auto items-center ">
             {/* Imagem principal */}
-            <div className="flex justify-center w-full tablet1:w-[450px] desktop1:w-[42%] desktop2:w-[42.8%]">
-              <MotionDivDownToUp className="relative flex justify-center w-full ">
-                {/* <div
-                  className="bg-top rounded-xl w-full h-[350px] tablet1:h-[380px] desktop1:h-[500px] desktop1:w-[500px] bg-cover bg-no-repeat shadow-custom-opacity shadow-black/30"
-                  style={{
-                    backgroundImage: `url(${content.texts.hero.heroImg})`,
-                    backgroundSize: "",
-                  }}
-                ></div> */}
-                <div className="w-full">
+            <div className="flex justify-center w-full relative">
+              <MotionDivDownToUp className="relative flex justify-center w-full h-full">
+                <div className="w-full h-full">
                   <ImageGallery
                     items={images}
-                    showNav={false} // Ativando a navegação
-                    showFullscreenButton={false} // Desativando botão de tela cheia
-                    useBrowserFullscreen={false} // Desativando o uso de tela cheia do navegador
+                    showNav={false}
+                    showFullscreenButton={false}
+                    useBrowserFullscreen={false}
                     showBullets={false}
-                    showPlayButton={false} // Remove o botão de play
-                    showThumbnails={false} // Remove as miniaturas
+                    showPlayButton={false}
+                    showThumbnails={false}
                     autoPlay={true}
                     additionalClass="custom-gallery"
                   />
                   <style>
                     {`
-                    .custom-gallery .image-gallery-slide img {
-                      height: auto; 
-                      width: 100%;
-                    }
+          .custom-gallery .image-gallery-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* faz a imagem preencher sem distorcer */
+          }
 
-                    .custom-gallery .image-gallery-thumbnails img {
-                      height: 60px;  
-                      width: 100px;  
-                      object-fit: cover; 
-                    }
-                  `}
+          .custom-gallery .image-gallery-thumbnails {
+            display: none; /* garante que as thumbnails não apareçam */
+          }
+        `}
                   </style>
                 </div>
               </MotionDivDownToUp>

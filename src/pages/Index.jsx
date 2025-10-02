@@ -31,6 +31,8 @@ export default function Index() {
         influencer={false}
         mesclado={false}
       />
+      <About modal={true} showGallery={false} colorMode={colorMode} />
+
       <Features
         colorMode={colorMode}
         defaultFeature={false}
@@ -40,7 +42,6 @@ export default function Index() {
         sixCards={false}
         paragraphsModal={false}
       />
-      <About modal={true} showGallery={false} colorMode={colorMode} />
 
       {/* <AboutInstagram
         colorMode={colorMode}
@@ -49,7 +50,7 @@ export default function Index() {
         socialPrint={true}
       /> */}
       {/* <Cta colorMode={colorMode} /> */}
-      <CtaSecondary />
+      {/* <CtaSecondary /> */}
       {/* <Steps colorMode={colorMode} /> */}
       <BlogPosts />
       {/* <Faq colorMode={colorMode} /> */}

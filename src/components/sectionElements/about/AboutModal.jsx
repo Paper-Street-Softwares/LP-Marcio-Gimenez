@@ -49,9 +49,9 @@ export default function AboutModal() {
         removeAnchor={true}
         removeTarget={true}
         animation={true}
-        icon={<MoveRight color="black" />}
-        color="bg-white"
-        textclassName="text-secondary"
+        icon={<MoveRight color="currentColor" />}
+        color="bg-buttonColor"
+        textclassName="text-white"
       />
       <Dialog
         className="font-secondFont"
