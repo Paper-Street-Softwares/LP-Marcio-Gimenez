@@ -1,19 +1,21 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
-const WhatsappForm = () => {
+const EmailForm = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
+  const [success, setSuccess] = useState(false);
 
   const validateEmail = (email) => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email.trim());
   };
 
-  const sendToWhatsapp = () => {
+  const sendEmail = () => {
     const validationErrors = {};
     if (!name.trim()) validationErrors.name = "O campo Nome é obrigatório.";
     if (!phone.trim())
@@ -31,10 +33,34 @@ const WhatsappForm = () => {
       return;
     }
 
-    const phoneNumber = "5511963010654"; // Seu número
-    const text = `*Nome:* ${name}%0A*Telefone:* ${phone}%0A*E-mail:* ${email}%0A*Mensagem:* ${message}`;
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
-    window.open(whatsappUrl, "_blank");
+    const templateParams = {
+      from_name: name,
+      phone,
+      reply_to: email,
+      message,
+    };
+
+    emailjs
+      .send(
+        "SEU_SERVICE_ID", // substitua pelo ID do seu serviço EmailJS
+        "SEU_TEMPLATE_ID", // substitua pelo ID do seu template
+        templateParams,
+        "SEU_PUBLIC_KEY" // substitua pela sua chave pública
+      )
+      .then(
+        (response) => {
+          console.log("EMAIL ENVIADO", response.status, response.text);
+          setSuccess(true);
+          setName("");
+          setPhone("");
+          setEmail("");
+          setMessage("");
+          setErrors({});
+        },
+        (err) => {
+          console.error("ERRO AO ENVIAR EMAIL:", err);
+        }
+      );
   };
 
   return (
@@ -47,7 +73,7 @@ const WhatsappForm = () => {
         </p>
 
         {/* Telefones */}
-        <div className="">
+        <div>
           <h3 className="font-semibold mb-2">TELEFONE:</h3>
           <div className="flex items-center gap-2 text-gray-700 justify-center tablet2:justify-start">
             <svg
@@ -57,10 +83,10 @@ const WhatsappForm = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-phone-icon lucide-phone"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-phone-icon lucide-phone"
             >
               <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
             </svg>
@@ -83,10 +109,10 @@ const WhatsappForm = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-mail-icon lucide-mail"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-mail-icon lucide-mail"
               >
                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
                 <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -172,14 +198,18 @@ const WhatsappForm = () => {
           <button
             type="button"
             className="w-full bg-[#0f1112] text-white py-3 uppercase text-sm font-bold tracking-wider hover:opacity-90 transition"
-            onClick={sendToWhatsapp}
+            onClick={sendEmail}
           >
             Enviar Mensagem
           </button>
+
+          {success && (
+            <p className="text-green-500 mt-2">Mensagem enviada com sucesso!</p>
+          )}
         </div>
       </div>
     </div>
   );
 };
 
-export default WhatsappForm;
+export default EmailForm;
