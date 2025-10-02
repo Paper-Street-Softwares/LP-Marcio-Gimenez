@@ -10,6 +10,7 @@ import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import FeatureImgOnBgCardButton from "../cards/FeatureImgOnBgCardButton";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function FeaturesButton({ colorMode }) {
   const [visible, setVisible] = useState(false);
@@ -65,48 +66,22 @@ export default function FeaturesButton({ colorMode }) {
                   title={card.title}
                   description={card.subtitle}
                   buttonLabel={card.buttonLabel}
+                  buttonLink={`/${card.slug}`} // agora usando slug
                   animation
-                  onClick={() =>
-                    onClick(
-                      card.title,
-                      <div>
-                        <ServiceDetailCard
-                          img={card.imgModal}
-                          description={card.description}
-                          buttonIcon={<FaWhatsapp size={24} color="white" />}
-                          buttonLabel={card.buttonLabelModal}
-                          buttonLink={content.texts.links.ctaWhatsapp}
-                          bgPosition="bg-top"
-                        />
-                      </div>
-                    )
-                  }
-                  colorMode={colorMode}
-                />
+                  onClick={null}
+                >
+                  <Link
+                    to={`/${card.slug}`} // link também pelo slug
+                    className="absolute inset-0 flex items-center justify-center"
+                  >
+                    {card.buttonLabel}
+                  </Link>
+                </FeatureImgOnBgCardButton>
               );
             })}
           </div>
         </SectionWrapper>
       </SectionArea>
-
-      <Dialog
-        className={`font-secondFont ${bgClass} ${textClass}`}
-        header={modalTitle}
-        visible={visible}
-        onHide={() => setVisible(false)}
-        style={{ width: "30vw" }}
-        breakpoints={{
-          "1440px": "25vw",
-          "1024px": "35vw",
-          "768px": "50vw",
-          "640px": "60vw",
-          "639px": "80vw",
-          "425px": "90vw",
-        }}
-      >
-        <div className={textClass}>{modalSubtitle}</div>
-        <div className={`m-0 ${textClass}`}>{modalContent}</div>
-      </Dialog>
     </>
   );
 }

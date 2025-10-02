@@ -2,17 +2,15 @@ import PropTypes from "prop-types";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import Button from "../interactives/Button";
 
-export default function FeatureImgOnBgCardButton(props) {
-  const {
-    bgImg,
-    title,
-    description,
-    buttonLabel,
-    buttonLink,
-    onClick,
-    buttonColor,
-  } = props;
-
+export default function FeatureImgOnBgCardButton({
+  bgImg,
+  title,
+  description,
+  buttonLabel,
+  buttonLink, // rota
+  buttonColor,
+  onClick,
+}) {
   FeatureImgOnBgCardButton.propTypes = {
     bgImg: PropTypes.any,
     title: PropTypes.any,
@@ -25,18 +23,15 @@ export default function FeatureImgOnBgCardButton(props) {
 
   return (
     <MotionDivDownToUp>
-      <div
-        id="featureCard"
-        className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[210px] font-mainFont flex flex-col desktop1:max-w-[300px] desktop1:w-[280px] desktop3:max-w-[375px] shadow-custom-opacity shadow-shadowBlogs/5 bg-bgSectionLight border rounded-sm p-[20px] mb-4"
-      >
+      <div className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[210px] font-mainFont flex flex-col desktop1:max-w-[300px] desktop1:w-[280px] desktop3:w-[400px] shadow-custom-opacity shadow-shadowBlogs/5 bg-bgSectionLight border rounded-sm p-[10px] mb-4">
         {/* Imagem */}
-        <div className="w-full max-h-[220px] tablet1:h-[300px] tablet2:h-auto flex justify-center items-center overflow-hidden">
+        <div className="w-full max-h-[350px] tablet1:h-[300px] tablet2:h-auto flex justify-center items-center overflow-hidden">
           <img src={bgImg} alt={title} className="w-full object-cover" />
         </div>
 
         {/* Título */}
         <h1
-          className="mt-4 text-title1 text-gray-600 leading-[25px]  mb-[12px] font-bold"
+          className="mt-4 text-title1 text-gray-600 leading-[25px] mb-[12px] font-bold"
           title={title}
         >
           {title}
@@ -50,12 +45,12 @@ export default function FeatureImgOnBgCardButton(props) {
           {description}
         </h2>
 
-        {/* Botão */}
+        {/* Botão customizado */}
         <div className="flex">
           <Button
-            removeAnchor={true}
+            removeAnchor={false}
             label={buttonLabel}
-            buttonLink={buttonLink}
+            buttonLink={buttonLink} // aqui passa a rota
             color={buttonColor}
             size="small"
             onClick={onClick}

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Index from "./pages/Index.jsx";
+import CardsRota from "./components/cards/CardsRota.jsx";
 
 import "./index.css";
 import "./styles/backgrounds.css";
@@ -16,6 +17,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="privacidade" element={<Privacy />} />
+      <Route path="/:cardSlug" element={<CardsRota colorMode="light" />} />
+
       {/* <Route path="/" element={<Lp01 />} /> */}
       {/* <Route path="/whatsapp" element={<WhatsAppLinks />} /> */}
 

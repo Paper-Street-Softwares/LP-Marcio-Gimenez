@@ -138,9 +138,8 @@ const content = {
         "QUEM SOMOS",
         "ARTIGOS",
         "PERGUNTAS FREQUENTES",
-        "MAPA",
       ],
-      menuId: ["home", "service", "about", "blog", "faq", "maps"],
+      menuId: ["home", "service", "about", "blog", "faq"],
 
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
@@ -214,6 +213,7 @@ const content = {
       card1: {
         img: featuresImg1,
         title: "Direito Empresarial",
+        slug: "direitoempresarial",
         subtitle:
           " O escritório oferece soluções jurídicas estratégicas para empresas de todos os portes, com foco em contratos, governança societária, disputas complexas e expansão de negócios. Nossa atuação combina técnica, visão prática e experiência em setores regulados, garantindo segurança e competitividade.",
         description: (
@@ -287,6 +287,7 @@ const content = {
       card2: {
         img: featuresImg2,
         title: "Direito Administrativo",
+        slug: "direitoadministrativo",
         subtitle:
           "Com experiência consolidada em licitações, contratos administrativos e defesa de gestores, o escritório alia a vivência prática dentro da Administração Pública à visão estratégica do setor privado. Atuamos com precisão técnica e discrição em temas que envolvem a máquina estatal e seus impactos no setor empresarial.",
         description: (
@@ -363,6 +364,7 @@ const content = {
       card3: {
         img: featuresImg3,
         title: "Direito Imobiliário",
+        slug: "direitoimobiliario",
         subtitle:
           "O escritório atua na proteção patrimonial e na gestão de riscos de operações imobiliárias, oferecendo suporte em incorporações, contratos, regularizações e litígios. Nossa prática alia precisão técnica e visão estratégica para garantir segurança em negócios e disputas.",
         description: (
@@ -440,6 +442,7 @@ const content = {
       card4: {
         img: featuresImg4,
         title: "Direito de Família e Sucessões",
+        slug: "direitodefamiliaesucessoes",
         subtitle:
           "O escritório conduz demandas familiares e sucessórias com técnica, sigilo e estratégia, assegurando proteção patrimonial e prevenindo decisões impulsivas. Atuamos em divórcios, alimentos, guarda, inventários e partilhas de alta complexidade.",
         description: (
@@ -513,6 +516,7 @@ const content = {
       card5: {
         img: featuresImg5,
         title: "Direito do Trabalho",
+        slug: "direitodotrabalho",
         subtitle:
           "O escritório assessora clientes em imigração, cidadania e mobilidade internacional, com parcerias nos Estados Unidos e Europa. Atuamos em green cards, cidadania italiana e planejamento patrimonial internacional, além de apoiar estrangeiros que desejam investir e residir no Brasil.",
         description: (
@@ -603,6 +607,7 @@ const content = {
       card6: {
         img: featuresImg6,
         title: "Imigração e Mobilidade Internacional",
+        slug: "imigracaoemobilidadeinternacional",
         subtitle:
           "O escritório atua na defesa de empresas em matéria trabalhista, com foco em prevenção de litígios, gestão de passivos e conformidade. Estruturamos políticas internas, assessoramos negociações coletivas, acompanhamos fiscalizações e conduzimos contencioso estratégico. Também realizamos auditorias/due diligence, treinamentos e ajustes de rotinas (jornadas, teletrabalho, terceirização), alinhando segurança jurídica, eficiência operacional e custos.",
         description: (
