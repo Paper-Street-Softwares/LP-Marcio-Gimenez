@@ -41,10 +41,7 @@ export default function FeaturesButton({ colorMode }) {
 
   return (
     <>
-      <SectionArea
-        id={"service"}
-        className={`py-[40px] tablet1:py-[64px] desktop1:py-[96px] desktop1:pb-[0px] ${bgClass}`}
-      >
+      <SectionArea paddingbot={false} id={"service"} className={` ${bgClass}`}>
         <SectionHeader
           className={`text-center ${textClass}`}
           miniTitle={content.texts.features.miniTag}
