@@ -58,32 +58,39 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
           <div className="flex desktop1:justify-between mx-auto items-center ">
             {/* Imagem principal */}
             <div className="flex justify-center w-full relative">
-              <MotionDivDownToUp className="relative flex justify-center w-full h-full">
-                <div className="w-full h-full">
-                  <ImageGallery
-                    items={images}
-                    showNav={false}
-                    showFullscreenButton={false}
-                    useBrowserFullscreen={false}
-                    showBullets={false}
-                    showPlayButton={false}
-                    showThumbnails={false}
-                    autoPlay={true}
-                    additionalClass="custom-gallery"
-                  />
-                  <style>
-                    {`
-          .custom-gallery .image-gallery-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* faz a imagem preencher sem distorcer */
-          }
+              {/* Carrossel */}
+              <div className="w-full h-full">
+                <ImageGallery
+                  items={images}
+                  showNav={false}
+                  showFullscreenButton={false}
+                  useBrowserFullscreen={false}
+                  showBullets={false}
+                  showPlayButton={false}
+                  showThumbnails={false}
+                  autoPlay={true}
+                  additionalClass="custom-gallery"
+                />
+                <style>
+                  {`
+        .custom-gallery .image-gallery-slide img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .custom-gallery .image-gallery-thumbnails {
+          display: none;
+        }
+      `}
+                </style>
+              </div>
 
-          .custom-gallery .image-gallery-thumbnails {
-            display: none; /* garante que as thumbnails não apareçam */
-          }
-        `}
-                  </style>
+              {/* Texto sobreposto */}
+              <MotionDivDownToUp className="absolute inset-0 flex items-center justify-center">
+                <div
+                  className={`font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title6 ${titleColor}`}
+                >
+                  <h1>{content.texts.hero.title}</h1>
                 </div>
               </MotionDivDownToUp>
             </div>

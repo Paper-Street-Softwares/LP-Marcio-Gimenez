@@ -145,15 +145,14 @@ const content = {
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: "ADVOGADO INTERNACIONAL COM ATUAÇÃO EM SÃO PAULO - SP",
+      miniTag: "",
       title: (
         <h1 className="mb-[16px]">
           Nem todo problema aceita
-          <span className="text-primary"> receita pronta</span>
+          <span className=""> receita pronta</span>
         </h1>
       ),
-      subtitle:
-        "Se a sua questão exige mais do que fórmulas, talvez você precise de mais do que um escritório comum.",
+      subtitle: "",
       heroImgPhone: heroImgPhone, // img da pessoa mobile
       heroDesktop: heroImgDesktop, //bg com foto da pessoa
       heroImg: bgHeroImg, //fundo da Hero
