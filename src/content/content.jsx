@@ -1300,8 +1300,7 @@ const content = {
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
       footerNavegacaoText: "NAVEGAÇÃO",
-      footerDivulgacaoText:
-        "© 2025 – Todos os direitos reservados | Desenvolvido por Paper Street Softwares",
+      footerDivulgacaoText: "© 2025 – Desenvolvido por Paper Street Softwares",
     },
   },
 };
