@@ -8,6 +8,7 @@ import { useState, useEffect, useRef } from "react";
 import SidebarSocial from "../sectionElements/SidebarSocial";
 import ListGroupSocial from "../sectionElements/ListGroupSocial";
 
+
 export default function NavbarSocial({ colorMode }) {
   const navigate = useNavigate();
   const [scrolling, setScrolling] = useState(false);
@@ -120,6 +121,7 @@ export default function NavbarSocial({ colorMode }) {
                 aria-label={content.texts.hero.ctaButtonAriaLabel}
                 label={content.texts.navbar.ctaButtonTextResponsive}
                 size="small"
+                buttonLink="/formulario"
                 icon={<FaWhatsapp />}
                 colorMode={colorMode}
               />

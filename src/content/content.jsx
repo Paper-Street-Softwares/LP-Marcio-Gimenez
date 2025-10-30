@@ -517,68 +517,70 @@ const content = {
         title: "Direito do Trabalho",
         slug: "direitodotrabalho",
         subtitle:
-          "O escritório assessora clientes em imigração, cidadania e mobilidade internacional, com parcerias nos Estados Unidos e Europa. Atuamos em green cards, cidadania italiana e planejamento patrimonial internacional, além de apoiar estrangeiros que desejam investir e residir no Brasil.",
+          "O escritório atua na defesa de empresas em matéria trabalhista, com foco em prevenção de litígios, gestão de passivos e conformidade. Estruturamos políticas internas, assessoramos negociações coletivas, acompanhamos fiscalizações e conduzimos contencioso estratégico. Também realizamos auditorias/due diligence, treinamentos e ajustes de rotinas (jornadas, teletrabalho, terceirização), alinhando segurança jurídica, eficiência operacional e custos.",
         description: (
           <div>
-            O Direito Internacional e a Mobilidade Global são áreas que exigem
-            mais do que conhecimento jurídico: pedem planejamento, visão
-            estratégica e compreensão das diferenças culturais, normativas e
-            patrimoniais que atravessam fronteiras. O escritório atua nesse
-            campo com uma abordagem que integra técnica jurídica e sensibilidade
-            prática, em parceria com escritórios especializados nos Estados
-            Unidos e na Europa.
+            A prática trabalhista do escritório é orientada à empresa e integra
+            consultoria, negociação e contencioso com um objetivo claro: reduzir
+            riscos, controlar passivos e dar previsibilidade às decisões.
+            Partimos da compreensão de que o tema trabalhista é um vetor
+            sensível de risco jurídico, financeiro e reputacional; por isso,
+            priorizamos a prevenção sem abdicar de uma atuação firme quando o
+            litígio é inevitável.
             <br />
             <br />
-            Prestamos assessoria em imigração e cidadania, incluindo a obtenção
-            de green cards americanos por vias profissionais e de investimento
-            (EB-1, EB-2 NIW, EB-5), bem como análise e consultoria para
-            cidadania italiana por direito de sangue, à luz das recentes
-            alterações legislativas. Também estruturamos estratégias jurídicas
-            para planejamento patrimonial e sucessório internacional,
-            assegurando proteção e estabilidade em diferentes jurisdições.
+            Atuamos em todos os aspectos do Direito do Trabalho empresarial:
+            diagnóstico e auditoria, políticas internas e compliance
+            trabalhista, negociação coletiva, adequação operacional (jornadas,
+            banco de horas, teletrabalho, remuneração variável), relação com
+            sindicatos e defesa em processos individuais e coletivos. No campo
+            administrativo, acompanhamos fiscalizações, procedimentos no
+            Ministério do Trabalho e inquéritos civis no MPT, negociando TACs
+            quando estrategicamente indicado.
             <br /> <br />
-            Além de assessorar brasileiros que buscam oportunidades no exterior,
-            o escritório também apoia estrangeiros que desejam constituir
-            negócios ou residir no Brasil. Desenvolvemos soluções para a
-            abertura de empresas, estruturação societária, regularização
-            migratória e obtenção de vistos de residência e trabalho. Essa
-            atuação integra o Direito Empresarial e a Mobilidade Internacional,
-            oferecendo segurança jurídica a investidores estrangeiros que buscam
-            expandir suas atividades no mercado brasileiro.
+            Nossa condução é pautada por confidencialidade, pragmatismo e
+            precisão técnica. Trabalhamos lado a lado com a gestão e com o
+            jurídico interno para padronizar fluxos, treinar lideranças e
+            prepostos e estruturar respostas rápidas a incidentes, sempre
+            alinhando segurança jurídica e viabilidade operacional.
             <br /> <br />
-            Nossa prática é pautada por rigor técnico, sigilo e clareza.
-            Tratamos cada projeto de mobilidade como uma decisão de vida e,
-            muitas vezes, de legado. O compromisso do escritório é oferecer
-            caminhos juridicamente seguros, eliminando incertezas e
-            possibilitando que nossos clientes vivam, invistam e prosperem além
-            — ou aquém — das fronteiras.
+            Principais serviços em Direito do Trabalho (empresas):
             <br />
             <br />
             <br />
             <strong>
-              Entre os principais serviços prestados em Direito Internacional e
-              Mobilidade Global estão:
+              Diagnóstico e auditoria trabalhista (due diligence): mapeamento de
+              riscos e contingências, inclusive em M&A e reestruturações.
             </strong>
             <br />
             <br />
-            - Consultoria para obtenção de green cards americanos (EB-1, EB-2
-            NIW, EB-5);
+            Compliance trabalhista e políticas internas: códigos de conduta,
+            canais e investigações internas (assédio, discriminação), ajustes
+            alinhados a privacidade/LGPD quando aplicável.
             <br />
-            - Assessoria em processos de cidadania italiana por direito de
-            sangue;
+            Adequação de rotinas: jornadas, banco de horas,
+            teletrabalho/híbrido, terceirização, contratos com parceiros e
+            responsabilidade subsidiária/solidária.
             <br />
-            - Análise de estratégias jurídicas diante das recentes alterações
-            legislativas italianas;
+            Remuneração e incentivos: estruturação de PLR, bônus e modelos de
+            remuneração variável com segurança jurídica.
             <br />
-            - Planejamento sucessório e patrimonial internacional;
+            Negociação coletiva e sindical: ACT/CCT, mediações, gestão de
+            conflitos e greves.
             <br />
-            - Consultoria em mobilidade global e estruturação de investimentos
-            no exterior;
+            Fiscalizações e âmbito administrativo: acompanhamento perante o
+            Ministério do Trabalho e o MPT, respostas a autos de infração e
+            TACs.
             <br />
-            - Apoio jurídico a estrangeiros que desejam investir e constituir
-            empresas no Brasil;
-            <br />- Regularização migratória, vistos de residência e
-            autorizações de trabalho.
+            Contencioso estratégico: defesa em reclamações individuais e ações
+            coletivas, gestão de acordos, recursos a TRTs e TST, e
+            audiências/perícias.
+            <br />
+            -Treinamentos: líderes, RH e prepostos; manuais e checklists
+            operacionais.
+            <br />
+            Programas de desligamento e acordos: PDV/PDI e acordos
+            extrajudiciais quando recomendáveis.
           </div>
         ),
         imgModal: imgFeaturesCardModal5,
@@ -608,66 +610,65 @@ const content = {
         title: "Imigração e Mobilidade Internacional",
         slug: "imigracaoemobilidadeinternacional",
         subtitle:
-          "O escritório atua na defesa de empresas em matéria trabalhista, com foco em prevenção de litígios, gestão de passivos e conformidade. Estruturamos políticas internas, assessoramos negociações coletivas, acompanhamos fiscalizações e conduzimos contencioso estratégico. Também realizamos auditorias/due diligence, treinamentos e ajustes de rotinas (jornadas, teletrabalho, terceirização), alinhando segurança jurídica, eficiência operacional e custos.",
+          "O escritório assessora clientes em imigração, cidadania e mobilidade internacional, com parcerias nos Estados Unidos e Europa. Atuamos em green cards, cidadania italiana e planejamento patrimonial internacional, além de apoiar estrangeiros que desejam investir e residir no Brasil.",
         description: (
           <div>
-            A prática trabalhista do escritório é orientada à empresa e integra
-            consultoria, negociação e contencioso com um objetivo claro: reduzir
-            riscos, controlar passivos e dar previsibilidade às decisões.
-            Partimos da compreensão de que o tema trabalhista é um vetor
-            sensível de risco jurídico, financeiro e reputacional; por isso,
-            priorizamos a prevenção sem abdicar de uma atuação firme quando o
-            litígio é inevitável.
+            O Direito Internacional e a Mobilidade Global são áreas que exigem
+            mais do que conhecimento jurídico: pedem planejamento, visão
+            estratégica e compreensão das diferenças culturais, normativas e
+            patrimoniais que atravessam fronteiras. O escritório atua nesse
+            campo com uma abordagem que integra técnica jurídica e sensibilidade
+            prática, em parceria com escritórios especializados nos Estados
+            Unidos e na Europa.
             <br /> <br />
-            Atuamos em todos os aspectos do Direito do Trabalho empresarial:
-            diagnóstico e auditoria, políticas internas e compliance
-            trabalhista, negociação coletiva, adequação operacional (jornadas,
-            banco de horas, teletrabalho, remuneração variável), relação com
-            sindicatos e defesa em processos individuais e coletivos. No campo
-            administrativo, acompanhamos fiscalizações, procedimentos no
-            Ministério do Trabalho e inquéritos civis no MPT, negociando TACs
-            quando estrategicamente indicado.
+            Prestamos assessoria em imigração e cidadania, incluindo a obtenção
+            de green cards americanos por vias profissionais e de investimento
+            (EB-1, EB-2 NIW, EB-5), bem como análise e consultoria para
+            cidadania italiana por direito de sangue, à luz das recentes
+            alterações legislativas. Também estruturamos estratégias jurídicas
+            para planejamento patrimonial e sucessório internacional,
+            assegurando proteção e estabilidade em diferentes jurisdições.
             <br /> <br />
-            Nossa condução é pautada por confidencialidade, pragmatismo e
-            precisão técnica. Trabalhamos lado a lado com a gestão e com o
-            jurídico interno para padronizar fluxos, treinar lideranças e
-            prepostos e estruturar respostas rápidas a incidentes, sempre
-            alinhando segurança jurídica e viabilidade operacional.
+            Além de assessorar brasileiros que buscam oportunidades no exterior,
+            o escritório também apoia estrangeiros que desejam constituir
+            negócios ou residir no Brasil. Desenvolvemos soluções para a
+            abertura de empresas, estruturação societária, regularização
+            migratória e obtenção de vistos de residência e trabalho. Essa
+            atuação integra o Direito Empresarial e a Mobilidade Internacional,
+            oferecendo segurança jurídica a investidores estrangeiros que buscam
+            expandir suas atividades no mercado brasileiro.
+            <br /> <br />
+            Nossa prática é pautada por rigor técnico, sigilo e clareza.
+            Tratamos cada projeto de mobilidade como uma decisão de vida e,
+            muitas vezes, de legado. O compromisso do escritório é oferecer
+            caminhos juridicamente seguros, eliminando incertezas e
+            possibilitando que nossos clientes vivam, invistam e prosperem além
+            — ou aquém — das fronteiras.
             <br /> <br /> <br />
             <strong>
-              Principais serviços em Direito do Trabalho (empresas):
+              Entre os principais serviços prestados em Direito Internacional e
+              Mobilidade Global estão:
             </strong>
             <br />
             <br />
-            - Diagnóstico e auditoria trabalhista (due diligence): mapeamento de
-            riscos e contingências, inclusive em M&A e reestruturações.
+            Consultoria para obtenção de green cards americanos (EB-1, EB-2 NIW,
+            EB-5);
             <br />
-            - Compliance trabalhista e políticas internas: códigos de conduta,
-            canais e investigações internas (assédio, discriminação), ajustes
-            alinhados a privacidade/LGPD quando aplicável.
+            Assessoria em processos de cidadania italiana por direito de sangue;
             <br />
-            - Adequação de rotinas: jornadas, banco de horas,
-            teletrabalho/híbrido, terceirização, contratos com parceiros e
-            responsabilidade subsidiária/solidária.
+            Análise de estratégias jurídicas diante das recentes alterações
+            legislativas italianas;
             <br />
-            - Remuneração e incentivos: estruturação de PLR, bônus e modelos de
-            remuneração variável com segurança jurídica.
+            Planejamento sucessório e patrimonial internacional;
             <br />
-            - Negociação coletiva e sindical: ACT/CCT, mediações, gestão de
-            conflitos e greves.
+            Consultoria em mobilidade global e estruturação de investimentos no
+            exterior;
             <br />
-            - Fiscalizações e âmbito administrativo: acompanhamento perante o
-            Ministério do Trabalho e o MPT, respostas a autos de infração e
-            TACs.
+            Apoio jurídico a estrangeiros que desejam investir e constituir
+            empresas no Brasil;
             <br />
-            - Contencioso estratégico: defesa em reclamações individuais e ações
-            coletivas, gestão de acordos, recursos a TRTs e TST, e
-            audiências/perícias.
-            <br />
-            - Treinamentos: líderes, RH e prepostos; manuais e checklists
-            operacionais.
-            <br />- Programas de desligamento e acordos: PDV/PDI e acordos
-            extrajudiciais quando recomendáveis.
+            Regularização migratória, vistos de residência e autorizações de
+            trabalho.
           </div>
         ),
         imgModal: imgFeaturesCardModal6,
@@ -748,7 +749,7 @@ const content = {
           transformação.
         </div>
       ),
-      buttonModalLabelAbout: "Continuar lendo",
+      buttonModalLabelAbout: "Saiba mais",
       modal: (
         <p>
           Toda trajetória sólida nasce da combinação entre vivência prática e
@@ -909,7 +910,11 @@ const content = {
     },
     blog: {
       miniTag: "BLOG",
-      title: "Informação jurídica ao seu alcance",
+      title: (
+        <h1 className="text-title5 leading-[35px]">
+          Informação jurídica ao seu alcance
+        </h1>
+      ),
       subtitle:
         "Acompanhe conteúdos exclusivos para manter-se sempre informado.",
       img: imgSteps,
@@ -1300,8 +1305,7 @@ const content = {
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
       footerNavegacaoText: "NAVEGAÇÃO",
-      footerDivulgacaoText:
-        "© 2025 – Todos os direitos reservados | Desenvolvido por Paper Street Softwares",
+      footerDivulgacaoText: "© 2025 – Desenvolvido por Paper Street Softwares",
     },
   },
 };

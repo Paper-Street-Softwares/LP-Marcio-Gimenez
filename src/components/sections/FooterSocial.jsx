@@ -57,9 +57,9 @@ export default function FooterSocial({
       textColor = "text-black";
       break;
     default:
-      footerBackground =
-        "bg-gradient-to-b from-bgSectionDark to-bgSectionDark bg-cover bg-center bg-no-repeat";
-      textColor = "text-white";
+      footerBackground = "bg-white";
+      // "bg-gradient-to-b from-bgSectionDark to-bgSectionDark bg-cover bg-center bg-no-repeat";
+      textColor = "text-secondary";
       break;
   }
 
@@ -69,7 +69,7 @@ export default function FooterSocial({
     >
       <SectionArea paddingtop={true} paddingbot={false} className="pb-[23px]">
         <SectionWrapper className="gap-[42px]">
-          <div className="w-full max-w-[1215px] flex flex-col gap-y-[80px] desktop1:flex-row desktop1:justify-between">
+          {/* <div className="w-full max-w-[1215px] flex flex-col gap-y-[80px] desktop1:flex-row desktop1:justify-between">
             <div className="flex flex-col gap-y-[16px] desktop1:w-[290px] text-paragraph3">
               <LogoFooter />
               <PhoneFooter colorMode={colorMode} />
@@ -119,7 +119,71 @@ export default function FooterSocial({
               <NavegationTextFooter />
               <LinksNavegationFooter />
             </div>
+          </div> */}
+          <div className="flex flex-col items-center tablet1:items-start tablet1:flex-row gap-8 justify-evenly w-full">
+            <div className="flex flex-col gap-3">
+              <h1>Nossas Redes Sociais</h1>
+              <div className="flex gap-5">
+                <a href={content.texts.links.instagram}>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                    alt=""
+                    className="w-[50px] rounded-md"
+                  />
+                </a>
+                <a href={content.texts.links.linkedin}>
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bGEl9v47XieEtHyj0TqTr1tOXJmib-KHtw&s"
+                    alt=""
+                    className="w-[50px] rounded-md bg-white"
+                  />
+                </a>
+                <a href={content.texts.links.facebook}>
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/256/124/124010.png"
+                    alt=""
+                    className="w-[50px] rounded-md bg-white"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h5> Newsletter</h5>
+              <div className="flex flex-col">
+                <input
+                  type="text"
+                  aria-label="E-mail"
+                  placeholder="E-mail"
+                  className="w-[290px] bg-primary/20 px-2 h-10"
+                />
+                <button className="bg-bgSectionDark w-[290px] text-white py-2 text-paragraph2">
+                  <a href="mailto:contato@marciogimenez.com.br">INSCREVER-SE</a>
+                </button>
+              </div>
+            </div>
           </div>
+          <button
+            onClick={() => {
+              navigate("/privacidade");
+              window.scrollTo(0, 0);
+            }}
+            className="bg-primary/30 py-1 px-4"
+          >
+            Política de Privacidade
+          </button>
+          {/* <Button
+            aria-label="Política de Privacidade"
+            label="Política de Privacidade"
+            onClick={() => {
+              navigate("/privacidade");
+              window.scrollTo(0, 0);
+            }}
+            animation
+            className="w-[100%]"
+            colorMode={colorMode}
+            color="bg-primary/30"
+            textclassName="text-secondary"
+          /> */}
           <CopyrightFooter />
         </SectionWrapper>
       </SectionArea>
