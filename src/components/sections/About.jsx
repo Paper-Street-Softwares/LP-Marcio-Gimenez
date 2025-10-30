@@ -29,7 +29,7 @@ export default function About({
   const textClasses = {
     dark: "text-white",
     light: "text-black",
-    default: "text-primary",
+    default: "text-bgSectionDark",
   };
   const bgClass = bgClasses[colorMode] || bgClasses.default;
   const titleColor = textClasses[colorMode] || textClasses.default;
@@ -66,7 +66,7 @@ export default function About({
             color={colorMode}
             type=""
             titleColorSet={titleColor}
-            subtitleColorSet="text-primary"
+            subtitleColorSet="text-bgSectionDark"
             miniTitleBgColor={false}
           />
           <div className="flex flex-col gap-8 desktop1:gap-0 desktop1:flex-row-reverse justify-between">

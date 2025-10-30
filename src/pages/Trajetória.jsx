@@ -5,7 +5,7 @@ export default function Trajetoria() {
   return (
     <>
       <div className="bg-bgSectionDark h-48 flex items-center justify-center">
-        <h1 className="text-black text-title6 font-mainFont ">TRAJETÓRIA</h1>
+        <h1 className="text-primary text-title6 font-mainFont ">TRAJETÓRIA</h1>
       </div>
       <AboutCompleto />
 

@@ -13,7 +13,7 @@ export default function Form() {
   return (
     <>
       <div className="bg-bgSectionDark h-48 flex items-center justify-center">
-        <h1 className="text-black text-title7 font-mainFont  ">CONTATO</h1>
+        <h1 className="text-primary text-title7 font-mainFont">CONTATO</h1>
       </div>
       <FormAndLocation />
 
