@@ -157,7 +157,7 @@ export default function FooterSocial({
                   className="w-[290px] bg-primary/20 px-2 h-10"
                 />
                 <button className="bg-bgSectionDark w-[290px] text-white py-2 text-paragraph2">
-                  INSCREVER-SE
+                  <a href="mailto:contato@marciogimenez.com.br">INSCREVER-SE</a>
                 </button>
               </div>
             </div>

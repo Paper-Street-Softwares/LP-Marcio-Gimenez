@@ -14,7 +14,7 @@ import SectionHeader from "../sectionElements/SectionHeader";
 import HowItWorksCard from "../cards/HowItWorksCard";
 import WhatsappForm from "../interactives/WhatsappForm";
 
-export default function Steps() {
+export default function FormAndLocation() {
   const [visible, setVisible] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [modalTitle, setModalTitle] = useState("");

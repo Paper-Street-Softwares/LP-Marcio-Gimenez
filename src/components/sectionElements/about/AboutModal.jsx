@@ -45,9 +45,7 @@ export default function AboutModal() {
       <Button
         className="mt-[48px] text-secondary"
         label={content.texts.about.buttonModalLabelAbout}
-        onClick={onClick}
-        removeAnchor={true}
-        removeTarget={true}
+        buttonLink="/trajetoria"
         animation={true}
         icon={<MoveRight color="currentColor" />}
         color="bg-buttonColor"

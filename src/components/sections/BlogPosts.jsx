@@ -35,34 +35,42 @@ function BlogPosts() {
           <ul className="flex flex-wrap gap-[30px] justify-center mb-[80px]">
             {posts.slice(0, 3).map((post) => (
               <li key={post.ID}>
-                <WordPressBlogCard
-                  img={
-                    post.featured_image && (
-                      <img
-                        src={post.featured_image}
-                        alt="Imagem do post"
-                        className=""
+                <a
+                  href={post.URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:scale-[1.02] transition-transform duration-200"
+                >
+                  <WordPressBlogCard
+                    img={
+                      post.featured_image && (
+                        <img
+                          src={post.featured_image}
+                          alt="Imagem do post"
+                          className=""
+                        />
+                      )
+                    }
+                    title={
+                      <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+                    }
+                    subtitle={
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html:
+                            post.excerpt.length > 100
+                              ? post.excerpt.substring(0, 100) + "..."
+                              : post.excerpt,
+                        }}
                       />
-                    )
-                  }
-                  title={
-                    <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
-                  }
-                  subtitle={
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          post.excerpt.length > 100
-                            ? post.excerpt.substring(0, 100) + "..."
-                            : post.excerpt,
-                      }}
-                    />
-                  }
-                  link={post.URL}
-                />
+                    }
+                    link={post.URL}
+                  />
+                </a>
               </li>
             ))}
           </ul>
+
           <MotionDivDownToUp>
             <Paragraphs className="text-center text-white underline transition hover:scale-110">
               <a href={content.texts.blog.blogLink} target="_blank">
