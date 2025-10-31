@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Index from "./pages/Index.jsx";
 import CardsRota from "./components/cards/CardsRota.jsx";
+import ScrollToTop from "./pages/ScrollToTop.jsx";
 
 import "./index.css";
 import "./styles/backgrounds.css";
@@ -19,6 +20,7 @@ import Trajetoria from "./pages/Trajetória.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="privacidade" element={<Privacy />} />
