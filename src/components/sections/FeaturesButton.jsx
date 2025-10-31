@@ -57,23 +57,20 @@ export default function FeaturesButton({ colorMode }) {
             {[1, 2, 3, 4, 5, 6].map((i) => {
               const card = content.texts.features[`card${i}`];
               return (
-                <FeatureImgOnBgCardButton
+                <Link
                   key={i}
-                  bgImg={card.img}
-                  title={card.title}
-                  description={card.subtitle}
-                  buttonLabel={card.buttonLabel}
-                  buttonLink={`/${card.slug}`} // agora usando slug
-                  animation
-                  onClick={null}
+                  to={`/${card.slug}`}
+                  className="block w-fit" // garante que o link ocupe o tamanho do card
                 >
-                  <Link
-                    to={`/${card.slug}`} // link também pelo slug
-                    className="absolute inset-0 flex items-center justify-center"
-                  >
-                    {card.buttonLabel}
-                  </Link>
-                </FeatureImgOnBgCardButton>
+                  <FeatureImgOnBgCardButton
+                    bgImg={card.img}
+                    title={card.title}
+                    description={card.subtitle}
+                    buttonLabel={card.buttonLabel}
+                    buttonLink={`/${card.slug}`}
+                    animation
+                  />
+                </Link>
               );
             })}
           </div>
