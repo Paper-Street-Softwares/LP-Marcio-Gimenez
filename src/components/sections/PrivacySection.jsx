@@ -34,6 +34,10 @@ export default function PrivacySection() {
                 Política de privacidade:
               </h1>
               <br />
+              <h6 className="text-white underline">
+                Em vigor a partir de 01/11/2025
+              </h6>
+              <br />
               <p className="text-white/60 mb-4">
                 <strong className="text-white">
                   Em vigor a partir de [data da publicação no site]
