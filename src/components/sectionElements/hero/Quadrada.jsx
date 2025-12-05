@@ -4,11 +4,11 @@ import Button from "../../interactives/Button";
 import { FaWhatsapp } from "react-icons/fa";
 import "../../../styles/shapeDivs.css";
 import ImageGallery from "react-image-gallery";
-import heroImg1 from "../../../assets/imgs/hero/imgHero2.webp";
-import heroImg2 from "../../../assets/imgs/hero/imgHero3.webp";
-import heroImg3 from "../../../assets/imgs/hero/imgHero4.webp";
-import heroImg4 from "../../../assets/imgs/hero/imgHero5.webp";
-import heroImg5 from "../../../assets/imgs/hero/imgHero6.webp";
+import heroImg1 from "../../../assets/imgs/hero/imgHero1.webp";
+import heroImg2 from "../../../assets/imgs/hero/imgHero2.webp";
+import heroImg3 from "../../../assets/imgs/hero/imgHero3.webp";
+import heroImg4 from "../../../assets/imgs/hero/imgHero4.webp";
+import heroImg5 from "../../../assets/imgs/hero/imgHero5.webp";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -91,7 +91,7 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
               </div>
 
               {/* Texto sobreposto com animação suave */}
-              <div className="absolute inset-0 flex items-center justify-center z-20">
+              {/* <div className="absolute inset-0 flex items-center justify-center z-20">
                 <AnimatePresence mode="wait">
                   <motion.h1
                     key={currentIndex}
@@ -104,7 +104,7 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                     {captions[currentIndex]}
                   </motion.h1>
                 </AnimatePresence>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
