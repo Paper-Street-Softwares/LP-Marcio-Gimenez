@@ -214,50 +214,119 @@ const content = {
         title: "Direito Empresarial",
         slug: "direitoempresarial",
         subtitle:
-          " O escritório oferece soluções jurídicas estratégicas para empresas de todos os portes, com foco em contratos, governança societária, disputas complexas e expansão de negócios. Nossa atuação combina técnica, visão prática e experiência em setores regulados, garantindo segurança e competitividade.",
+          "O escritório oferece soluções jurídicas estratégicas para empresas de todos os portes, com foco em contratos, governança societária, disputas complexas e expansão de negócios. Nosso trabalho é orientar decisões que fortalecem a estrutura da empresa, reduzem riscos e sustentam o crescimento de forma consistente.",
         description: (
           <div>
-            O Direito Empresarial é um dos pilares do nosso escritório,
-            desenvolvido para apoiar empresas na tomada de decisões seguras e na
-            expansão de seus negócios em cenários desafiadores. Nossa prática
-            foi moldada por mais de duas décadas de experiência em setores
-            estratégicos — da construção civil e infraestrutura à indústria de
-            transformação, logística e serviços.
+            O Direito Empresarial é a espinha dorsal do escritório e foi
+            estruturado para atender empresas que demandam segurança, estratégia
+            e precisão jurídica na condução de suas operações. Com mais de duas
+            décadas assessorando companhias dos setores de construção,
+            infraestrutura, indústria, logística, varejo e serviços, atuamos de
+            forma integrada no suporte à tomada de decisão corporativa,
+            reduzindo riscos e fortalecendo o ambiente de negócios.
             <br />
             <br />
-            Atuamos em todos os aspectos da vida empresarial, oferecendo suporte
-            desde a constituição e organização societária até a negociação de
-            contratos complexos e a resolução de litígios estratégicos. Essa
-            atuação vai além do suporte jurídico tradicional: transformamos
-            riscos em clareza e incertezas em estratégia.
+            Nossa prática empresarial combina rigor técnico, leitura estratégica
+            do cenário econômico e profundo conhecimento das dinâmicas internas
+            das empresas, desde a governança societária até o desenho de
+            contratos de alta complexidade. Esse posicionamento permite que
+            antecipemos riscos, traduzamos problemas jurídicos em impactos
+            gerenciais e atuemos como facilitadores para a execução de projetos,
+            expansão de operações e solução de conflitos.
             <br />
             <br />
-            Nossa prática empresarial é pautada por confidencialidade, visão
-            crítica da realidade e compromisso com resultados concretos. Atuamos
-            lado a lado com o cliente, integrando o Direito ao processo de
-            gestão e ao planejamento corporativo de longo prazo.
+            Atuamos lado a lado com executivos, gestores e empreendedores,
+            oferecendo não apenas respostas jurídicas, mas estratégias sólidas e
+            modelos de decisão que conectam Direito, gestão e viabilidade
+            econômica. A abordagem do escritório é baseada em confidencialidade,
+            técnica e visão crítica, garantindo previsibilidade e estabilidade
+            em ambientes regulatórios e negociais cada vez mais exigentes.
             <br />
+            <br />
+            <br />
+            A prática de Direito Empresarial do escritório compreende:
             <br />
             <br />
             <strong>
-              Entre os principais serviços prestados em Direito Empresarial
-              estão:
+              Governança societária, estruturação e reorganização de empresas
             </strong>
             <br />
+            ✔ Constituição de sociedades, elaboração de acordos de
+            sócios/acionistas e definição de estruturas de governança. <br />
+            ✔ Reorganizações societárias, fusões, cisões, incorporações e
+            transformação societária. <br />
+            ✔ Resolução de conflitos societários, mediação entre sócios e
+            readequação de estruturas de controle. <br />
+            ✔ Due diligence societária, compliance documental e auditorias
+            internas.
             <br />
-            - Elaboração, revisão e negociação de contratos nacionais e
-            internacionais;
             <br />
-            - Estruturação de operações de fusões, aquisições e reestruturações
-            societárias;
+            <strong>Contratos empresariais e operações estratégicas</strong>
             <br />
-            - Governança corporativa e resolução de conflitos entre sócios;
+            ✔ Elaboração, revisão e negociação de contratos nacionais e
+            internacionais de alta complexidade. <br />
+            ✔ Pareceres contratuais, análise de risco e modelagem de contratos
+            de fornecimento, EPC, empreitada, distribuição, logística,
+            confidencialidade, tecnologia e prestação de serviços. <br />
+            ✔ Estruturação jurídica para novos projetos, expansão de operações,
+            contratos de parceria e relações comerciais relevantes. <br />
+            ✔ Apoio jurídico em investimentos, operações de equity e joint
+            ventures.
             <br />
-            - Consultoria permanente ou sob demanda em assuntos estratégicos;
             <br />
-            - Contencioso empresarial de alta complexidade;
-            <br />- Apoio jurídico em projetos de infraestrutura, expansão de
-            negócios e relações contratuais de grande porte
+            <strong>Consultoria empresarial contínua</strong>
+            <br />
+            ✔ Atendimento jurídico permanente, estruturado ou sob demanda,
+            alinhado aos objetivos corporativos do cliente. <br />
+            ✔ Suporte na tomada de decisão executiva: análise de risco, desenho
+            de políticas internas e adequação normativa. <br />
+            ✔ Acompanhamento de rotinas empresariais, compliance contratual,
+            gestão de crises e prevenção de litígios. <br />
+            ✔ Interlocução com áreas internas (RH, Compras, Engenharia,
+            Financeiro, Diretoria) para integrar decisões jurídicas ao fluxo
+            operacional.
+            <br />
+            <br />
+            <strong>Contencioso empresarial estratégico</strong>
+            <br />
+            ✔ Atuação em disputas de alta complexidade envolvendo contratos,
+            responsabilidade civil, cadeia produtiva, construção, serviços e
+            inadimplemento. <br />
+            ✔ Condução de litígios empresariais com estratégia técnica e foco em
+            mitigação de perdas. <br />
+            ✔ Atuação em arbitragem, mediação e dispute boards. <br />
+            ✔ Recuperação de créditos, cobrança empresarial estruturada e ações
+            de urgência.
+            <br />
+            <br />
+            <strong>
+              Propriedade intelectual, tecnologia e transformação digital
+            </strong>
+            <br />
+            ✔ Proteção de marcas, know-how, segredos industriais e ativos
+            intangíveis.
+            <br />
+            ✔ Contratos de tecnologia, software, licenciamento, dados e projetos
+            digitais. <br />
+            ✔ Orientação jurídica em inovação, processos digitais e ambientes
+            regulatórios emergentes.
+            <br />
+            <br />
+            <strong>Projetos especiais e setores regulados</strong>
+            <br />
+            ✔ Consultoria em projetos de infraestrutura, obras civis,
+            investimento estrangeiro, expansão industrial e relações contratuais
+            complexas. <br />
+            ✔ Adequação regulatória e análise de riscos em setores com forte
+            carga normativa. <br />
+            ✔ Estruturação jurídica para entrada em novos mercados e expansão de
+            operações.
+            <br />
+            <br />
+            Nosso foco é fornecer ao cliente empresarial um ambiente jurídico
+            estável, previsível e orientado a resultados, traduzindo
+            complexidade jurídica em clareza estratégica e apoiando decisões que
+            influenciam o futuro da empresa.
           </div>
         ),
         imgModal: imgFeaturesCardModal1,
@@ -288,52 +357,113 @@ const content = {
         title: "Direito Administrativo",
         slug: "direitoadministrativo",
         subtitle:
-          "Com experiência consolidada em licitações, contratos administrativos e defesa de gestores, o escritório alia a vivência prática dentro da Administração Pública à visão estratégica do setor privado. Atuamos com precisão técnica e discrição em temas que envolvem a máquina estatal e seus impactos no setor empresarial.",
+          "O escritório atua em licitações, contratos públicos e controle externo, com experiência direta na Administração. Assessoramos empresas e gestores em impugnações de edital, recursos administrativos, defesas formais junto aos Tribunais de Contas e acompanhamento jurídico de contratações públicas de obras e serviços.",
         description: (
           <div>
-            O Direito Administrativo é uma das áreas em que o escritório possui
-            autoridade consolidada, fruto de mais de 14 anos de atuação direta
-            dentro da Administração Pública. Essa vivência proporciona uma
-            compreensão profunda das engrenagens estatais e de como a legalidade
-            se equilibra com a viabilidade prática, conferindo ao escritório uma
-            posição diferenciada na assessoria a empresas e gestores.
+            O escritório possui atuação sólida em Direito Administrativo e conta
+            com expertise construída ao longo de mais de 14 anos de experiência
+            direta na Administração Pública, somada à prática consultiva e
+            contenciosa voltada a empresas que contratam com o Estado. Essa
+            combinação permite ao escritório oferecer um diferencial raro no
+            mercado: compreensão profunda da lógica interna do setor público e
+            domínio do contencioso estruturado necessário ao setor privado.
             <br />
             <br />
-            Atuamos em todos os aspectos do Direito Administrativo, combinando
-            consultoria preventiva e contencioso estratégico. Essa atuação
-            envolve desde a análise de editais e estruturação de contratos até a
-            defesa de clientes perante Tribunais de Contas e o Poder Judiciário.
-            Nosso papel é oferecer soluções jurídicas seguras, que permitam ao
-            cliente se relacionar com o poder público de forma eficaz, ética e
-            sustentável.
+            Atendemos construtoras, incorporadoras, empresas de engenharia,
+            fornecedores de grande porte, prestadores de serviços continuados e
+            grupos econômicos que dependem de segurança jurídica para navegar em
+            licitações, contratos administrativos e procedimentos de controle.
+            Nosso trabalho é orientado por precisão técnica, visão estratégica e
+            absoluta discrição, pilares essenciais para organizações que lidam
+            com órgãos públicos, fiscalização e órgãos de controle.
             <br />
             <br />
-            A prática administrativa do escritório é pautada por clareza, sigilo
-            e rigor técnico, com foco em reduzir riscos, prevenir litígios e
-            assegurar que as decisões de nossos clientes sejam juridicamente
-            sólidas.
+            A prática de Direito Administrativo do escritório abrange tanto a
+            prevenção de riscos regulatórios e contratuais, quanto a solução de
+            litígios complexos, sempre com foco em proteger a operação,
+            preservar receitas, evitar sanções e viabilizar projetos.
             <br />
             <br />
             <br />
             <strong>
-              Entre os principais serviços prestados em Direito Administrativo
-              estão:
+              Licitações, Editais e Procedimentos de Contratação Pública
             </strong>
             <br />
+            ✔ Análise detalhada de editais, termos de referência, minutas
+            contratuais e matrizes de risco. <br />
+            ✔ Impugnações técnicas, pedidos de esclarecimento e estratégias para
+            correção de ilegalidades. <br />
+            ✔ Apoio completo na preparação de habilitação, documentação técnica
+            e propostas. <br />
+            ✔ Atuação para empresas que buscam ampliar participação em
+            licitações, concorrências, pregões, RDC, PMI e contratações diretas.
             <br />
-            - Consultoria em licitações e contratos administrativos;
             <br />
-            - Impugnações, recursos e defesa em sanções aplicadas pela
-            Administração Pública;
+            <strong>Contratos Administrativos e Execução Contratual</strong>
+            <br />✔ Suporte jurídico contínuo durante toda a execução
+            contratual. <br />
+            ✔ Reequilíbrio econômico-financeiro: instrução técnica, formulação
+            de pleitos e sustentação perante a Administração. <br />
+            ✔ Revisão e renegociação de contratos impactados por aumento de
+            custos, fatos supervenientes e álea extraordinária. <br />
+            ✔ Acompanhamento jurídico em medições, glosas, reajustes,
+            fiscalizações e auditorias internas do órgão público. <br />
+            ✔ Orientação estratégica para evitar penalidades e garantir a
+            continuidade das operações.
             <br />
-            - Elaboração e revisão de editais e contratos de grande relevância;
             <br />
-            - Pareceres técnicos para gestores públicos e privados;
+            <strong>
+              Defesa em Processos Administrativos e Tribunais de Contas
+            </strong>
             <br />
-            - Defesa de gestores em ações civis públicas e processos perante
-            Tribunais de Contas;
-            <br />- Demandas indenizatórias, regulatórias e de nulidade
-            contratual contra o Estado.
+            ✔ Defesa de empresas e gestores públicos perante os Tribunais de
+            Contas Estaduais, Tribunal de Contas da União e Controladorias e
+            Comissões de Sindicância. <br />
+            ✔ Atuação em processos de tomada de contas, auditorias, apurações de
+            responsabilidade e análises de irregularidades contratuais. <br />
+            ✔ Elaboração de manifestações técnicas, memoriais e sustentação
+            oral. <br />
+            ✔ Atuação ágil e técnica para mitigação de riscos reputacionais e
+            financeiros.
+            <br />
+            <br />
+            <strong>
+              Regulação, Setores Estratégicos e Parcerias Público-Privadas
+            </strong>
+            <br />
+            ✔ Consultoria regulatória em setores como construção,
+            infraestrutura, saneamento, energia e mobilidade. <br />
+            ✔ Análise de viabilidade jurídica para participação em PPPs,
+            concessões e autorizações. <br />
+            ✔ Acompanhamento perante agências reguladoras e órgãos específicos
+            do setor.
+            <br />
+            <br />
+            <strong>Contencioso Administrativo e Judicial</strong>
+            <br />✔ Mandados de segurança, ações anulatórias, medidas cautelares
+            e ações ordinárias envolvendo licitações, penalidades e contratos.{" "}
+            <br />
+            ✔ Defesa contra sanções como multa, glosa, impedimento de licitar,
+            rescisão contratual e declaração de inidoneidade. <br />
+            ✔ Estratégias para suspensão de atos administrativos lesivos ao
+            negócio.
+            <br />
+            <br />
+            <strong>Projetos especiais e interlocução institucional</strong>
+            <br />
+            ✔ Suporte estratégico na condução de projetos com impacto
+            regulatório relevante. <br />
+            ✔ Estruturação jurídica de operações com forte interação com o Poder
+            Público.
+            <br />
+            ✔ Acompanhamento técnico em reuniões, auditorias, comissões e fases
+            críticas de contratação e execução.
+            <br />
+            <br />A advocacia pública e a advocacia privada operam em lógicas
+            distintas. Nosso diferencial é dominar ambas. Transformamos
+            complexidade normativa em clareza estratégica, permitindo que
+            empresas atuem com segurança e previsibilidade em ambientes
+            regulados e em contratos públicos de alta relevância.
           </div>
         ),
         imgModal: imgFeaturesCardModal2,
@@ -365,55 +495,114 @@ const content = {
         title: "Direito Imobiliário",
         slug: "direitoimobiliario",
         subtitle:
-          "O escritório atua na proteção patrimonial e na gestão de riscos de operações imobiliárias, oferecendo suporte em incorporações, contratos, regularizações e litígios. Nossa prática alia precisão técnica e visão estratégica para garantir segurança em negócios e disputas.",
+          "O escritório oferece suporte jurídico completo para construtoras, incorporadoras e investidores, atuando em due diligence de imóveis, análise de riscos, elaboração de instrumentos contratuais e condução de litígios imobiliários. Nossa atuação prioriza segurança jurídica nas negociações e eficiência na gestão de empreendimentos.",
         description: (
           <div>
-            O Direito Imobiliário exige atenção rigorosa aos detalhes e clareza
-            na condução de operações que envolvem alto valor econômico e impacto
-            patrimonial. No escritório, a prática imobiliária foi moldada a
-            partir de experiências com construtoras, incorporadoras,
-            investidores e adquirentes, permitindo uma visão abrangente de todos
-            os lados da relação.
+            Nossa prática de Direito Imobiliário foi desenvolvida e estruturada
+            para atender construtoras, incorporadoras, investidores, fundos,
+            empresas do setor de infraestrutura e clientes que demandam
+            segurança jurídica em operações de alta relevância econômica. Nossa
+            prática combina rigor técnico, visão prática do mercado e
+            experiência acumulada em negociações, regularizações, análises e
+            litígios imobiliários de diferentes perfis, desde projetos
+            residenciais e comerciais até empreendimentos de grande porte e
+            ativos estratégicos.
             <br />
             <br />
-            Atuamos em todas as fases do ciclo imobiliário, desde a análise
-            documental e urbanística até a elaboração de contratos de compra e
-            venda, permuta, locação e distrato. Também prestamos suporte em
-            incorporações, loteamentos e regularizações fundiárias, oferecendo
-            soluções que conciliam segurança jurídica com viabilidade prática.
+            Atuamos de forma integrada em todas as fases das operações
+            imobiliárias, desde a concepção do negócio à mitigação de riscos e
+            defesa em disputas, assegurando previsibilidade, clareza documental
+            e decisões estruturadas. Esse trabalho envolve não apenas a análise
+            jurídica, mas também a compreensão dos elementos operacionais,
+            urbanísticos, contratuais e regulatórios que influenciam diretamente
+            a viabilidade e o desempenho de cada projeto.
             <br />
             <br />
-            Nosso compromisso é prevenir litígios e proteger o patrimônio do
-            cliente, mas, quando o conflito é inevitável, conduzimos disputas
-            com rigor técnico e visão estratégica, assegurando consistência nas
-            decisões e resultados efetivos.
+            Nos destacamos pela capacidade de transformar complexidade em
+            precisão: mapeamos riscos, estruturamos soluções jurídicas
+            consistentes e conduzimos negociações de maneira pragmática,
+            preservando a segurança do investimento e a continuidade operacional
+            dos negócios. Além disso, atuamos de forma estratégica em litígios
+            imobiliários relevantes, com abordagem técnica voltada à prevenção
+            de perdas patrimoniais e à solução eficiente de conflitos.
             <br />
+            <br />
+            A prática imobiliária do escritório compreende:
+            <br />
+            <br />
+            <strong>Negócios imobiliários e estruturação de operações</strong>
+            <br />
+            ✔ Compra e venda de imóveis residenciais, comerciais, industriais e
+            logísticos.
+            <br />
+            ✔ Auditorias imobiliárias completas (due diligence) para aquisição,
+            incorporação, investimento ou desenvolvimento. <br />
+            ✔ Estruturação de operações envolvendo permuta física e permuta
+            financeira.
+            <br />✔ Constituição e execução de garantias imobiliárias (alienação
+            fiduciária, hipoteca, cessão fiduciária, uso, usufruto, superfície).{" "}
+            <br />
+            ✔ Suporte jurídico para investidores nacionais e estrangeiros em
+            operações de aquisição direta, via SPE ou por estruturas
+            societárias.
             <br />
             <br />
             <strong>
-              Entre os principais serviços prestados em Direito Imobiliário
-              estão:
+              Construção, incorporação e desenvolvimento imobiliário
             </strong>
             <br />
+            ✔ Estruturação jurídica de incorporações imobiliárias. <br />
+            ✔ Elaboração e revisão de memorial de incorporação, afetação,
+            convenção de condomínio, RI, atas e documentos acessórios. <br />
+            ✔ Modelagem de contratos com empreiteiras, subcontratadas,
+            projetistas, gerenciadoras e fornecedores. <br />
+            ✔ Assessoria na fase pré-operacional: estudos dominiais, viabilidade
+            jurídica, análises de restrições urbanísticas e licenças.
             <br />
-            - Estruturação jurídica de incorporações e empreendimentos
-            imobiliários;
             <br />
-            - Due diligence documental, registral e urbanística;
+            <strong>Locações e contratos de gestão imobiliária</strong>
             <br />
-            - Elaboração e revisão de contratos de compra e venda, permuta,
-            locação e distrato;
+            ✔ Elaboração e negociação de contratos de locação comercial,
+            industrial, logística e built-to-suit. <br />
+            ✔ Revisão contratual, renovações compulsórias, ações revisionais e
+            renovatórias.
             <br />
-            - Regularização de imóveis, retificação de registros e usucapião
-            (judicial e extrajudicial);
+            ✔ Estruturação de contratos de administração imobiliária e
+            regularização de operações complexas. <br />
+            ✔ Acompanhamento jurídico em obras (fit-out), prazos,
+            responsabilidades e garantias contratuais.
             <br />
-            - Ações possessórias, reivindicatórias, revisionais e
-            indenizatórias;
             <br />
-            - Contencioso envolvendo vícios construtivos, atrasos na entrega e
-            cláusulas abusivas;
-            <br />- Apoio em inventários, partilhas e divórcios com bens
-            imobiliários relevantes
+            <strong>Regularização imobiliária e urbanística</strong>
+            <br />✔ Retificação, desmembramento, unificação e adequação de
+            matrículas. <br />
+            ✔ Regularização de imóveis urbanos e rurais perante cartórios,
+            prefeituras e órgãos reguladores. <br />
+            ✔ Assessoria em usucapião judicial e extrajudicial. <br />
+            ✔ Atos perante registros imobiliários, elaborados com precisão
+            técnica para evitar exigências e retrabalhos.
+            <br />
+            <br />
+            <strong>Contencioso imobiliário estratégico</strong>
+            <br />
+            ✔ Rescisões contratuais, distratos, indenizações e responsabilidade
+            civil envolvendo obras, atraso de entrega, vícios construtivos e
+            inadimplemento. <br />✔ Atuação em litígios societários que envolvam
+            ativos imobiliários. <br />✔ Defesa em disputas complexas envolvendo
+            empreendimentos, shopping centers, condomínios, loteamentos e
+            contratos de grande porte. <br />
+            ✔ Atuação em disputas relacionadas a danos estruturais, laudos
+            técnicos, perícias e demandas com alto impacto financeiro.
+            <br />
+            <br />
+            <strong>Operações estruturadas e mercado de capitais</strong>
+            <br />
+            ✔ Suporte jurídico na estruturação de operações com fundos
+            imobiliários (FIIs) e securitização de recebíveis (CRIs). <br />
+            ✔ Assessoria em operações de sale and lease-back, built-to-suit
+            financeiro e desenvolvimento sob medida. <br />✔ Análise jurídica
+            para viabilidade de projetos de energia com utilização de imóveis
+            (solar, eólica, logística integrada).
           </div>
         ),
         imgModal: imgFeaturesCardModal3,
@@ -443,53 +632,82 @@ const content = {
         title: "Direito de Família e Sucessões",
         slug: "direitodefamiliaesucessoes",
         subtitle:
-          "O escritório conduz demandas familiares e sucessórias com técnica, sigilo e estratégia, assegurando proteção patrimonial e prevenindo decisões impulsivas. Atuamos em divórcios, alimentos, guarda, inventários e partilhas de alta complexidade.",
+          "O escritório atua em demandas de família e sucessões com estratégia jurídica, precisão probatória e sigilo. Conduzimos divórcios, guarda, visitas, alimentos, inventários e partilhas complexas, assegurando proteção patrimonial, estabilidade processual e decisões amparadas em técnica e evidências.",
         description: (
           <div>
-            O Direito de Família e Sucessões exige uma combinação rara: técnica
-            refinada, sensibilidade e firmeza estratégica. No escritório,
-            tratamos essas demandas como parte de um contexto mais amplo, em que
-            decisões jurídicas impactam não apenas vínculos pessoais, mas também
-            patrimônios de grande relevância.
+            O Direito de Família e Sucessões exige mais do que conhecimento
+            jurídico: exige direção estratégica, precisão técnica e capacidade
+            de estabilizar cenários marcados por forte carga emocional. O
+            escritório atua em conflitos familiares, sucessórios e patrimoniais
+            com absoluta confidencialidade e planejamento rigoroso, protegendo o
+            cliente em decisões que moldam não apenas o presente, mas o futuro
+            das relações e do patrimônio.
             <br />
             <br />
-            Atuamos em todas as dimensões do Direito de Família e Sucessões,
-            desde divórcios e dissoluções de união estável até disputas
-            sucessórias e partilhas de bens em múltiplas jurisdições. Nosso
-            compromisso é blindar o cliente contra decisões precipitadas,
-            preservando tanto a integridade emocional quanto a posição
-            patrimonial em jogo.
+            Nossa atuação é pautada por três pilares: proteção patrimonial,
+            gestão de conflitos e segurança emocional para tomada de decisão. Em
+            um momento em que o cliente muitas vezes está fragilizado,
+            oferecemos um ambiente de racionalidade e clareza, conduzindo o caso
+            com maturidade, estratégia e foco no resultado.
             <br />
             <br />
-            A prática é conduzida com absoluto sigilo, racionalidade e visão
-            estratégica. Entendemos que o cliente precisa de previsibilidade e
-            proteção — e não de atalhos jurídicos. Nosso papel é assegurar
-            soluções consistentes, que resistam ao tempo e à complexidade das
-            relações familiares e sucessórias.
+            Ao longo das últimas décadas, estruturamos práticas capazes de lidar
+            com disputas sensíveis e de alta complexidade, desde divórcios
+            envolvendo empresas familiares, grandes patrimônios e ativos
+            imobiliários, até inventários com múltiplos herdeiros, conflitos
+            societários e análise de estruturas sucessórias pouco convencionais.
+            Nosso trabalho integra técnica jurídica, visão prática e compreensão
+            profunda das dinâmicas familiares em litígio.
+            <br />
+            <br />
+            No contencioso, atuamos com firmeza e precisão em ações de
+            alimentos, guarda, visitas, divórcios litigiosos, dissoluções de
+            união estável e disputas sucessórias. Na esfera consultiva,
+            desenvolvemos estratégias preventivas para evitar litígios,
+            organizar patrimônio, estruturar acordos com harmonia e garantir
+            soluções estáveis de longo prazo.
+            <br />
+            <br />
+            Mais do que intervir em conflitos, o escritório se dedica a blindar
+            o cliente de desgastes desnecessários, mantendo sigilo absoluto e
+            comunicação estratégica, sempre guiada pelo interesse jurídico e
+            patrimonial do representado.
             <br />
             <br />
             <br />
             <strong>
-              Entre os principais serviços prestados em Família e Sucessões
-              estão:
+              Principais serviços em Direito de Família e Sucessões
             </strong>
             <br />
             <br />
-            - Divórcios e dissoluções de união estável, com ou sem partilha de
-            bens;
+            <strong>Família</strong>
             <br />
-            - Ações de alimentos, revisões, exonerações e execuções;
+            ✔ Divórcios consensuais ou litigiosos, com análise detalhada de
+            patrimônio, empresas familiares e ativos imobiliários. <br />
+            ✔ Ações de alimentos (fixação, revisão, exoneração) e execução de
+            alimentos.
             <br />
-            - Conflitos relacionados à guarda, convivência e autoridade
-            parental;
+            ✔ Disputas de guarda, regulamentação de visitas, convivência
+            paterno-materna e tomada de decisão compartilhada. <br />
+            ✔ Dissolução de união estável, definição de regime de bens e
+            partilha de patrimônio comum. <br />
+            ✔ Pactos antenupciais, acordos de convivência e planejamento
+            patrimonial familiar. <br />
+            ✔ Medidas urgentes: tutelas provisórias, afastamento do lar,
+            proteção de menores e salvaguarda patrimonial.
             <br />
-            - Inventários e partilhas, inclusive com bens no exterior ou via
-            holdings;
             <br />
-            - Disputas sucessórias complexas e de alta sensibilidade
-            patrimonial;
-            <br />- Planejamento sucessório e reorganização patrimonial
-            preventiva.
+            <strong>Sucessões</strong>
+            <br />
+            ✔ Inventários judiciais e extrajudiciais, com gestão completa do
+            patrimônio, ativos empresariais e heranças complexas. <br />
+            ✔ Planejamento sucessório: testamentos, doações com cláusulas
+            protetivas, holdings familiares e estruturas híbridas. <br />
+            ✔ Disputas entre herdeiros, sonegação, colação, nulidade de
+            testamentos e proteção de vulneráveis. <br />
+            ✔ Arrolamentos e partilhas amigáveis com foco em agilidade e
+            segurança jurídica. <br />✔ Defesa em ações de petição de herança,
+            prestação de contas, anulação de partilha e litígios correlatos.
           </div>
         ),
         imgModal: imgFeaturesCardModal4,
@@ -517,70 +735,115 @@ const content = {
         title: "Direito do Trabalho",
         slug: "direitodotrabalho",
         subtitle:
-          "O escritório atua na defesa de empresas em matéria trabalhista, com foco em prevenção de litígios, gestão de passivos e conformidade. Estruturamos políticas internas, assessoramos negociações coletivas, acompanhamos fiscalizações e conduzimos contencioso estratégico. Também realizamos auditorias/due diligence, treinamentos e ajustes de rotinas (jornadas, teletrabalho, terceirização), alinhando segurança jurídica, eficiência operacional e custos.",
+          "O escritório defende empresas em matéria trabalhista com foco em prevenção de litígios, gestão de passivos e conformidade. Estruturamos políticas internas, assessoramos negociações coletivas, litígios estratégicos e fazemos ajustes de rotinas para melhorar segurança jurídica e eficiência operacional.",
         description: (
           <div>
-            A prática trabalhista do escritório é orientada à empresa e integra
-            consultoria, negociação e contencioso com um objetivo claro: reduzir
-            riscos, controlar passivos e dar previsibilidade às decisões.
-            Partimos da compreensão de que o tema trabalhista é um vetor
-            sensível de risco jurídico, financeiro e reputacional; por isso,
-            priorizamos a prevenção sem abdicar de uma atuação firme quando o
-            litígio é inevitável.
+            O escritório possui forte atuação consultiva e contenciosa na área
+            trabalhista empresarial, com foco na prevenção de litígios, na
+            redução de passivos e na construção de um ambiente corporativo
+            juridicamente seguro, eficiente e sustentável. Nossa assessoria
+            combina rigor técnico, visão empresarial e experiência no
+            acompanhamento de empresas de médio e grande porte, especialmente
+            nos setores de construção civil, alimentação, logística, transporte,
+            indústria e serviços especializados.
             <br />
             <br />
-            Atuamos em todos os aspectos do Direito do Trabalho empresarial:
-            diagnóstico e auditoria, políticas internas e compliance
-            trabalhista, negociação coletiva, adequação operacional (jornadas,
-            banco de horas, teletrabalho, remuneração variável), relação com
-            sindicatos e defesa em processos individuais e coletivos. No campo
-            administrativo, acompanhamos fiscalizações, procedimentos no
-            Ministério do Trabalho e inquéritos civis no MPT, negociando TACs
-            quando estrategicamente indicado.
-            <br /> <br />
-            Nossa condução é pautada por confidencialidade, pragmatismo e
-            precisão técnica. Trabalhamos lado a lado com a gestão e com o
-            jurídico interno para padronizar fluxos, treinar lideranças e
-            prepostos e estruturar respostas rápidas a incidentes, sempre
-            alinhando segurança jurídica e viabilidade operacional.
-            <br /> <br />
-            Principais serviços em Direito do Trabalho (empresas):
+            O trabalho é orientado por inteligência jurídica e análise
+            criteriosa de riscos, permitindo decisões estratégicas que
+            equilibram segurança jurídica, produtividade, governança e custos
+            operacionais. Atuamos como parceiros permanentes da gestão,
+            oferecendo suporte alinhado às reais necessidades do negócio, seja
+            na rotina corporativa, em crises operacionais ou em litígios de alta
+            complexidade.
             <br />
+            <br />
+            <strong>Consultoria Estratégica e Prevenção de Passivos</strong>
+            <br />
+            ✔ Desenvolvimento e implementação de políticas internas,
+            regulamentos, códigos de conduta e manuais operacionais. <br />
+            ✔ Adequação trabalhista completa: jornadas, banco de horas, controle
+            de ponto, teletrabalho, terceirização, cargos de confiança e regimes
+            especiais. <br />
+            ✔ Suporte jurídico na contratação e gestão de fornecedores
+            terceirizados e temporários, com análise de riscos e blindagem da
+            responsabilidade subsidiária.
+            <br />
+            ✔ Auditorias trabalhistas (full audit) para identificação de
+            contingências, distorções operacionais e potenciais passivos
+            ocultos.
+            <br />
+            ✔ Treinamentos para equipes de RH, líderes operacionais e gestores
+            sobre práticas trabalhistas seguras.
+            <br />
+            <br />
+            <strong>Contencioso Estratégico</strong>
+            <br />
+            <br />
+            Atuamos na defesa de empresas em litígios individuais e coletivos,
+            com atuação técnica rigorosa e visão estratégica orientada a
+            resultados:
+            <br />
+            <br />✔ Defesa em reclamações trabalhistas de alta complexidade,
+            envolvendo pedidos milionários, doenças ocupacionais, acidentes de
+            trabalho, periculosidade, insalubridade ou equiparação salarial.
+            <br />
+            ✔ Atuação em demandas com reflexos relevantes: FGTS, horas extras
+            habituais, enriquecimento sem causa, vínculos controversos, verbas
+            rescisórias e rescisões indiretas.
+            <br />
+            ✔ Defesa em ações civis públicas, TACs, investigações e
+            fiscalizações do MPT.
+            <br />
+            ✔ Atuação perante Delegacias Regionais do Trabalho, Secretarias de
+            Fiscalização e Auditoria Fiscal do Trabalho.
+            <br />
+            ✔ Negociação estratégica de acordos para controle de contingências e
+            mitigação de riscos reputacionais.
+            <br />
+            <br />
+            <strong>Relações Sindicais e Negociações Coletivas</strong>
+            <br />
+            ✔ Condução de negociações diretas com sindicatos, elaboração e
+            análise de ACTs e CCTs.
+            <br />
+            ✔ Estruturação de estratégias de diálogo institucional, mediações e
+            composições coletivas.
+            <br />
+            ✔ Atuação em dissídios coletivos e conflitos trabalhistas de impacto
+            setorial.
+            <br />
+            <br />
+            <strong>Suporte a Operações e Projetos Empresariais</strong>
+            <br />
+            ✔ Due diligence trabalhista em operações de fusões, aquisições e
+            reestruturações societárias. <br />
+            ✔ Análise de riscos para implantação de novas unidades, expansão de
+            operações ou reorganização produtiva. <br />
+            ✔ Acompanhamento de projetos com grande contingente de mão de obra
+            (construção, indústrias, obras civis e turnkey).
             <br />
             <br />
             <strong>
-              Diagnóstico e auditoria trabalhista (due diligence): mapeamento de
-              riscos e contingências, inclusive em M&A e reestruturações.
+              Acidentes de Trabalho, Segurança e Medicina do Trabalho
             </strong>
             <br />
+            ✔ Atuação completa em casos de acidentes, doenças ocupacionais e
+            demandas indenizatórias.
             <br />
-            Compliance trabalhista e políticas internas: códigos de conduta,
-            canais e investigações internas (assédio, discriminação), ajustes
-            alinhados a privacidade/LGPD quando aplicável.
+            ✔ Gestão jurídica da CAT, PPP, LTCAT, PCMSO, PPRA/PGR e programas de
+            saúde e segurança.
             <br />
-            Adequação de rotinas: jornadas, banco de horas,
-            teletrabalho/híbrido, terceirização, contratos com parceiros e
-            responsabilidade subsidiária/solidária.
+            ✔ Defesa em auditorias, fiscalizações e autos de infração.
+            <br />✔ Estratégias de prevenção para mitigação de responsabilidades
+            civil, trabalhista e criminal.
             <br />
-            Remuneração e incentivos: estruturação de PLR, bônus e modelos de
-            remuneração variável com segurança jurídica.
             <br />
-            Negociação coletiva e sindical: ACT/CCT, mediações, gestão de
-            conflitos e greves.
-            <br />
-            Fiscalizações e âmbito administrativo: acompanhamento perante o
-            Ministério do Trabalho e o MPT, respostas a autos de infração e
-            TACs.
-            <br />
-            Contencioso estratégico: defesa em reclamações individuais e ações
-            coletivas, gestão de acordos, recursos a TRTs e TST, e
-            audiências/perícias.
-            <br />
-            -Treinamentos: líderes, RH e prepostos; manuais e checklists
-            operacionais.
-            <br />
-            Programas de desligamento e acordos: PDV/PDI e acordos
-            extrajudiciais quando recomendáveis.
+            Nosso enfoque vai além da atuação reativa: construímos ambientes
+            jurídicos sólidos, capazes de reduzir litígios, aumentar
+            previsibilidade de custos e fortalecer a governança corporativa. A
+            atuação é pautada por técnica refinada, leitura de contexto
+            empresarial e gestão de riscos, atributos essenciais para empresas
+            que buscam segurança jurídica e performance sustentável.
           </div>
         ),
         imgModal: imgFeaturesCardModal5,
@@ -610,65 +873,98 @@ const content = {
         title: "Imigração e Mobilidade Internacional",
         slug: "imigracaoemobilidadeinternacional",
         subtitle:
-          "O escritório assessora clientes em imigração, cidadania e mobilidade internacional, com parcerias nos Estados Unidos e Europa. Atuamos em green cards, cidadania italiana e planejamento patrimonial internacional, além de apoiar estrangeiros que desejam investir e residir no Brasil.",
+          "O escritório atua em imigração, cidadania e mobilidade internacional, com suporte integrado por parceiros nos EUA e Europa. Assessoramos greencards, cidadania italiana e planejamento patrimonial global, além de orientar estrangeiros que desejam investir ou estabelecer residência no Brasil.",
         description: (
           <div>
-            O Direito Internacional e a Mobilidade Global são áreas que exigem
-            mais do que conhecimento jurídico: pedem planejamento, visão
-            estratégica e compreensão das diferenças culturais, normativas e
-            patrimoniais que atravessam fronteiras. O escritório atua nesse
-            campo com uma abordagem que integra técnica jurídica e sensibilidade
-            prática, em parceria com escritórios especializados nos Estados
-            Unidos e na Europa.
-            <br /> <br />
-            Prestamos assessoria em imigração e cidadania, incluindo a obtenção
-            de green cards americanos por vias profissionais e de investimento
-            (EB-1, EB-2 NIW, EB-5), bem como análise e consultoria para
-            cidadania italiana por direito de sangue, à luz das recentes
-            alterações legislativas. Também estruturamos estratégias jurídicas
-            para planejamento patrimonial e sucessório internacional,
-            assegurando proteção e estabilidade em diferentes jurisdições.
-            <br /> <br />
-            Além de assessorar brasileiros que buscam oportunidades no exterior,
-            o escritório também apoia estrangeiros que desejam constituir
-            negócios ou residir no Brasil. Desenvolvemos soluções para a
-            abertura de empresas, estruturação societária, regularização
-            migratória e obtenção de vistos de residência e trabalho. Essa
-            atuação integra o Direito Empresarial e a Mobilidade Internacional,
-            oferecendo segurança jurídica a investidores estrangeiros que buscam
-            expandir suas atividades no mercado brasileiro.
-            <br /> <br />
-            Nossa prática é pautada por rigor técnico, sigilo e clareza.
-            Tratamos cada projeto de mobilidade como uma decisão de vida e,
-            muitas vezes, de legado. O compromisso do escritório é oferecer
-            caminhos juridicamente seguros, eliminando incertezas e
-            possibilitando que nossos clientes vivam, invistam e prosperem além
-            — ou aquém — das fronteiras.
-            <br /> <br /> <br />
+            A crescente mobilidade global exige soluções jurídicas capazes de
+            integrar Direito, estratégia migratória, planejamento patrimonial e
+            conformidade regulatória. O escritório atua em processos de
+            imigração, cidadania e expansão internacional com rigor técnico,
+            visão transnacional e coordenação precisa entre diferentes
+            jurisdições.
+            <br />
+            <br />
+            Prestamos assessoria a brasileiros que desejam residir no exterior,
+            bem como a estrangeiros e empresas internacionais que buscam
+            estabelecer operações no Brasil. Nosso trabalho combina análise
+            jurídica profunda, orientação estratégica personalizada e atuação
+            integrada com especialistas no exterior, garantindo fluidez,
+            segurança documental e aderência às exigências legais de cada país.
+            <br />
+            <br />
+            No âmbito de mobilidade individual, assessoramos processos de
+            greencard, vistos baseados em investimento, habilidades
+            extraordinárias, trabalho e reunificação familiar, atuando em
+            colaboração com escritório parceiro sediado na Flórida, com ampla
+            experiência em imigração norte-americana. Em matéria de cidadania
+            italiana, trabalhamos em modelo integrado com escritório localizado
+            em Roma, garantindo precisão histórica, documental e procedimental.
+            <br />
+            <br />
+            No âmbito empresarial e regulatório, estruturamos a entrada de
+            empresas estrangeiras no Brasil, incluindo instalação de filiais,
+            joint ventures, distribuição de produtos, importação, relacionamento
+            com órgãos reguladores e regularização de bens sujeitos a controle
+            estatal, como equipamentos hospitalares submetidos à ANVISA,
+            produtos de tecnologia, dispositivos industriais e bens de consumo
+            regulados. Essa atuação envolve mapeamento de riscos, definição da
+            estrutura societária mais eficiente e alinhamento aos padrões de
+            conformidade internacionais.
+            <br />
+            <br />
+            Nosso compromisso é proporcionar uma experiência jurídica completa,
+            estratégica e global, eliminando barreiras regulatórias, antecipando
+            riscos e permitindo que indivíduos e empresas se movimentem com
+            segurança em diferentes países.
+            <br />
+            <br />
+            <br />
             <strong>
-              Entre os principais serviços prestados em Direito Internacional e
-              Mobilidade Global estão:
+              Principais serviços em Direito Internacional e Mobilidade Global
             </strong>
             <br />
             <br />
-            Consultoria para obtenção de green cards americanos (EB-1, EB-2 NIW,
-            EB-5);
+            <strong>Mobilidade internacional de pessoas</strong>
             <br />
-            Assessoria em processos de cidadania italiana por direito de sangue;
+            ✔ Green cards (EB-1, EB-2 NIW, EB-3, Family Based), vistos de
+            trabalho e vistos de investimento (E-2, L-1, entre outros).
             <br />
-            Análise de estratégias jurídicas diante das recentes alterações
-            legislativas italianas;
+            ✔ Cidadania italiana por via judicial, administrativa ou
+            reconstrução documental, com atuação integrada em Roma.
             <br />
-            Planejamento sucessório e patrimonial internacional;
+            ✔ Planejamento migratório familiar e patrimonial. <br />
+            ✔ Orientação jurídica para residência, trabalho e regularização
+            documental no Brasil para estrangeiros.
             <br />
-            Consultoria em mobilidade global e estruturação de investimentos no
-            exterior;
             <br />
-            Apoio jurídico a estrangeiros que desejam investir e constituir
-            empresas no Brasil;
+            <strong>Expansão internacional de empresas</strong>
             <br />
-            Regularização migratória, vistos de residência e autorizações de
-            trabalho.
+            ✔ Estruturação de filiais, subsidiárias, joint ventures e
+            representações comerciais no Brasil.
+            <br />
+            ✔ Due diligence regulatória e societária para entrada no mercado
+            brasileiro.
+            <br />
+            ✔ Assessoria jurídica em importação e exportação, contratos
+            internacionais e operações transnacionais.
+            <br />
+            ✔ Mapeamento regulatório junto a ANVISA, INMETRO, MAPA, SUSEP e
+            demais órgãos competentes.
+            <br />
+            ✔ Coordenação com especialistas regulatórios e técnicos para
+            certificações obrigatórias, liberação de produtos e adequações
+            normativas.
+            <br />
+            <br />
+            <strong>Compliance internacional e proteção patrimonial</strong>
+            <br />
+            ✔ Estruturação de modelos de governança para empresas que atuam em
+            múltiplas jurisdições.
+            <br />
+            ✔ Estratégias de proteção patrimonial internacional e planejamento
+            sucessório com ativos no exterior.
+            <br />✔ Análise de riscos regulatórios e prevenção de contingências
+            em operações globais.
           </div>
         ),
         imgModal: imgFeaturesCardModal6,
