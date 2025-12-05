@@ -1027,100 +1027,92 @@ const content = {
       labelX: "Siga-nos no X",
       paragraph: (
         <div>
-          Com mais de duas décadas de atuação, o escritório se destaca pela
-          combinação de rigor técnico e visão estratégica, oferecendo soluções
-          jurídicas que aliam experiência administrativa e prática empresarial.
+          Toda trajetória sólida nasce da combinação entre vivência prática e
+          rigor técnico. Foi assim que Marcio Gimenez construiu sua carreira
+          jurídica: unindo clareza em meio à complexidade, visão crítica da
+          realidade e a convicção de que o Direito é, antes de tudo, instrumento
+          de estratégia e proteção patrimonial.
           <br />
           <br />
-          O mesmo rigor que orienta nossa prática junto a empresas e
-          instituições também se aplica ao atendimento de pessoas físicas.
-          Demandas familiares, sucessórias e imobiliárias recebem tratamento
-          estratégico e sensível, sempre com foco em preservar patrimônios,
-          prevenir litígios e garantir soluções de longo prazo.
+          Durante 14 anos, atuou dentro da Administração Pública assessorando
+          prefeitos, secretários e presidentes de câmaras legislativas. Nesse
+          período, exerceu funções como pregoeiro e presidente de comissões de
+          licitação, elaborando editais, contratos e pareceres de alta
+          relevância. Destacou-se especialmente na atuação perante o Tribunal de
+          Contas do Estado de São Paulo, estruturando defesas e conduzindo
+          estratégias em processos de controle externo que exigiam precisão,
+          cautela e firmeza institucional.
           <br />
-          <br /> Nosso propósito é transformar complexidade em clareza,
-          conduzindo clientes com segurança nas relações legais e operações de
-          grande relevância. Atuamos para proteger patrimônios, fortalecer
-          empresas e oferecer estabilidade jurídica em um mundo em constante
-          transformação.
+          <br /> Essa vivência permitiu compreender as engrenagens
+          administrativas por dentro: como o Estado decide, como aplica suas
+          normas, como se formam os riscos e como se constrói segurança jurídica
+          na prática.
         </div>
       ),
       buttonModalLabelAbout: "Saiba mais",
-      modal: (
-        <p>
-          Toda trajetória sólida nasce da combinação entre vivência prática e
-          rigor técnico. Foi assim que Marcio Gimenez consolidou sua carreira
-          jurídica, marcada pela clareza em meio à complexidade, pela crítica
-          refinada da realidade e pela convicção de que o Direito é, antes de
-          tudo, um instrumento de estratégia e proteção patrimonial.
-          <br />
-          <br />
-          Durante 14 anos, trabalhou dentro da Administração Pública,
-          assessorando prefeitos, secretários e presidentes de câmaras
-          legislativas. Exerceu funções como pregoeiro e presidente de comissões
-          de licitação, elaborando pareceres técnicos, contratos e editais de
-          grande relevância. Nessa vivência, destacou-se pela atuação perante o
-          Tribunal de Contas do Estado de São Paulo, conduzindo defesas e
-          estruturando estratégias em processos de controle externo que exigiam
-          precisão e altivez.
-          <br />
-          <br />
-          Essa experiência na área pública permitiu a compreensão das
-          engrenagens administrativas por dentro: como o Estado decide, como
-          aplica suas normas e como tensiona a relação entre legalidade,
-          interesse público e viabilidade prática. Conhecimento que hoje se
-          converte em diferencial estratégico para empresas e clientes que
-          precisam atuar em licitações, contratos administrativos ou em demandas
-          que envolvem a máquina estatal.
-          <br />
-          <br />
-          Ao lado dessa experiência, desenvolveu uma prática sólida no setor
-          privado. Foram mais de duas décadas assessorando empresas de grande
-          porte, grupos multinacionais e construtoras em projetos de alta
-          complexidade, que incluíram desde obras de infraestrutura e transporte
-          público até incorporações imobiliárias e contratos internacionais.
-          Essa atuação proporcionou contato direto com setores regulados como
-          construção civil, logística, indústria alimentícia, metalurgia e
-          empresas de tecnologia, garantindo ao escritório uma visão ampla do
-          ambiente corporativo.
-          <br />
-          <br />
-          O mesmo rigor técnico aplicado na assessoria a empresas e instituições
-          também orienta o atendimento de pessoas físicas. Questões familiares,
-          sucessórias e patrimoniais são conduzidas com sensibilidade e
-          estratégia, sempre com foco em preservar bens, prevenir litígios e
-          garantir soluções duradouras. Esse equilíbrio assegura que tanto
-          indivíduos quanto organizações contem com um suporte jurídico sólido,
-          discreto e eficiente.
-          <br />
-          <br />
-          No contencioso, conduziu disputas judiciais de alta complexidade,
-          sempre com enfoque estratégico e resultados expressivos em instâncias
-          superiores. Na consultoria, elaborou e revisou contratos empresariais
-          e administrativos de grande relevância, estruturando operações e
-          prevenindo litígios com precisão técnica. Ao longo desse caminho,
-          integrou práticas modernas, como programas de compliance corporativo e
-          adequação à LGPD, reforçando a conexão entre Direito, governança e
-          competitividade.
-          <br />
-          <br />
-          Dessa soma de vivências nasce o Marcio Gimenez Advocacia, um
-          escritório moldado para oferecer soluções jurídicas de alto nível,
-          unindo a visão institucional adquirida na Administração Pública à
-          experiência prática consolidada no setor privado. O escritório traduz
-          a consolidação de uma trajetória pautada em rigor técnico, visão
-          estratégica e autoridade institucional.
-          <br />
-          <br />
-          Mais do que oferecer respostas jurídicas, o escritório entrega visão
-          estratégica, proteção patrimonial e segurança de longo prazo. Porque,
-          para nós, o Direito não é mero instrumento de reação: é ferramenta de
-          poder, clareza e sofisticação para quem precisa conduzir seus
-          interesses com solidez e inteligência.
-          <br />
-          <br />
-        </p>
-      ),
+      // modal: (
+      //   <p>
+      //     Toda trajetória sólida nasce da combinação entre vivência prática e
+      //     rigor técnico. Foi assim que Marcio Gimenez construiu sua carreira
+      //     jurídica: unindo clareza em meio à complexidade, visão crítica da
+      //     realidade e a convicção de que o Direito é, antes de tudo, instrumento
+      //     de estratégia e proteção patrimonial.
+      //     <br />
+      //     <br />
+      //     Durante 14 anos, atuou dentro da Administração Pública assessorando
+      //     prefeitos, secretários e presidentes de câmaras legislativas. Nesse
+      //     período, exerceu funções como pregoeiro e presidente de comissões de
+      //     licitação, elaborando editais, contratos e pareceres de alta
+      //     relevância. Destacou-se especialmente na atuação perante o Tribunal de
+      //     Contas do Estado de São Paulo, estruturando defesas e conduzindo
+      //     estratégias em processos de controle externo que exigiam precisão,
+      //     cautela e firmeza institucional.
+      //     <br />
+      //     <br />
+      //     Essa vivência permitiu compreender as engrenagens administrativas por
+      //     dentro: como o Estado decide, como aplica suas normas, como se formam
+      //     os riscos e como se constrói segurança jurídica na prática.
+      //     <br />
+      //     <br />
+      //     Ao lado dessa experiência pública, Marcio consolidou atuação robusta
+      //     no setor privado, assessorando empresas de grande porte, grupos
+      //     multinacionais e construtoras em operações complexas — obras de
+      //     infraestrutura, contratos internacionais, incorporações, logística,
+      //     indústria de alimentos, metalurgia e tecnologia. Essa imersão conferiu
+      //     visão corporativa ampla, madura e integradora.
+      //     <br />
+      //     <br />
+      //     No contencioso, conduziu disputas judiciais estratégicas de alta
+      //     complexidade, com resultados expressivos em diferentes instâncias. Na
+      //     consultoria, estruturou dezenas de contratos empresariais e
+      //     administrativos, prevenindo litígios e fortalecendo governança.
+      //     Incorporou práticas modernas como compliance, gestão de riscos e LGPD,
+      //     conectando Direito, gestão e competitividade.
+      //     <br />
+      //     <br />
+      //     Dessa combinação de vivências, pública, empresarial e institucional,
+      //     nasce o Marcio Gimenez Advocacia, concebido para oferecer soluções
+      //     jurídicas de alto nível, pautadas por rigor técnico, visão estratégica
+      //     e autoridade institucional.
+      //     <br />
+      //     <br />
+      //     O escritório carrega a mesma filosofia que moldou a trajetória do seu
+      //     fundador: transformar complexidade em clareza, proteger patrimônios,
+      //     fortalecer empresas e conduzir clientes com segurança em decisões de
+      //     longo prazo.
+      //     <br />
+      //     <br />
+      //     Atendemos empresas, famílias e indivíduos com a mesma intensidade
+      //     técnica: preservando bens, prevenindo litígios, estruturando operações
+      //     e garantindo estabilidade jurídica em um mundo que exige soluções
+      //     precisas, discretas e eficazes.
+      //     <br />
+      //     <br />
+      //     Mais do que respostas jurídicas, entregamos consistência, estratégia e
+      //     proteção patrimonial. Porque o Direito, para nós, não é instrumento
+      //     reativo, é ferramenta de poder, estabilidade e sofisticação.
+      //   </p>
+      // ),
       ctaButtonAriaLabel: "Botão para entrar em contato",
       ctaButtonText: "Entre em contato",
 
