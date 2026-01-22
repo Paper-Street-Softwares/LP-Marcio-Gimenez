@@ -1,12 +1,12 @@
-import SectionArea from "../components/sectionElements/SectionArea";
-import About from "../components/sections/About";
-import NavbarSocial from "../components/sections/NavbarSocial";
+import SectionArea from '../components/sectionElements/SectionArea'
+import About from '../components/sections/About'
+import NavbarSocial from '../components/sections/NavbarSocial'
 
 export default function AboutPage() {
   return (
     <>
       <NavbarSocial />
-      <SectionArea className="pt-[100px] tablet1:pt-[200px]">
+      <SectionArea className="pt-[100px] tablet1:pt-[200px]" paddingbot={false}>
         <About />
       </SectionArea>
 
@@ -30,5 +30,5 @@ export default function AboutPage() {
         </a>
       </button>
     </>
-  );
+  )
 }
