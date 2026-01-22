@@ -1,27 +1,28 @@
-import content from "../../content/content";
+import content from '../../content/content'
 
-export default function AboutFading({ colorMode = "default" }) {
+export default function AboutFading({ colorMode = 'default' }) {
   // Classes de tema
   const textClasses = {
-    dark: "text-white",
-    light: "text-black",
-    default: "text-secondary",
-  };
+    dark: 'text-white',
+    light: 'text-black',
+    default: 'text-secondary',
+  }
   const fadeClasses = {
-    dark: "to-bgFixedDark",
-    light: "to-bgFixedLight",
-    default: "to-white",
-  };
+    dark: 'to-bgFixedDark',
+    light: 'to-bgFixedLight',
+    default: 'to-white',
+  }
 
-  const textClass = textClasses[colorMode] || textClasses.default;
-  const fadeClass = fadeClasses[colorMode] || fadeClasses.default;
+  const textClass = textClasses[colorMode] || textClasses.default
+  const fadeClass = fadeClasses[colorMode] || fadeClasses.default
 
   return (
     <div className={`relative font-secondFont text-paragraph4 ${textClass}`}>
       {content.texts.about.paragraph}
       <div
-        className={`bottom-0 absolute w-full h-[80px] bg-gradient-to-b from-transparent ${fadeClass}`}
+        className={`bottom-0 absolute w-full h-[80px] bg-gradient-to-b from-transparent`}
       ></div>
     </div>
-  );
+  )
 }
+//  ${fadeClass}

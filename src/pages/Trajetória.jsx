@@ -1,5 +1,6 @@
-import AboutCompleto from "../components/sections/AboutCompleto";
-import FormAndLocation from "../components/sections/FormAndLocation";
+import AboutCompleto from '../components/sections/AboutCompleto'
+import FormAndLocation from '../components/sections/FormAndLocation'
+import FooterSocial from '../components/sections/FooterSocial'
 
 export default function Trajetoria() {
   return (
@@ -8,6 +9,12 @@ export default function Trajetoria() {
         <h1 className="text-primary text-title6 font-mainFont ">TRAJETÓRIA</h1>
       </div>
       <AboutCompleto />
+      <FooterSocial
+        addresSecundario={false}
+        phoneTerciario={false}
+        expedientesecond={false}
+        addres={true}
+      />
 
       <button className="bg-bgSectionDark fixed bottom-2 left-8 p-4 rounded-full hover:scale-105 duration-300 transition-all">
         <a href="/">
@@ -29,5 +36,5 @@ export default function Trajetoria() {
         </a>
       </button>
     </>
-  );
+  )
 }

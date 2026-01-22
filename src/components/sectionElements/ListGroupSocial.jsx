@@ -16,7 +16,7 @@ export default function ListGroupSocial({ colorMode = "default" }) {
   // Itens do menu e rotas
   const menuItems = [
     { label: "Home", route: "/" },
-    { label: "Trajetória", route: "/about" },
+    { label: "Trajetória", route: "/trajetoria" },
     { label: "Áreas de Atuação", route: "/servicos" },
     { label: "Artigos", route: "/artigos" },
   ];

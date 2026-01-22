@@ -1,24 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ReactDOM from "react-dom/client";
-import Index from "./pages/Index.jsx";
-import CardsRota from "./components/cards/CardsRota.jsx";
-import ScrollToTop from "./pages/ScrollToTop.jsx";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ReactDOM from 'react-dom/client'
+import Index from './pages/Index.jsx'
+import CardsRota from './components/cards/CardsRota.jsx'
+import ScrollToTop from './pages/ScrollToTop.jsx'
 
-import "./index.css";
-import "./styles/backgrounds.css";
-import "./styles/shapeDivs.css";
-import Lp01 from "./pages/Lp01.jsx";
-import Lp02 from "./pages/Lp02.jsx";
-import Lp03 from "./pages/Lp03.jsx";
-import WhatsAppLinks from "./components/interactives/WhatsappLinks.jsx";
-import Privacy from "./pages/Privacy.jsx";
-import Form from "./pages/Form.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
-import ServicesPage from "./pages/ServicesPage.jsx";
-import ArticlesPage from "./pages/ArticlesPage.jsx";
-import Trajetoria from "./pages/Trajetória.jsx";
+import './index.css'
+import './styles/backgrounds.css'
+import './styles/shapeDivs.css'
+import Lp01 from './pages/Lp01.jsx'
+import Lp02 from './pages/Lp02.jsx'
+import Lp03 from './pages/Lp03.jsx'
+import WhatsAppLinks from './components/interactives/WhatsappLinks.jsx'
+import Privacy from './pages/Privacy.jsx'
+import Form from './pages/Form.jsx'
+import AboutPage from './pages/AboutPage.jsx'
+import ServicesPage from './pages/ServicesPage.jsx'
+import ArticlesPage from './pages/ArticlesPage.jsx'
+import Trajetoria from './pages/Trajetória.jsx'
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
     <ScrollToTop />
     <Routes>
@@ -39,5 +39,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       {/* <Route path="/lp03" element={<Lp03 />} /> */}
       {/* <Route path="/whatsapp" element={<WhatsAppLinks form={true} />} /> */}
     </Routes>
-  </Router>
-);
+  </Router>,
+)

@@ -1,6 +1,7 @@
-import SectionArea from "../components/sectionElements/SectionArea";
-import FeaturesButton from "../components/sections/FeaturesButton";
-import NavbarSocial from "../components/sections/NavbarSocial";
+import SectionArea from '../components/sectionElements/SectionArea'
+import FeaturesButton from '../components/sections/FeaturesButton'
+import NavbarSocial from '../components/sections/NavbarSocial'
+import FooterSocial from '../components/sections/FooterSocial'
 
 export default function ServicesPage() {
   return (
@@ -9,6 +10,12 @@ export default function ServicesPage() {
       <SectionArea className="pt-[100px] tablet1:pt-[200px] bg-bgSectionDark">
         <FeaturesButton />
       </SectionArea>
+      <FooterSocial
+        addresSecundario={false}
+        phoneTerciario={false}
+        expedientesecond={false}
+        addres={true}
+      />
 
       <button className="bg-bgSectionDark border-white border-2 fixed bottom-2 left-8 p-4 rounded-full hover:scale-105 duration-300 transition-all">
         <a href="/">
@@ -30,5 +37,5 @@ export default function ServicesPage() {
         </a>
       </button>
     </>
-  );
+  )
 }

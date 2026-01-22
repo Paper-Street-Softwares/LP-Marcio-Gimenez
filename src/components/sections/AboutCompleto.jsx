@@ -62,11 +62,11 @@ export default function AboutCompleto({
             Marcio Gimenez
           </h1>
           <div className="flex flex-col gap-8 desktop1:gap-0 desktop1:flex-row-reverse justify-between">
-            <MotionDivDownToUp className="relative w-[90%] desktop1:w-[415px] desktop2:w-[450px] flex justify-center m-auto desktop1:m-0">
+            <MotionDivDownToUp className="relative w-[90%] desktop1:w-[415px] desktop2:w-[550px] flex justify-center m-auto desktop1:m-0">
               <img
                 src={content.texts.about.imagem.img}
                 alt={content.texts.about.imagem.alt}
-                className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] "
+                className="w-full "
               />
             </MotionDivDownToUp>
             <MotionDivDownToUp className="text-center desktop1:text-start desktop1:w-[50%] ">
