@@ -1,44 +1,44 @@
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
-import content from "../../../content/content";
-import Button from "../../interactives/Button";
-import { FaWhatsapp } from "react-icons/fa";
-import "../../../styles/shapeDivs.css";
-import ImageGallery from "react-image-gallery";
-import heroImg1 from "../../../assets/imgs/hero/imgHero1.webp";
-import heroImg2 from "../../../assets/imgs/hero/imgHero2.webp";
-import heroImg3 from "../../../assets/imgs/hero/imgHero3.webp";
-import heroImg4 from "../../../assets/imgs/hero/imgHero4.webp";
-import heroImg5 from "../../../assets/imgs/hero/imgHero5.webp";
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
+import content from '../../../content/content'
+import Button from '../../interactives/Button'
+import { FaWhatsapp } from 'react-icons/fa'
+import '../../../styles/shapeDivs.css'
+import ImageGallery from 'react-image-gallery'
+import heroImg1 from '../../../assets/imgs/hero/imgHero1.webp'
+import heroImg2 from '../../../assets/imgs/hero/imgHero2.webp'
+import heroImg3 from '../../../assets/imgs/hero/imgHero3.webp'
+import heroImg4 from '../../../assets/imgs/hero/imgHero4.webp'
+// import heroImg5 from "../../../assets/imgs/hero/imgHero5.webp";
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Quadrada({ appDownloadButtons, colorMode }) {
   const backgroundClasses = {
-    dark: "bg-bgFixedDark",
-    light: "bg-bgFixedLight",
-    default: "from-bgSectionDark to-darker",
-  };
+    dark: 'bg-bgFixedDark',
+    light: 'bg-bgFixedLight',
+    default: 'from-bgSectionDark to-darker',
+  }
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const images = [
     { original: heroImg1 },
     { original: heroImg2 },
     { original: heroImg3 },
     { original: heroImg4 },
-    { original: heroImg5 },
-  ];
+    // { original: heroImg5 },
+  ]
 
   const captions = [
-    "Segurança Jurídica construída com experiência e técnica",
-    "O mundo corporativo exige conhecimento e estratégia para sustentar grandes negócios",
-    "Com 14 anos de experiência no setor público, o escritório alinha conhecimento jurídico e experiência administrativa",
-    "A solidez de um empreendimento nasce do rigor jurídico que o ampara",
-    "Soluções jurídicas que atravessam fronteiras",
-  ];
+    'Segurança Jurídica construída com experiência e técnica',
+    'O mundo corporativo exige conhecimento e estratégia para sustentar grandes negócios',
+    'Com 14 anos de experiência no setor público, o escritório alinha conhecimento jurídico e experiência administrativa',
+    'A solidez de um empreendimento nasce do rigor jurídico que o ampara',
+    'Soluções jurídicas que atravessam fronteiras',
+  ]
 
-  const bgGradient = backgroundClasses[colorMode] || backgroundClasses.default;
-  const titleColor = colorMode === "light" ? "text-black" : "text-white";
+  const bgGradient = backgroundClasses[colorMode] || backgroundClasses.default
+  const titleColor = colorMode === 'light' ? 'text-black' : 'text-white'
 
   return (
     <div
@@ -110,5 +110,5 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
