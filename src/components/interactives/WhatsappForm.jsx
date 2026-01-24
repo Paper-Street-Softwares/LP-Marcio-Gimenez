@@ -1,122 +1,126 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from 'react'
+import emailjs from '@emailjs/browser'
+import Button from './Button'
 
 const EmailForm = () => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState({});
-  const [success, setSuccess] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [errors, setErrors] = useState({})
+  const [success, setSuccess] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const validateEmail = (email) => {
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailPattern.test(email.trim());
-  };
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    return emailPattern.test(email.trim())
+  }
 
   // Capitalizar nome
   const handleNameChange = (e) => {
-    let value = e.target.value;
+    let value = e.target.value
     // capitaliza cada palavra sem remover os espaços
     value = value
-      .split(" ")
+      .split(' ')
       .map((word) =>
-        word.length > 0 ? word.charAt(0).toUpperCase() + word.slice(1) : ""
+        word.length > 0 ? word.charAt(0).toUpperCase() + word.slice(1) : '',
       )
-      .join(" ");
-    setName(value);
-  };
+      .join(' ')
+    setName(value)
+  }
 
   // Capitalizar letra inicial da mensagem
   const handleMessageChange = (e) => {
-    let value = e.target.value;
+    let value = e.target.value
     if (value.length > 0) {
-      value = value.charAt(0).toUpperCase() + value.slice(1);
+      value = value.charAt(0).toUpperCase() + value.slice(1)
     }
-    setMessage(value);
-  };
+    setMessage(value)
+  }
 
   // Formatar telefone
   const handlePhoneChange = (e) => {
-    let value = e.target.value.replace(/\D/g, ""); // só números
-    if (value.length > 11) value = value.slice(0, 11);
+    let value = e.target.value.replace(/\D/g, '') // só números
+    if (value.length > 11) value = value.slice(0, 11)
     if (value.length <= 10) {
-      value = value.replace(/^(\d{2})(\d{4})(\d{0,4})$/, "($1) $2-$3");
+      value = value.replace(/^(\d{2})(\d{4})(\d{0,4})$/, '($1) $2-$3')
     } else {
-      value = value.replace(/^(\d{2})(\d{5})(\d{0,4})$/, "($1) $2-$3");
+      value = value.replace(/^(\d{2})(\d{5})(\d{0,4})$/, '($1) $2-$3')
     }
-    setPhone(value);
-  };
+    setPhone(value)
+  }
 
   const sendEmail = () => {
-    const validationErrors = {};
-    if (!name.trim()) validationErrors.name = "O campo Nome é obrigatório.";
+    const validationErrors = {}
+    if (!name.trim()) validationErrors.name = 'O campo Nome é obrigatório.'
     if (!phone.trim())
-      validationErrors.phone = "O campo Telefone é obrigatório.";
+      validationErrors.phone = 'O campo Telefone é obrigatório.'
     if (!email.trim()) {
-      validationErrors.email = "O campo E-mail é obrigatório.";
+      validationErrors.email = 'O campo E-mail é obrigatório.'
     } else if (!validateEmail(email)) {
-      validationErrors.email = "Digite um e-mail válido.";
+      validationErrors.email = 'Digite um e-mail válido.'
     }
     if (!message.trim())
-      validationErrors.message = "O campo Mensagem é obrigatório.";
+      validationErrors.message = 'O campo Mensagem é obrigatório.'
 
     if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
+      setErrors(validationErrors)
+      return
     }
 
-    setLoading(true);
+    setLoading(true)
 
     const templateParams = {
       name: name,
       phone,
       email: email,
       message,
-    };
+    }
 
     emailjs
       .send(
-        "service_3m1hfaw", // ID do seu serviço EmailJS
-        "template_v67tp1f", // ID do seu template
+        'service_3m1hfaw', // ID do seu serviço EmailJS
+        'template_v67tp1f', // ID do seu template
         templateParams,
-        "zEMsClcrIfe_TEZeO" // sua chave pública
+        'zEMsClcrIfe_TEZeO', // sua chave pública
       )
       .then(
         (response) => {
-          console.log("EMAIL ENVIADO", response.status, response.text);
-          setSuccess(true);
-          setName("");
-          setPhone("");
-          setEmail("");
-          setMessage("");
-          setErrors({});
+          console.log('EMAIL ENVIADO', response.status, response.text)
+          setSuccess(true)
+          setName('')
+          setPhone('')
+          setEmail('')
+          setMessage('')
+          setErrors({})
           alert(
-            "As informações preenchidas no formulário foram enviadas corretamente."
-          );
+            'As informações preenchidas no formulário foram enviadas corretamente.',
+          )
         },
         (err) => {
-          console.error("ERRO AO ENVIAR EMAIL:", err);
-        }
+          console.error('ERRO AO ENVIAR EMAIL:', err)
+        },
       )
-      .finally(() => setLoading(false));
-  };
+      .finally(() => setLoading(false))
+  }
 
   return (
-    <div className="w-full flex flex-col md:flex-row justify-evenly gap-8">
+    <div className="w-full flex flex-col md:flex-row justify-evenly gap-8 font-secondFont">
       {/* Coluna esquerda - informações de contato */}
       <div className="md:w-1/2 space-y-6 text-center tablet2:text-start">
-        <h2 className="text-xl font-bold">Fale Conosco</h2>
-        <p className="text-gray-600">
-          Preencha o formulário ao lado para falar conosco.
-        </p>
+        <div>
+          {' '}
+          <h2 className="text-xl text-white font-bold">Fale Conosco</h2>
+          <p className="text-white font-secondFont opacity-50">
+            Preencha o formulário ao lado para falar conosco.
+          </p>
+        </div>
 
         {/* Telefones */}
         <div>
-          <h3 className="font-semibold mb-2">TELEFONE:</h3>
-          <div className="flex items-center gap-2 text-gray-700 justify-center tablet2:justify-start">
+          <h3 className="text-white font-semibold mb-2">TELEFONE:</h3>
+          <div className="flex items-center gap-2 text-white justify-center tablet2:justify-start font-secondFont opacity-50">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -137,10 +141,10 @@ const EmailForm = () => {
 
         {/* Email */}
         <div>
-          <h3 className="font-semibold mb-2">E-MAIL</h3>
+          <h3 className="text-white font-semibold mb-2">E-MAIL</h3>
           <a
             href="mailto:contato@marciogimenez.com.br"
-            className="flex items-center gap-2 text-gray-700 justify-center tablet2:justify-start"
+            className="flex items-center gap-2 text-white justify-center tablet2:justify-start font-secondFont opacity-50"
           >
             <span>
               <svg
@@ -165,13 +169,13 @@ const EmailForm = () => {
 
         {/* Endereços */}
         <div>
-          <h3 className="font-semibold mb-2">ENDEREÇOS</h3>
-          <p className="text-gray-700">
+          <h3 className="text-white font-semibold mb-2">ENDEREÇOS</h3>
+          <p className="text-white font-secondFont opacity-50">
             Avenida Brigadeiro Faria Lima, 1811, ESC 1119,
             <br />
-            Jardim Paulistano, São Paulo/SP{" "}
+            Jardim Paulistano, São Paulo/SP{' '}
           </p>
-          <p className="text-gray-700 mt-2">
+          <p className="text-white mt-2 font-secondFont opacity-50">
             CEP: 01452-001. <br />
           </p>
         </div>
@@ -236,18 +240,19 @@ const EmailForm = () => {
           </div>
 
           {/* Botão */}
-          <button
-            type="button"
-            className="w-full bg-[#0f1112] text-white py-3 uppercase text-sm font-bold tracking-wider hover:opacity-90 transition disabled:opacity-60"
-            onClick={sendEmail}
+          <Button
+            label={loading ? 'Enviando...' : 'Enviar Mensagem'}
             disabled={loading}
-          >
-            {loading ? "Enviando..." : "Enviar Mensagem"}
-          </button>
+            onClick={sendEmail}
+            size="small"
+            className="min-w-full"
+            color="bg-white"
+            labelColor="text-black"
+          />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default EmailForm;
+export default EmailForm

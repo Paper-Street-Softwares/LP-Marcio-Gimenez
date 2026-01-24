@@ -1,5 +1,6 @@
 import SectionArea from '../components/sectionElements/SectionArea'
 import BlogPosts from '../components/sections/BlogPosts'
+import FooterSocial from '../components/sections/FooterSocial'
 import NavbarSocial from '../components/sections/NavbarSocial'
 
 export default function ArticlesPage() {
@@ -8,6 +9,7 @@ export default function ArticlesPage() {
       <NavbarSocial />
       <div className="pt-[100px] tablet1:pt-[200px] desktop1:pt-[100px] bg-bgSectionDark" />
       <BlogPosts />
+      <FooterSocial colorMode="default" />
 
       <button className="bg-bgSectionDark fixed border-white border-2 bottom-2 left-8 p-4 rounded-full hover:scale-105 duration-300 transition-all">
         <a href="/">

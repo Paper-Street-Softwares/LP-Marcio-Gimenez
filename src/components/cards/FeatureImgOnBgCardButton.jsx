@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import Button from "../interactives/Button";
+import PropTypes from 'prop-types'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import Button from '../interactives/Button'
 
 export default function FeatureImgOnBgCardButton({
   bgImg,
@@ -19,11 +19,11 @@ export default function FeatureImgOnBgCardButton({
     buttonLink: PropTypes.string,
     buttonColor: PropTypes.any,
     onClick: PropTypes.func,
-  };
+  }
 
   return (
     <MotionDivDownToUp>
-      <div className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[210px] font-mainFont flex flex-col desktop1:max-w-[300px] desktop1:w-[280px] desktop3:w-[400px] h-[527px] shadow-custom-opacity shadow-shadowBlogs/5 bg-bgSectionLight border rounded-sm p-[10px] mb-4">
+      <div className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[222px] font-mainFont flex flex-col desktop1:max-w-[350px] desktop1:w-[260px] desktop2:w-[300px] desktop3:w-[400px] h-[527px] shadow-custom-opacity shadow-shadowBlogs/0 bg-bgSectionLight border rounded-sm p-[10px] ">
         {/* Imagem */}
         <div
           style={{ backgroundImage: `url(${bgImg})` }}
@@ -44,7 +44,7 @@ export default function FeatureImgOnBgCardButton({
 
           {/* Subtítulo/descrição */}
           <h2
-            className="text-paragraph2 desktop2:text-paragraph2 text-gray-600 leading-[18px] desktop1:leading-[21px] overflow-hidden flex-1 line-clamp-2"
+            className="text-paragraph2 font-secondFont desktop2:text-paragraph2 text-gray-600 leading-[18px] desktop1:leading-[21px] opacity-80 overflow-hidden flex-1 line-clamp-2"
             title={description}
           >
             {description}
@@ -82,5 +82,5 @@ export default function FeatureImgOnBgCardButton({
         </div>
       </div>
     </MotionDivDownToUp>
-  );
+  )
 }
