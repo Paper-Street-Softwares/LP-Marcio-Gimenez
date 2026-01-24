@@ -57,7 +57,7 @@ export const theme = {
       // mainFont: ["Poppins", "sans-serif"],
       // secondFont: ["Merriweather", "sans-serif"],
       mainFont: ['Times New Roman', 'sans-serif'],
-      secondFont: ['Roboto', 'sans-serif'],
+      secondFont: ['Times New Roman', 'sans-serif'],
       league: ['League Gothic'],
       barlow: ['Barlow Condensed'],
       times: ['Times New Romance', 'sans-serif'],
