@@ -58,11 +58,7 @@ export default function FeaturesButton({ colorMode }) {
             {[1, 2, 3, 4, 5, 6].map((i) => {
               const card = content.texts.features[`card${i}`]
               return (
-                <Link
-                  key={i}
-                  to={`/${card.slug}`}
-                  className="block w-fit" // garante que o link ocupe o tamanho do card
-                >
+                <Link key={i} to={`/${card.slug}`} className="block w-fit">
                   <FeatureImgOnBgCardButton
                     bgImg={card.img}
                     title={card.title}

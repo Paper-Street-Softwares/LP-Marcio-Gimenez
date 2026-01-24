@@ -1,19 +1,19 @@
-import React from "react";
-import SectionArea from "../sectionElements/SectionArea";
-import "react-image-gallery/styles/css/image-gallery.css";
-import SectionHeader from "../sectionElements/SectionHeader";
-import AboutModal from "../sectionElements/about/AboutModal";
-import content from "../../content/content";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import GalleryAbout from "../sectionElements/about/GalleryAbout";
-import ParagraphSemFading from "../sectionElements/about/ParagraphSemFading";
-import ParagraphWithFading from "../sectionElements/about/ParagraphWithFading";
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
-import img1 from "../../assets/imgs/about/imgGaleria1.webp";
-import img2 from "../../assets/imgs/about/imgGaleria2.webp";
-import img3 from "../../assets/imgs/about/imgGaleria3.webp";
+import React from 'react'
+import SectionArea from '../sectionElements/SectionArea'
+import 'react-image-gallery/styles/css/image-gallery.css'
+import SectionHeader from '../sectionElements/SectionHeader'
+import AboutModal from '../sectionElements/about/AboutModal'
+import content from '../../content/content'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import GalleryAbout from '../sectionElements/about/GalleryAbout'
+import ParagraphSemFading from '../sectionElements/about/ParagraphSemFading'
+import ParagraphWithFading from '../sectionElements/about/ParagraphWithFading'
+import ImageGallery from 'react-image-gallery'
+import 'react-image-gallery/styles/css/image-gallery.css'
+import img1 from '../../assets/imgs/about/imgGaleria1.webp'
+import img2 from '../../assets/imgs/about/imgGaleria2.webp'
+import img3 from '../../assets/imgs/about/imgGaleria3.webp'
 
 export default function AboutCompleto({
   modal = true,
@@ -22,19 +22,19 @@ export default function AboutCompleto({
 }) {
   // Definir classes de tema
   const bgClasses = {
-    dark: "bg-bgFixedDark",
-    light: "bg-bgFixedLight",
-    default: "bg-white",
-  };
+    dark: 'bg-bgFixedDark',
+    light: 'bg-bgFixedLight',
+    default: 'bg-white',
+  }
   const textClasses = {
-    dark: "text-white",
-    light: "text-black",
-    default: "text-primary",
-  };
-  const bgClass = bgClasses[colorMode] || bgClasses.default;
-  const titleColor = textClasses[colorMode] || textClasses.default;
+    dark: 'text-white',
+    light: 'text-black',
+    default: 'text-primary',
+  }
+  const bgClass = bgClasses[colorMode] || bgClasses.default
+  const titleColor = textClasses[colorMode] || textClasses.default
   const subtitleColor =
-    colorMode === "light" ? "text-gray-600" : "text-gray-600";
+    colorMode === 'light' ? 'text-gray-600' : 'text-gray-600'
 
   const images = [
     {
@@ -49,7 +49,7 @@ export default function AboutCompleto({
       original: img3,
       thumbnail: img3,
     },
-  ];
+  ]
 
   return (
     <SectionArea
@@ -71,6 +71,27 @@ export default function AboutCompleto({
             </MotionDivDownToUp>
             <MotionDivDownToUp className="text-center desktop1:text-start desktop1:w-[50%] ">
               <div className="flex flex-col gap-4">
+                <p className="text-justify">
+                  Com mais de duas décadas de atuação, o escritório se destaca
+                  pela combinação de rigor técnico e visão estratégica,
+                  oferecendo soluções jurídicas que aliam experiência
+                  administrativa e prática empresarial.
+                </p>
+                <p className="text-justify">
+                  O mesmo rigor que orienta nossa prática junto a empresas e
+                  instituições também se aplica ao atendimento de pessoas
+                  físicas. Demandas familiares, sucessórias e imobiliárias
+                  recebem tratamento estratégico e sensível, sempre com foco em
+                  preservar patrimônios, prevenir litígios e garantir soluções
+                  de longo prazo.
+                </p>
+                <p className="text-justify">
+                  Nosso propósito é transformar complexidade em clareza,
+                  conduzindo clientes com segurança nas relações legais e
+                  operações de grande relevância. Atuamos para proteger
+                  patrimônios, fortalecer empresas e oferecer estabilidade
+                  jurídica em um mundo em constante transformação.
+                </p>
                 <p className="text-justify">
                   Toda trajetória sólida nasce da combinação entre vivência
                   prática e rigor técnico. Foi assim que Marcio Gimenez
@@ -146,5 +167,5 @@ export default function AboutCompleto({
         </div>
       </SectionWrapper>
     </SectionArea>
-  );
+  )
 }

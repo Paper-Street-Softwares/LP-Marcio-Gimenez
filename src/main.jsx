@@ -17,9 +17,11 @@ import AboutPage from './pages/AboutPage.jsx'
 import ServicesPage from './pages/ServicesPage.jsx'
 import ArticlesPage from './pages/ArticlesPage.jsx'
 import Trajetoria from './pages/Trajetória.jsx'
+import DisableScrollRestoration from './components/DisableScrollRestoration.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
+    <DisableScrollRestoration />
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Index />} />

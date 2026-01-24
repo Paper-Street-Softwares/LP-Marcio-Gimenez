@@ -1020,33 +1020,29 @@ const content = {
       },
       miniTag: '',
       title: <h1 className="text-title5 leading-[35px]">Trajetória</h1>,
-      subtitle: 'Marcio Gimenez Advocacia',
+      subtitle: '',
       labelInstagram: 'Siga-nos no Instagram',
       labelFacebook: 'Siga-nos no Facebook',
       labelLinkedin: 'Siga-nos no LinkedIn',
       labelX: 'Siga-nos no X',
       paragraph: (
         <div>
-          Toda trajetória sólida nasce da combinação entre vivência prática e
-          rigor técnico. Foi assim que Marcio Gimenez construiu sua carreira
-          jurídica: unindo clareza em meio à complexidade, visão crítica da
-          realidade e a convicção de que o Direito é, antes de tudo, instrumento
-          de estratégia e proteção patrimonial.
+          Com mais de duas décadas de atuação, o escritório se destaca pela
+          combinação de rigor técnico e visão estratégica, oferecendo soluções
+          jurídicas que aliam experiência administrativa e prática empresarial.
           <br />
           <br />
-          Durante 14 anos, atuou dentro da Administração Pública assessorando
-          prefeitos, secretários e presidentes de câmaras legislativas. Nesse
-          período, exerceu funções como pregoeiro e presidente de comissões de
-          licitação, elaborando editais, contratos e pareceres de alta
-          relevância. Destacou-se especialmente na atuação perante o Tribunal de
-          Contas do Estado de São Paulo, estruturando defesas e conduzindo
-          estratégias em processos de controle externo que exigiam precisão,
-          cautela e firmeza institucional.
+          O mesmo rigor que orienta nossa prática junto a empresas e
+          instituições também se aplica ao atendimento de pessoas físicas.
+          Demandas familiares, sucessórias e imobiliárias recebem tratamento
+          estratégico e sensível, sempre com foco em preservar patrimônios,
+          prevenir litígios e garantir soluções de longo prazo.
           <br />
-          <br /> Essa vivência permitiu compreender as engrenagens
-          administrativas por dentro: como o Estado decide, como aplica suas
-          normas, como se formam os riscos e como se constrói segurança jurídica
-          na prática.
+          <br /> Nosso propósito é transformar complexidade em clareza,
+          conduzindo clientes com segurança nas relações legais e operações de
+          grande relevância. Atuamos para proteger patrimônios, fortalecer
+          empresas e oferecer estabilidade jurídica em um mundo em constante
+          transformação.
         </div>
       ),
       buttonModalLabelAbout: 'Saiba mais',
