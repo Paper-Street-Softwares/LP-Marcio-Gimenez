@@ -76,8 +76,8 @@ export default function About({
                 src={content.texts.about.imagem.img}
                 alt={content.texts.about.imagem.alt}
                 className="w-[90%]"
-                width={540}
-                height={416}
+                width={526}
+                height={351}
               />
             </div>
             <div className="text-center desktop1:text-start desktop1:w-[50%] ">
