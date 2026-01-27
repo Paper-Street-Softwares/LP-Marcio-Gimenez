@@ -27,52 +27,24 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
 
   const images = [
     {
-      original: heroImg1, // fallback
-      thumbnail: heroImg1,
+      desktop: heroImg1,
+      mobile: heroImg1Mobile,
       originalAlt: 'Primeira ilustrativa',
-      thumbnailAlt: 'Primeira ilustrativa',
-
-      srcSet: `
-      ${heroImg1Mobile} 480w,
-      ${heroImg1} 1200w
-    `,
-      sizes: '(max-width: 768px) 100vw, 1200px',
     },
     {
-      original: heroImg2,
-      thumbnail: heroImg2,
+      desktop: heroImg2,
+      mobile: heroImg2Mobile,
       originalAlt: 'Segunda ilustrativa',
-      thumbnailAlt: 'Segunda ilustrativa',
-
-      srcSet: `
-      ${heroImg2Mobile} 480w,
-      ${heroImg2} 1200w
-    `,
-      sizes: '(max-width: 768px) 100vw, 1200px',
     },
     {
-      original: heroImg3,
-      thumbnail: heroImg3,
+      desktop: heroImg3,
+      mobile: heroImg3Mobile,
       originalAlt: 'Terceira ilustrativa',
-      thumbnailAlt: 'Terceira ilustrativa',
-
-      srcSet: `
-      ${heroImg3Mobile} 480w,
-      ${heroImg3} 1200w
-    `,
-      sizes: '(max-width: 768px) 100vw, 1200px',
     },
     {
-      original: heroImg4,
-      thumbnail: heroImg4,
-      originalAlt: 'Terceira ilustrativa',
-      thumbnailAlt: 'Terceira ilustrativa',
-
-      srcSet: `
-      ${heroImg4Mobile} 480w,
-      ${heroImg4} 1200w
-    `,
-      sizes: '(max-width: 768px) 100vw, 1200px',
+      desktop: heroImg4,
+      mobile: heroImg4Mobile,
+      originalAlt: 'Quarta ilustrativa',
     },
   ]
 
@@ -137,17 +109,30 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                   showBullets={false}
                   showPlayButton={false}
                   showThumbnails={false}
-                  autoPlay={true}
+                  autoPlay
                   slideInterval={10000}
                   slideDuration={1000}
                   additionalClass="custom-gallery"
-                  renderItem={(item) => (
-                    <img
-                      src={item.original}
-                      alt={item.originalAlt}
-                      className="w-full h-full object-cover"
-                      fetchpriority="high"
-                    />
+                  renderItem={(item, index) => (
+                    <picture>
+                      {/* Mobile até 768px */}
+                      <source media="(max-width: 768px)" srcSet={item.mobile} />
+
+                      {/* Desktop a partir de 769px */}
+                      <source
+                        media="(min-width: 769px)"
+                        srcSet={item.desktop}
+                      />
+
+                      {/* Fallback obrigatório */}
+                      <img
+                        src={item.desktop}
+                        alt={item.originalAlt}
+                        className="w-full h-full object-cover"
+                        fetchpriority={index === 0 ? 'high' : 'auto'}
+                        loading={index === 0 ? 'eager' : 'lazy'}
+                      />
+                    </picture>
                   )}
                 />
 
@@ -171,7 +156,7 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                     }
                   `}
                 </style>
-                <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
+                {/* <div className="absolute inset-0 bg-black opacity-40 z-10"></div> */}
               </div>
 
               {/* Texto sobreposto com animação suave */}
