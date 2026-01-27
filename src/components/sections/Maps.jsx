@@ -1,39 +1,39 @@
-import Paragraphs from "../sectionElements/Paragraphs";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionTitles from "../sectionElements/SectionTitles";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import React, { useState } from "react";
-import { Dialog } from "primereact/dialog";
-import "primereact/resources/themes/saga-blue/theme.css";
-import "primereact/resources/primereact.min.css";
-import "primeicons/primeicons.css";
-import content from "../../content/content";
-import Button from "../interactives/Button";
-import SectionHeader from "../sectionElements/SectionHeader";
-import imgPoints from "../../assets/imgs/about/points.png";
-import HowItWorksCard from "../cards/HowItWorksCard";
-import SectionShapeDiv from "../sectionElements/SectionShapeDiv";
-import WhatsappForm from "../interactives/WhatsappForm";
+import Paragraphs from '../sectionElements/Paragraphs'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionTitles from '../sectionElements/SectionTitles'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import React, { useState } from 'react'
+import { Dialog } from 'primereact/dialog'
+import 'primereact/resources/themes/saga-blue/theme.css'
+import 'primereact/resources/primereact.min.css'
+import 'primeicons/primeicons.css'
+import content from '../../content/content'
+import Button from '../interactives/Button'
+import SectionHeader from '../sectionElements/SectionHeader'
+// import imgPoints from "../../assets/imgs/about/points.png";
+import HowItWorksCard from '../cards/HowItWorksCard'
+import SectionShapeDiv from '../sectionElements/SectionShapeDiv'
+import WhatsappForm from '../interactives/WhatsappForm'
 
 export default function Maps({ colorMode }) {
-  const [visible, setVisible] = useState(false);
-  const [modalContent, setModalContent] = useState("");
-  const [modalTitle, setModalTitle] = useState("");
+  const [visible, setVisible] = useState(false)
+  const [modalContent, setModalContent] = useState('')
+  const [modalTitle, setModalTitle] = useState('')
 
   // Classes de tema
   const bgClasses = {
-    dark: "bg-bgFixedDark",
-    light: "bg-bgFixedLight",
-    default: "bg-bgSectionDark",
-  };
+    dark: 'bg-bgFixedDark',
+    light: 'bg-bgFixedLight',
+    default: 'bg-bgSectionDark',
+  }
   const textClasses = {
-    dark: "text-white",
-    light: "text-black",
-    default: "text-white",
-  };
-  const bgClass = bgClasses[colorMode] || bgClasses.default;
-  const titleColor = textClasses[colorMode] || textClasses.default;
+    dark: 'text-white',
+    light: 'text-black',
+    default: 'text-white',
+  }
+  const bgClass = bgClasses[colorMode] || bgClasses.default
+  const titleColor = textClasses[colorMode] || textClasses.default
 
   return (
     <SectionArea className={`${bgClass}`} id="maps">
@@ -66,5 +66,5 @@ export default function Maps({ colorMode }) {
         </MotionDivDownToUp>
       </SectionWrapper>
     </SectionArea>
-  );
+  )
 }
