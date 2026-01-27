@@ -14,11 +14,15 @@ export default function Form({ colorMode }) {
   return (
     <>
       <NavbarSocial />
-      <div className="bg-bgSectionDark h-48 flex items-center justify-center pt-[100px] tablet1:pt-[200px]">
+      <div className="bg-bgSectionDark h-48 flex items-center justify-center pt-[200px] phone3:pt-[240px] tablet1:pt-[250px] desktop1:pt-[200px]">
         <h1 className="text-primary text-title7 font-mainFont">CONTATO</h1>
       </div>
 
-      <FormAndLocation colorMode="light" />
+      <FormAndLocation
+        colorMode="light"
+        paddingTop={false}
+        className={`pt-6`}
+      />
       <FooterSocial colorMode="light" />
 
       <button className="bg-bgSectionDark fixed bottom-2 left-8 p-4 rounded-full hover:scale-105 duration-300 transition-all">

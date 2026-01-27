@@ -73,30 +73,6 @@ export default function AboutCompleto({
             <section>
               <div className="flex flex-col gap-4 opacity-50 font-secondFont">
                 <p className="text-justify">
-                  Com mais de duas décadas de atuação, o escritório se destaca
-                  pela combinação de rigor técnico e visão estratégica,
-                  oferecendo soluções jurídicas que aliam experiência
-                  administrativa e prática empresarial.
-                </p>
-
-                <p className="text-justify">
-                  O mesmo rigor que orienta nossa prática junto a empresas e
-                  instituições também se aplica ao atendimento de pessoas
-                  físicas. Demandas familiares, sucessórias e imobiliárias
-                  recebem tratamento estratégico e sensível, sempre com foco em
-                  preservar patrimônios, prevenir litígios e garantir soluções
-                  de longo prazo.
-                </p>
-
-                <p className="text-justify">
-                  Nosso propósito é transformar complexidade em clareza,
-                  conduzindo clientes com segurança nas relações legais e
-                  operações de grande relevância. Atuamos para proteger
-                  patrimônios, fortalecer empresas e oferecer estabilidade
-                  jurídica em um mundo em constante transformação.
-                </p>
-
-                <p className="text-justify">
                   Toda trajetória sólida nasce da combinação entre vivência
                   prática e rigor técnico. Foi assim que Marcio Gimenez
                   construiu sua carreira jurídica: unindo clareza em meio à

@@ -14,14 +14,16 @@ import SectionHeader from '../sectionElements/SectionHeader'
 import HowItWorksCard from '../cards/HowItWorksCard'
 import WhatsappForm from '../interactives/WhatsappForm'
 
-export default function FormAndLocation({ colorMode }) {
+export default function FormAndLocation({ colorMode, paddingTop, className }) {
   const [visible, setVisible] = useState(false)
   const [modalContent, setModalContent] = useState('')
   const [modalTitle, setModalTitle] = useState('')
 
   return (
-    <SectionArea className="bg-bgSectionDark" id="maps">
-      <SectionWrapper className="flex flex-col desktop1:flex-row-reverse gap-[40px] desktop2:gap-0 desktop1:justify-between desktop1:items-center">
+    <SectionArea className="bg-bgSectionDark" id="maps" paddingtop={paddingTop}>
+      <SectionWrapper
+        className={`flex flex-col desktop1:flex-row-reverse gap-[40px] desktop2:gap-0 desktop1:justify-between desktop1:items-center ${className}`}
+      >
         <MotionDivDownToUp className="flex-col w-full flex justify-center items-center ">
           <SectionHeader
             className="text-center"
