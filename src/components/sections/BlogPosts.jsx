@@ -47,6 +47,8 @@ function BlogPosts() {
                         <img
                           src={post.featured_image}
                           alt="Imagem do post"
+                          width={168}
+                          height={123}
                           className=""
                         />
                       )
