@@ -59,7 +59,7 @@ export default function About({
       <SectionWrapper className="flex flex-col desktop1:flex-row-reverse gap-[40px] desktop1:gap-x-[40px] desktop2:gap-0 desktop1:justify-between">
         <div className="desktop1:w-full ">
           <SectionHeader
-            className="text-center"
+            className="text-center m-auto"
             // miniTitle={content.texts.about.miniTag}
             sectionHeaderTitle={content.texts.about.title}
             sectionHeaderSubtitle={content.texts.about.subtitle}
@@ -68,9 +68,10 @@ export default function About({
             titleColorSet={titleColor}
             subtitleColorSet="text-bgSectionDark"
             miniTitleBgColor={false}
+            animation={false}
           />
           <div className="flex flex-col gap-8 desktop1:gap-0 desktop1:flex-row-reverse justify-between">
-            <MotionDivDownToUp className="relative w-[90%] desktop1:w-[600px] aspect-[3/1] flex justify-center m-auto desktop1:m-0">
+            <div className="relative w-[90%] desktop1:w-[600px] aspect-[3/1] flex justify-center m-auto desktop1:m-0">
               <img
                 src={content.texts.about.imagem.img}
                 alt={content.texts.about.imagem.alt}
@@ -78,15 +79,15 @@ export default function About({
                 width={540}
                 height={416}
               />
-            </MotionDivDownToUp>
-            <MotionDivDownToUp className="text-center desktop1:text-start desktop1:w-[50%] ">
+            </div>
+            <div className="text-center desktop1:text-start desktop1:w-[50%] ">
               {modal ? (
                 <ParagraphWithFading colorMode={colorMode} />
               ) : (
                 <ParagraphSemFading colorMode={colorMode} />
               )}
               {modal && <AboutModal colorMode={colorMode} />}
-            </MotionDivDownToUp>
+            </div>
           </div>
         </div>
       </SectionWrapper>
