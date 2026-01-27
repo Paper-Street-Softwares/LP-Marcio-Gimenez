@@ -101,6 +101,7 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
             <div className="flex justify-center w-full relative overflow-hidden">
               <div className="w-full h-full relative">
                 <ImageGallery
+                  fetchpriority="high"
                   items={images}
                   showNav={false}
                   showFullscreenButton={false}
