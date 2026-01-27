@@ -25,6 +25,9 @@ import ExpedienteSecondFooter from '../sectionElements/footer/ExpedienteSecondFo
 import InstagramSecundaryFooter from '../sectionElements/footer/InstagramSecundaryFooter.jsx'
 import Button from '../../components/interactives/Button.jsx'
 import { useNavigate } from 'react-router-dom'
+import logoInsta from '../../assets/imgs/logo/instagram.webp'
+import logoFacebook from '../../assets/imgs/logo/facebook.webp'
+import logoLinkedin from '../../assets/imgs/logo/linkedin.webp'
 
 export default function FooterSocial({
   colorMode,
@@ -139,7 +142,7 @@ export default function FooterSocial({
                   aria-label="Link para o Instagram"
                 >
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                    src={logoInsta}
                     alt="Logo do Instagram"
                     className="w-[50px] rounded-md"
                     width={50}
@@ -152,7 +155,7 @@ export default function FooterSocial({
                   aria-label="Link para o LinkedIn"
                 >
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bGEl9v47XieEtHyj0TqTr1tOXJmib-KHtw&s"
+                    src={logoLinkedin}
                     alt="Logo do LinkedIn"
                     className="w-[50px] rounded-md bg-white"
                     width={50}
@@ -165,7 +168,7 @@ export default function FooterSocial({
                   aria-label="Link para o Facebook"
                 >
                   <img
-                    src="https://cdn-icons-png.flaticon.com/256/124/124010.png"
+                    src={logoFacebook}
                     alt="Logo do Facebook"
                     className="w-[50px] rounded-md bg-white"
                     width={50}
