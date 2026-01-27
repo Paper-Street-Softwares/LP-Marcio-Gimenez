@@ -154,7 +154,7 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                     }
                   `}
                 </style>
-                {/* <div className="absolute inset-0 bg-black opacity-40 z-10"></div> */}
+                <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
               </div>
 
               {/* Texto sobreposto com animação suave */}
