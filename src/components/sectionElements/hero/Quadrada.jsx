@@ -8,6 +8,10 @@ import heroImg1 from '../../../assets/imgs/hero/imgHero1.webp'
 import heroImg2 from '../../../assets/imgs/hero/imgHero2.webp'
 import heroImg3 from '../../../assets/imgs/hero/imgHero3.webp'
 import heroImg4 from '../../../assets/imgs/hero/imgHero4.webp'
+import heroImg1Mobile from '../../../assets/imgs/hero/imgHero1Mobile.webp'
+import heroImg2Mobile from '../../../assets/imgs/hero/imgHero2Mobile.webp'
+import heroImg3Mobile from '../../../assets/imgs/hero/imgHero3Mobile.webp'
+import heroImg4Mobile from '../../../assets/imgs/hero/imgHero4Mobile.webp'
 // import heroImg5 from "../../../assets/imgs/hero/imgHero5.webp";
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -23,31 +27,82 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
 
   const images = [
     {
-      original: heroImg1,
+      original: heroImg1, // fallback
       thumbnail: heroImg1,
       originalAlt: 'Primeira ilustrativa',
       thumbnailAlt: 'Primeira ilustrativa',
+
+      srcSet: `
+      ${heroImg1Mobile} 480w,
+      ${heroImg1} 1200w
+    `,
+      sizes: '(max-width: 768px) 100vw, 1200px',
     },
     {
       original: heroImg2,
       thumbnail: heroImg2,
       originalAlt: 'Segunda ilustrativa',
       thumbnailAlt: 'Segunda ilustrativa',
+
+      srcSet: `
+      ${heroImg2Mobile} 480w,
+      ${heroImg2} 1200w
+    `,
+      sizes: '(max-width: 768px) 100vw, 1200px',
     },
     {
       original: heroImg3,
       thumbnail: heroImg3,
       originalAlt: 'Terceira ilustrativa',
       thumbnailAlt: 'Terceira ilustrativa',
+
+      srcSet: `
+      ${heroImg3Mobile} 480w,
+      ${heroImg3} 1200w
+    `,
+      sizes: '(max-width: 768px) 100vw, 1200px',
     },
     {
       original: heroImg4,
       thumbnail: heroImg4,
-      originalAlt: 'Quarta ilustrativa',
-      thumbnailAlt: 'Quarta ilustrativa',
+      originalAlt: 'Terceira ilustrativa',
+      thumbnailAlt: 'Terceira ilustrativa',
+
+      srcSet: `
+      ${heroImg4Mobile} 480w,
+      ${heroImg4} 1200w
+    `,
+      sizes: '(max-width: 768px) 100vw, 1200px',
     },
-    // { original: heroImg5 },
   ]
+
+  // const images = [
+  //   {
+  //     original: heroImg1,
+  //     thumbnail: heroImg1,
+  //     originalAlt: 'Primeira ilustrativa',
+  //     thumbnailAlt: 'Primeira ilustrativa',
+  //   },
+  //   {
+  //     original: heroImg2,
+  //     thumbnail: heroImg2,
+  //     originalAlt: 'Segunda ilustrativa',
+  //     thumbnailAlt: 'Segunda ilustrativa',
+  //   },
+  //   {
+  //     original: heroImg3,
+  //     thumbnail: heroImg3,
+  //     originalAlt: 'Terceira ilustrativa',
+  //     thumbnailAlt: 'Terceira ilustrativa',
+  //   },
+  //   {
+  //     original: heroImg4,
+  //     thumbnail: heroImg4,
+  //     originalAlt: 'Quarta ilustrativa',
+  //     thumbnailAlt: 'Quarta ilustrativa',
+  //   },
+  //   // { original: heroImg5 },
+  // ]
 
   const captions = [
     'Segurança Jurídica construída com experiência e técnica',
@@ -91,7 +146,6 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                       src={item.original}
                       alt={item.originalAlt}
                       className="w-full h-full object-cover"
-                      loading="eager"
                       fetchpriority="high"
                     />
                   )}
