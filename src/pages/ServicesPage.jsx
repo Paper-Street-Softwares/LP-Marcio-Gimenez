@@ -15,10 +15,11 @@ export default function ServicesPage() {
         phoneTerciario={false}
         expedientesecond={false}
         addres={true}
+        colorMode="light"
       />
 
       <button className="bg-bgSectionDark border-white border-2 fixed bottom-2 left-8 p-4 rounded-full hover:scale-105 duration-300 transition-all">
-        <a href="https://lp-marcio-gimenez.vercel.app/servicos">
+        <a href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

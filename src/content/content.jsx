@@ -1026,7 +1026,7 @@ const content = {
       labelLinkedin: 'Siga-nos no LinkedIn',
       labelX: 'Siga-nos no X',
       paragraph: (
-        <div>
+        <div className="opacity-55 text-justify">
           Com mais de duas décadas de atuação, o escritório se destaca pela
           combinação de rigor técnico e visão estratégica, oferecendo soluções
           jurídicas que aliam experiência administrativa e prática empresarial.
@@ -1235,6 +1235,15 @@ const content = {
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',
+    },
+    contato: {
+      title: (
+        <h1 className="text-title5 leading-[35px]">
+          Nossos canais de atendimento
+        </h1>
+      ),
+      subtitle:
+        'O primeiro passo para a solução jurídica do seu caso começa aqui. Escolha o canal de sua preferência e inicie sua estratégia conosco.',
     },
     footer: {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,

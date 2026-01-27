@@ -1,12 +1,12 @@
-import React from "react";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import Button from "../interactives/Button";
-import { useNavigate } from "react-router-dom";
+import React from 'react'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import Button from '../interactives/Button'
+import { useNavigate } from 'react-router-dom'
 
 export default function PrivacySection() {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <SectionArea
@@ -18,15 +18,16 @@ export default function PrivacySection() {
           <div className="flex flex-col gap-8 desktop1:gap-0 desktop1:flex-row-reverse justify-between">
             <MotionDivDownToUp className="text-start desktop1:w-[50%] m-auto ">
               <Button
+                noPadding
                 aria-label="Voltar"
                 label="Voltar"
                 onClick={() => {
-                  navigate("/");
-                  window.scrollTo(0, 0);
+                  navigate('/')
+                  window.scrollTo(0, 0)
                 }}
                 size="small"
                 animation
-                className="w-[100%] underline px-0"
+                className="w-fit border-b mb-2"
                 color="bg-transparent"
                 textclassName="text-white"
               />
@@ -78,7 +79,7 @@ export default function PrivacySection() {
                 <br />
                 <strong className="text-white">
                   <p className="mb-1">
-                    {" "}
+                    {' '}
                     2. Para quais finalidades utilizamos os dados
                   </p>
                 </strong>
@@ -177,7 +178,7 @@ export default function PrivacySection() {
                 <br />
                 <br />
                 <h1 className="text-title5 text-white">Termos de uso:</h1>
-                <br />O website do{" "}
+                <br />O website do{' '}
                 <strong className="text-white">Marcio Gimenez Advocacia</strong>
                 , localizado no endereço eletrônico marciogimenez.com.br, tem
                 como finalidade exclusiva fornecer informações institucionais
@@ -200,7 +201,7 @@ export default function PrivacySection() {
                 logotipos, gráficos e materiais de apoio, está protegido pelas
                 leis de Propriedade Intelectual e não pode ser reproduzido,
                 distribuído ou utilizado para fins comerciais sem a expressa
-                autorização prévia e por escrito de{" "}
+                autorização prévia e por escrito de{' '}
                 <strong className="text-white">
                   Marcio Gimenez Advocacia.
                 </strong>
@@ -230,8 +231,8 @@ export default function PrivacySection() {
                 <strong className="text-white">
                   <p className="mb-2"> Limitação de Responsabilidade</p>
                 </strong>
-                O{" "}
-                <strong className="text-white">Marcio Gimenez Advocacia</strong>{" "}
+                O{' '}
+                <strong className="text-white">Marcio Gimenez Advocacia</strong>{' '}
                 envida esforços para manter as informações do site sempre
                 corretas e atualizadas, mas não garante a inexistência de erros,
                 falhas técnicas ou interrupções. O uso das informações
@@ -242,8 +243,8 @@ export default function PrivacySection() {
                 <strong className="text-white">
                   <p className="mb-2"> Alterações nos Termos de Uso</p>
                 </strong>
-                O{" "}
-                <strong className="text-white">Marcio Gimenez Advocacia</strong>{" "}
+                O{' '}
+                <strong className="text-white">Marcio Gimenez Advocacia</strong>{' '}
                 reserva-se o direito de alterar, atualizar ou revisar estes
                 Termos de Uso a qualquer tempo, sem aviso prévio. Recomendamos
                 que os usuários consultem regularmente esta página para
@@ -251,15 +252,16 @@ export default function PrivacySection() {
               </p>
 
               <Button
+                noPadding
                 aria-label="Voltar"
                 label="Voltar"
                 onClick={() => {
-                  navigate("/");
-                  window.scrollTo(0, 0);
+                  navigate('/')
+                  window.scrollTo(0, 0)
                 }}
                 size="small"
                 animation
-                className="w-[100%] underline px-0"
+                className="w-fit border-b mt-2"
                 color="bg-transparent"
                 textclassName="text-white"
               />
@@ -268,5 +270,5 @@ export default function PrivacySection() {
         </div>
       </SectionWrapper>
     </SectionArea>
-  );
+  )
 }

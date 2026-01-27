@@ -1,6 +1,6 @@
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import BlogButton from "../interactives/BlogButton";
-import Button from "../interactives/BlogButton";
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import BlogButton from '../interactives/BlogButton'
+import Button from '../interactives/BlogButton'
 
 export default function WordPressBlogCard({ img, title, subtitle, link }) {
   return (
@@ -8,7 +8,7 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
       <MotionDivDownToUp>
         <div
           id="cardBlog"
-          className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[210px] font-mainFont flex flex-col desktop1:max-w-[300px] desktop1:w-[280px] desktop3:max-w-[375px] shadow-custom-opacity shadow-shadowBlogs/30 bg-bgSectionLight rounded-sm p-[20px]"
+          className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[210px] font-mainFont flex flex-col desktop1:max-w-[300px] desktop1:w-[280px] desktop3:max-w-[375px] shadow-custom-opacity shadow-shadowBlogs/0 bg-bgSectionLight rounded-sm p-[20px] border"
         >
           <div className="w-full max-h-[220px] tablet1:h-[300px] tablet2:h-auto flex justify-center items-center overflow-hidden">
             <div className="w-full">{img}</div>
@@ -20,7 +20,7 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
             {title}
           </h1>
           <h2
-            className="text-paragraph2 desktop2:text-paragraph3 mb-[32px] text-gray-600 leading-[18px] desktop1:leading-[21px]  "
+            className="text-paragraph2 opacity-80 font-secondFont desktop2:text-paragraph3 mb-[32px] text-gray-600 leading-[18px] desktop1:leading-[21px]  "
             title="blogSubtitle"
           >
             {subtitle}
@@ -55,5 +55,5 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
         </div>
       </MotionDivDownToUp>
     </div>
-  );
+  )
 }

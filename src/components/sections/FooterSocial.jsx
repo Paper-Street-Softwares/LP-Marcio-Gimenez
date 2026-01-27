@@ -1,30 +1,30 @@
-import content, { infos } from "../../content/content";
-import XFooter from "../sectionElements/footer/XFooter.jsx";
-import SectionArea from "../sectionElements/SectionArea.jsx";
-import ObsFooter from "../sectionElements/footer/ObsFooter.jsx";
-import LogoFooter from "../sectionElements/footer/LogoFooter.jsx";
-import SectionWrapper from "../sectionElements/SectionWrapper.jsx";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp.jsx";
-import PhoneFooter from "../sectionElements/footer/PhoneFooter.jsx";
-import EmailFooter from "../sectionElements/footer/EmailFooter.jsx";
-import AdressFooter from "../sectionElements/footer/AdressFooter.jsx";
-import MidTextFooter from "../sectionElements/footer/MidTextFooter.jsx";
-import FacebookFooter from "../sectionElements/footer/FacebookFooter.jsx";
-import LinkedinFooter from "../sectionElements/footer/LinkedinFooter.jsx";
-import PhoneSecundario from "../sectionElements/footer/PhoneSecundario.jsx";
-import CopyrightFooter from "../sectionElements/footer/CopyrightFooter.jsx";
-import InstagramFooter from "../sectionElements/footer/InstagramFooter.jsx";
-import ParagrapfFooter from "../sectionElements/footer/ParagrapfFooter.jsx";
-import ExpedienteFooter from "../sectionElements/footer/ExpedienteFooter.jsx";
-import AdressSecundarioFooter from "../sectionElements/footer/AdressSecundario.jsx";
-import NavegationTextFooter from "../sectionElements/footer/NavegationTextFooter.jsx";
-import LinksNavegationFooter from "../sectionElements/footer/LinksNavegationFooter.jsx";
-import PhoneTerciario from "../sectionElements/footer/PhoneTerciario.jsx";
-import TikTokFooter from "../sectionElements/footer/TikTokFooter.jsx";
-import ExpedienteSecondFooter from "../sectionElements/footer/ExpedienteSecondFooter.jsx";
-import InstagramSecundaryFooter from "../sectionElements/footer/InstagramSecundaryFooter.jsx";
-import Button from "../../components/interactives/Button.jsx";
-import { useNavigate } from "react-router-dom";
+import content, { infos } from '../../content/content'
+import XFooter from '../sectionElements/footer/XFooter.jsx'
+import SectionArea from '../sectionElements/SectionArea.jsx'
+import ObsFooter from '../sectionElements/footer/ObsFooter.jsx'
+import LogoFooter from '../sectionElements/footer/LogoFooter.jsx'
+import SectionWrapper from '../sectionElements/SectionWrapper.jsx'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp.jsx'
+import PhoneFooter from '../sectionElements/footer/PhoneFooter.jsx'
+import EmailFooter from '../sectionElements/footer/EmailFooter.jsx'
+import AdressFooter from '../sectionElements/footer/AdressFooter.jsx'
+import MidTextFooter from '../sectionElements/footer/MidTextFooter.jsx'
+import FacebookFooter from '../sectionElements/footer/FacebookFooter.jsx'
+import LinkedinFooter from '../sectionElements/footer/LinkedinFooter.jsx'
+import PhoneSecundario from '../sectionElements/footer/PhoneSecundario.jsx'
+import CopyrightFooter from '../sectionElements/footer/CopyrightFooter.jsx'
+import InstagramFooter from '../sectionElements/footer/InstagramFooter.jsx'
+import ParagrapfFooter from '../sectionElements/footer/ParagrapfFooter.jsx'
+import ExpedienteFooter from '../sectionElements/footer/ExpedienteFooter.jsx'
+import AdressSecundarioFooter from '../sectionElements/footer/AdressSecundario.jsx'
+import NavegationTextFooter from '../sectionElements/footer/NavegationTextFooter.jsx'
+import LinksNavegationFooter from '../sectionElements/footer/LinksNavegationFooter.jsx'
+import PhoneTerciario from '../sectionElements/footer/PhoneTerciario.jsx'
+import TikTokFooter from '../sectionElements/footer/TikTokFooter.jsx'
+import ExpedienteSecondFooter from '../sectionElements/footer/ExpedienteSecondFooter.jsx'
+import InstagramSecundaryFooter from '../sectionElements/footer/InstagramSecundaryFooter.jsx'
+import Button from '../../components/interactives/Button.jsx'
+import { useNavigate } from 'react-router-dom'
 
 export default function FooterSocial({
   colorMode,
@@ -40,27 +40,36 @@ export default function FooterSocial({
   phoneTerciario,
   expedientesecond,
   instagramSecundary,
+  bgButton,
+  textButton,
 }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   // Define estilos com base no colorMode
-  let footerBackground = "";
-  let textColor = "";
+  let footerBackground = ''
+  let textColor = ''
 
   switch (colorMode) {
-    case "dark":
-      footerBackground = "bg-bgFixedDark";
-      textColor = "text-white";
-      break;
-    case "light":
-      footerBackground = "bg-bgFixedLight";
-      textColor = "text-black";
-      break;
+    case 'dark':
+      footerBackground = 'bg-bgFixedDark'
+      textColor = 'text-white'
+      bgButton = 'bg-primary'
+      textButton = 'text-white'
+      break
+    case 'light':
+      footerBackground = 'bg-white'
+      textColor = 'text-black'
+      bgButton = 'bg-buttonColor'
+      textButton = 'text-white'
+
+      break
     default:
-      footerBackground = "bg-white";
+      footerBackground = 'bg-bgSectionDark'
       // "bg-gradient-to-b from-bgSectionDark to-bgSectionDark bg-cover bg-center bg-no-repeat";
-      textColor = "text-secondary";
-      break;
+      textColor = 'text-white'
+      bgButton = 'bg-white'
+      textButton = 'text-black'
+      break
   }
 
   return (
@@ -148,7 +157,7 @@ export default function FooterSocial({
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <h5> Newsletter</h5>
+              <h5> Informação</h5>
               <div className="flex flex-col">
                 <input
                   type="text"
@@ -156,18 +165,26 @@ export default function FooterSocial({
                   placeholder="E-mail"
                   className="w-[290px] bg-primary/20 px-2 h-10"
                 />
-                <button className="bg-bgSectionDark w-[290px] text-white py-2 text-paragraph2">
+                <Button
+                  label="Inscrever-se"
+                  className="w-full mt-2"
+                  size="small"
+                  buttonLink="mailto:contato@marciogimenez.com.br"
+                  color={`${bgButton}`}
+                  labelColor={`${textButton}`}
+                />
+                {/* <button className="bg-bgSectionDark w-[290px] text-white py-2 text-paragraph2">
                   <a href="mailto:contato@marciogimenez.com.br">INSCREVER-SE</a>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
           <button
             onClick={() => {
-              navigate("/privacidade");
-              window.scrollTo(0, 0);
+              navigate('/privacidade')
+              window.scrollTo(0, 0)
             }}
-            className="bg-primary/30 py-1 px-4"
+            className="bg-primary/30 py-1 px-4 rounded-sm scale-100 hover:scale-95 cursor-pointer transition-all duration-500"
           >
             Política de Privacidade
           </button>
@@ -188,5 +205,5 @@ export default function FooterSocial({
         </SectionWrapper>
       </SectionArea>
     </footer>
-  );
+  )
 }

@@ -1,25 +1,25 @@
-import { useState, useEffect } from "react";
-import WordPressBlogCard from "../cards/WordPressBlogCard";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import SectionHeader from "../sectionElements/SectionHeader";
-import content from "../../content/content";
-import Paragraphs from "../sectionElements/Paragraphs";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import { useState, useEffect } from 'react'
+import WordPressBlogCard from '../cards/WordPressBlogCard'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import SectionHeader from '../sectionElements/SectionHeader'
+import content from '../../content/content'
+import Paragraphs from '../sectionElements/Paragraphs'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 function BlogPosts() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([])
 
   useEffect(() => {
     fetch(content.texts.blog.blogApiEndpoint)
       .then((response) => response.json())
       .then((data) => setPosts(data.posts)) // Ajustado para pegar a chave correta
-      .catch((error) => console.error("Erro ao buscar posts:", error));
-  }, []);
+      .catch((error) => console.error('Erro ao buscar posts:', error))
+  }, [])
 
   return (
     <div>
-      <SectionArea className="bg-bgSectionDark" id="blog" paddingbot={true}>
+      <SectionArea className="bg-white" id="blog" paddingbot={true}>
         <SectionWrapper>
           <SectionHeader
             className="text-center"
@@ -27,8 +27,8 @@ function BlogPosts() {
             sectionHeaderTitle={content.texts.blog.title}
             sectionHeaderSubtitle={content.texts.blog.subtitle}
             color=""
-            titleColorSet="text-white"
-            subtitleColorSet="text-white"
+            titleColorSet="text-black"
+            subtitleColorSet="text-black"
             type=""
             miniTitleBgColor={false}
           />
@@ -59,7 +59,7 @@ function BlogPosts() {
                         dangerouslySetInnerHTML={{
                           __html:
                             post.excerpt.length > 100
-                              ? post.excerpt.substring(0, 100) + "..."
+                              ? post.excerpt.substring(0, 100) + '...'
                               : post.excerpt,
                         }}
                       />
@@ -72,7 +72,7 @@ function BlogPosts() {
           </ul>
 
           <MotionDivDownToUp>
-            <Paragraphs className="text-center text-white underline transition hover:scale-110">
+            <Paragraphs className="text-center text-black underline transition hover:scale-110">
               <a href={content.texts.blog.blogLink} target="_blank">
                 {content.texts.blog.label}
               </a>
@@ -81,7 +81,7 @@ function BlogPosts() {
         </SectionWrapper>
       </SectionArea>
     </div>
-  );
+  )
 
   // return (
   //   <div>
@@ -105,4 +105,4 @@ function BlogPosts() {
   // );
 }
 
-export default BlogPosts;
+export default BlogPosts

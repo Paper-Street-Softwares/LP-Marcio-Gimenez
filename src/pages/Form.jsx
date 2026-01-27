@@ -1,21 +1,29 @@
-import React from "react";
-import Navbar from "../components/sections/NavbarSocial";
-import FooterSocial from "../components/sections/FooterSocial";
-import PrivacySection from "../components/sections/PrivacySection";
-import BackToTopButton from "../components/interactives/BackToTopButton";
-import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
-import SectionHeader from "../components/sectionElements/SectionHeader";
-import content from "../content/content";
-import SectionArea from "../components/sectionElements/SectionArea";
-import FormAndLocation from "../components/sections/FormAndLocation";
+import React from 'react'
+import Navbar from '../components/sections/NavbarSocial'
+import FooterSocial from '../components/sections/FooterSocial'
+import PrivacySection from '../components/sections/PrivacySection'
+import BackToTopButton from '../components/interactives/BackToTopButton'
+import FloatingWhatsappButton from '../components/interactives/FloatingWhatsappButton'
+import SectionHeader from '../components/sectionElements/SectionHeader'
+import content from '../content/content'
+import SectionArea from '../components/sectionElements/SectionArea'
+import FormAndLocation from '../components/sections/FormAndLocation'
+import NavbarSocial from '../components/sections/NavbarSocial'
 
-export default function Form() {
+export default function Form({ colorMode }) {
   return (
     <>
-      <div className="bg-bgSectionDark h-48 flex items-center justify-center">
+      <NavbarSocial />
+      <div className="bg-bgSectionDark h-48 flex items-center justify-center pt-[200px] phone3:pt-[240px] tablet1:pt-[250px] desktop1:pt-[200px]">
         <h1 className="text-primary text-title7 font-mainFont">CONTATO</h1>
       </div>
-      <FormAndLocation />
+
+      <FormAndLocation
+        colorMode="light"
+        paddingTop={false}
+        className={`pt-6`}
+      />
+      <FooterSocial colorMode="light" />
 
       <button className="bg-bgSectionDark fixed bottom-2 left-8 p-4 rounded-full hover:scale-105 duration-300 transition-all">
         <a href="/">
@@ -37,5 +45,5 @@ export default function Form() {
         </a>
       </button>
     </>
-  );
+  )
 }

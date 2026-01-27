@@ -58,7 +58,7 @@ export default function Index() {
       <FormAndLocation />
 
       <FooterSocial
-        colorMode={colorMode}
+        colorMode="light"
         addresSecundario={false}
         phoneTerciario={false}
         expedientesecond={false}

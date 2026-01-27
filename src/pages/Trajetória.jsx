@@ -1,11 +1,13 @@
 import AboutCompleto from '../components/sections/AboutCompleto'
 import FormAndLocation from '../components/sections/FormAndLocation'
 import FooterSocial from '../components/sections/FooterSocial'
+import NavbarSocial from '../components/sections/NavbarSocial'
 
 export default function Trajetoria() {
   return (
     <>
-      <div className="bg-bgSectionDark h-48 flex items-center justify-center">
+      <NavbarSocial />
+      <div className="bg-bgSectionDark h-96 pt-36 flex items-center justify-center">
         <h1 className="text-primary text-title6 font-mainFont ">TRAJETÓRIA</h1>
       </div>
       <AboutCompleto />
