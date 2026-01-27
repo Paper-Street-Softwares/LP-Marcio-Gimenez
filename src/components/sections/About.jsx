@@ -74,7 +74,9 @@ export default function About({
               <img
                 src={content.texts.about.imagem.img}
                 alt={content.texts.about.imagem.alt}
-                className=" w-[90%]"
+                className="w-[90%]"
+                width={540}
+                height={416}
               />
             </MotionDivDownToUp>
             <MotionDivDownToUp className="text-center desktop1:text-start desktop1:w-[50%] ">

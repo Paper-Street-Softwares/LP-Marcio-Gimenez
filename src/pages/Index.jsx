@@ -24,48 +24,50 @@ export default function Index() {
     <>
       <Navbar colorMode={colorMode} />
 
-      <Hero
-        colorMode={colorMode}
-        appDownloadButtons={false}
-        defaultHero={true}
-        influencer={false}
-        mesclado={false}
-      />
-      <About modal={true} showGallery={false} colorMode={colorMode} />
+      <main>
+        <Hero
+          colorMode={colorMode}
+          appDownloadButtons={false}
+          defaultHero={true}
+          influencer={false}
+          mesclado={false}
+        />
+        <About modal={true} showGallery={false} colorMode={colorMode} />
 
-      <Features
-        colorMode={colorMode}
-        defaultFeature={false}
-        button={true}
-        modalWithCards={false}
-        paragraphs={false}
-        sixCards={false}
-        paragraphsModal={false}
-      />
+        <Features
+          colorMode={colorMode}
+          defaultFeature={false}
+          button={true}
+          modalWithCards={false}
+          paragraphs={false}
+          sixCards={false}
+          paragraphsModal={false}
+        />
 
-      {/* <AboutInstagram
+        {/* <AboutInstagram
         colorMode={colorMode}
         instagram={true}
         facebook={true}
         socialPrint={true}
       /> */}
-      {/* <Cta colorMode={colorMode} /> */}
-      {/* <CtaSecondary /> */}
-      {/* <Steps colorMode={colorMode} /> */}
-      <BlogPosts />
-      {/* <Faq colorMode={colorMode} /> */}
-      {/* <Maps colorMode={colorMode} /> */}
-      <FormAndLocation />
+        {/* <Cta colorMode={colorMode} /> */}
+        {/* <CtaSecondary /> */}
+        {/* <Steps colorMode={colorMode} /> */}
+        <BlogPosts />
+        {/* <Faq colorMode={colorMode} /> */}
+        {/* <Maps colorMode={colorMode} /> */}
+        <FormAndLocation />
 
-      <FooterSocial
-        colorMode="light"
-        addresSecundario={false}
-        phoneTerciario={false}
-        expedientesecond={false}
-        addres={true}
-      />
-      <FloatingWhatsappButton />
-      <BackToTopButton />
+        <FooterSocial
+          colorMode="light"
+          addresSecundario={false}
+          phoneTerciario={false}
+          expedientesecond={false}
+          addres={true}
+        />
+        <FloatingWhatsappButton />
+        <BackToTopButton />
+      </main>
     </>
   )
 }

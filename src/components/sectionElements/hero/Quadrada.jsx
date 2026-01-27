@@ -22,10 +22,30 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const images = [
-    { original: heroImg1 },
-    { original: heroImg2 },
-    { original: heroImg3 },
-    { original: heroImg4 },
+    {
+      original: heroImg1,
+      thumbnail: heroImg1,
+      originalAlt: 'Primeira ilustrativa',
+      thumbnailAlt: 'Primeira ilustrativa',
+    },
+    {
+      original: heroImg2,
+      thumbnail: heroImg2,
+      originalAlt: 'Segunda ilustrativa',
+      thumbnailAlt: 'Segunda ilustrativa',
+    },
+    {
+      original: heroImg3,
+      thumbnail: heroImg3,
+      originalAlt: 'Terceira ilustrativa',
+      thumbnailAlt: 'Terceira ilustrativa',
+    },
+    {
+      original: heroImg4,
+      thumbnail: heroImg4,
+      originalAlt: 'Quarta ilustrativa',
+      thumbnailAlt: 'Quarta ilustrativa',
+    },
     // { original: heroImg5 },
   ]
 
@@ -66,7 +86,17 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                   slideInterval={10000}
                   slideDuration={1000}
                   additionalClass="custom-gallery"
+                  renderItem={(item) => (
+                    <img
+                      src={item.original}
+                      alt={item.originalAlt}
+                      className="w-full h-full object-cover"
+                      loading="eager"
+                      fetchpriority="high"
+                    />
+                  )}
                 />
+
                 <style>
                   {`
                     .custom-gallery .image-gallery-slide img {

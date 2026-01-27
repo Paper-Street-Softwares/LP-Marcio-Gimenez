@@ -133,31 +133,49 @@ export default function FooterSocial({
             <div className="flex flex-col gap-3">
               <h1>Nossas Redes Sociais</h1>
               <div className="flex gap-5">
-                <a href={content.texts.links.instagram} target="_blank">
+                <a
+                  href={content.texts.links.instagram}
+                  target="_blank"
+                  aria-label="Link para o Instagram"
+                >
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
-                    alt=""
+                    alt="Logo do Instagram"
                     className="w-[50px] rounded-md"
+                    width={50}
+                    height={50}
                   />
                 </a>
-                <a href={content.texts.links.linkedin} target="_blank">
+                <a
+                  href={content.texts.links.linkedin}
+                  target="_blank"
+                  aria-label="Link para o LinkedIn"
+                >
                   <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bGEl9v47XieEtHyj0TqTr1tOXJmib-KHtw&s"
-                    alt=""
+                    alt="Logo do LinkedIn"
                     className="w-[50px] rounded-md bg-white"
+                    width={50}
+                    height={50}
                   />
                 </a>
-                <a href={content.texts.links.facebook} target="_blank">
+                <a
+                  href={content.texts.links.facebook}
+                  target="_blank"
+                  aria-label="Link para o Facebook"
+                >
                   <img
                     src="https://cdn-icons-png.flaticon.com/256/124/124010.png"
-                    alt=""
+                    alt="Logo do Facebook"
                     className="w-[50px] rounded-md bg-white"
+                    width={50}
+                    height={50}
                   />
                 </a>
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <h5> Informação</h5>
+              <h1> Informação</h1>
               <div className="flex flex-col">
                 <input
                   type="text"
