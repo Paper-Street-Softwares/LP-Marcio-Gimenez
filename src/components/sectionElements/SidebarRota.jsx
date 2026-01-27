@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
-import { Sidebar } from "primereact/sidebar";
-import { Button as PrimeButton } from "primereact/button";
-import { Ripple } from "primereact/ripple";
-import "primeicons/primeicons.css";
-import { FileText } from "lucide-react";
-import Button from "../interactives/Button";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from 'react'
+import { Sidebar } from 'primereact/sidebar'
+import { Button as PrimeButton } from 'primereact/button'
+import { Ripple } from 'primereact/ripple'
+import 'primeicons/primeicons.css'
+import { FileText } from 'lucide-react'
+import Button from '../interactives/Button'
+import { useNavigate } from 'react-router-dom'
 
 import {
   HelpCircle,
@@ -13,39 +13,38 @@ import {
   ServerIcon,
   UserSearch,
   AlignJustify,
-} from "lucide-react";
-import { MapPinCheck } from "lucide-react";
-import { Link } from "react-scroll";
-import content from "../../content/content";
-import ButtonWithIconNavbar from "../interactives/ButtonWithIconNavbar";
+} from 'lucide-react'
+import { MapPinCheck } from 'lucide-react'
+import { Link } from 'react-scroll'
+import content from '../../content/content'
+import ButtonWithIconNavbar from '../interactives/ButtonWithIconNavbar'
 
 export default function SidebarRota({ colorMode }) {
-  const [visible, setVisible] = useState(false);
-  const [submenuVisible, setSubmenuVisible] = useState(true);
-  const [reportsSubmenuVisible, setReportsSubmenuVisible] = useState(false);
-  const [revenueSubmenuVisible, setRevenueSubmenuVisible] = useState(false);
-  const [aplicationSubmenuVisible, setAplicationSubmenuVisible] =
-    useState(true);
-  const [scrolled, setScrolled] = useState(false);
-  const navigate = useNavigate();
+  const [visible, setVisible] = useState(false)
+  const [submenuVisible, setSubmenuVisible] = useState(true)
+  const [reportsSubmenuVisible, setReportsSubmenuVisible] = useState(false)
+  const [revenueSubmenuVisible, setRevenueSubmenuVisible] = useState(false)
+  const [aplicationSubmenuVisible, setAplicationSubmenuVisible] = useState(true)
+  const [scrolled, setScrolled] = useState(false)
+  const navigate = useNavigate()
 
   const toggleSidebar = () => {
-    setVisible(!visible);
-  };
+    setVisible(!visible)
+  }
 
-  const [visibleSections, setVisibleSections] = useState([]);
+  const [visibleSections, setVisibleSections] = useState([])
 
   useEffect(() => {
-    const allIds = content.texts.navbar.menuId;
-    const existing = allIds.filter((id) => document.getElementById(id));
-    setVisibleSections(existing);
-  }, []);
+    const allIds = content.texts.navbar.menuId
+    const existing = allIds.filter((id) => document.getElementById(id))
+    setVisibleSections(existing)
+  }, [])
 
   return (
     <div className="inset-0 z-10 flex">
       <div
         className={`${
-          visible ? "block" : "hidden"
+          visible ? 'block' : 'hidden'
         } fixed inset-0 bg-darker opacity-50 lg:hidden`}
         onClick={toggleSidebar}
       />
@@ -57,9 +56,9 @@ export default function SidebarRota({ colorMode }) {
           className={`p-button-rounded p-button-outlined lg:hidden ${
             colorMode
               ? scrolled
-                ? "text-primary"
-                : "text-primary"
-              : "text-primary"
+                ? 'text-primary'
+                : 'text-primary'
+              : 'text-primary'
           } w-[40px] h-[40px]`}
           onClick={() => setVisible(true)}
         />
@@ -75,10 +74,10 @@ export default function SidebarRota({ colorMode }) {
               id="app-sidebar-2"
               className={`${
                 colorMode
-                  ? "bg-bgSectionDark"
-                  : "absolute top-0 left-0 flex-shrink-0 h-screen border-r-[1px] select-none bg-bgSectionDark surface-section lg:hidden lg:static z-1 surface-border border-neutral-700"
+                  ? 'bg-bgSectionDark'
+                  : 'absolute top-0 left-0 flex-shrink-0 h-screen border-r-[1px] select-none bg-bgSectionDark surface-section lg:hidden lg:static z-1 surface-border border-neutral-700'
               }`}
-              style={{ width: "280px" }}
+              style={{ width: '280px' }}
             >
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between flex-shrink-0 px-4 pt-6 ">
@@ -99,8 +98,8 @@ export default function SidebarRota({ colorMode }) {
                       outlined
                       className={`${
                         colorMode
-                          ? "text-white"
-                          : "h-2rem w-2rem p-[5px] text-white"
+                          ? 'text-white'
+                          : 'h-2rem w-2rem p-[5px] text-white'
                       }`}
                     ></PrimeButton>
                   </span>
@@ -112,8 +111,8 @@ export default function SidebarRota({ colorMode }) {
                       aria-label="Voltar ao Site"
                       label="Voltar ao Site"
                       onClick={() => {
-                        navigate("/");
-                        window.scrollTo(0, 0);
+                        navigate('/servicos')
+                        window.scrollTo(0, 0)
                       }}
                       animation
                       className="w-[100%] "
@@ -130,5 +129,5 @@ export default function SidebarRota({ colorMode }) {
         ></Sidebar>
       </div>
     </div>
-  );
+  )
 }

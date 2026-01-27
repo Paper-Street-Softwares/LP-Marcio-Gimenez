@@ -1,30 +1,30 @@
-import content, { infos } from "../../content/content";
-import XFooter from "../sectionElements/footer/XFooter.jsx";
-import SectionArea from "../sectionElements/SectionArea.jsx";
-import ObsFooter from "../sectionElements/footer/ObsFooter.jsx";
-import LogoFooter from "../sectionElements/footer/LogoFooter.jsx";
-import SectionWrapper from "../sectionElements/SectionWrapper.jsx";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp.jsx";
-import PhoneFooter from "../sectionElements/footer/PhoneFooter.jsx";
-import EmailFooter from "../sectionElements/footer/EmailFooter.jsx";
-import AdressFooter from "../sectionElements/footer/AdressFooter.jsx";
-import MidTextFooter from "../sectionElements/footer/MidTextFooter.jsx";
-import FacebookFooter from "../sectionElements/footer/FacebookFooter.jsx";
-import LinkedinFooter from "../sectionElements/footer/LinkedinFooter.jsx";
-import PhoneSecundario from "../sectionElements/footer/PhoneSecundario.jsx";
-import CopyrightFooter from "../sectionElements/footer/CopyrightFooter.jsx";
-import InstagramFooter from "../sectionElements/footer/InstagramFooter.jsx";
-import ParagrapfFooter from "../sectionElements/footer/ParagrapfFooter.jsx";
-import ExpedienteFooter from "../sectionElements/footer/ExpedienteFooter.jsx";
-import AdressSecundarioFooter from "../sectionElements/footer/AdressSecundario.jsx";
-import NavegationTextFooter from "../sectionElements/footer/NavegationTextFooter.jsx";
-import LinksNavegationFooter from "../sectionElements/footer/LinksNavegationFooter.jsx";
-import PhoneTerciario from "../sectionElements/footer/PhoneTerciario.jsx";
-import TikTokFooter from "../sectionElements/footer/TikTokFooter.jsx";
-import ExpedienteSecondFooter from "../sectionElements/footer/ExpedienteSecondFooter.jsx";
-import InstagramSecundaryFooter from "../sectionElements/footer/InstagramSecundaryFooter.jsx";
-import Button from "../../components/interactives/Button.jsx";
-import { useNavigate } from "react-router-dom";
+import content, { infos } from '../../content/content'
+import XFooter from '../sectionElements/footer/XFooter.jsx'
+import SectionArea from '../sectionElements/SectionArea.jsx'
+import ObsFooter from '../sectionElements/footer/ObsFooter.jsx'
+import LogoFooter from '../sectionElements/footer/LogoFooter.jsx'
+import SectionWrapper from '../sectionElements/SectionWrapper.jsx'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp.jsx'
+import PhoneFooter from '../sectionElements/footer/PhoneFooter.jsx'
+import EmailFooter from '../sectionElements/footer/EmailFooter.jsx'
+import AdressFooter from '../sectionElements/footer/AdressFooter.jsx'
+import MidTextFooter from '../sectionElements/footer/MidTextFooter.jsx'
+import FacebookFooter from '../sectionElements/footer/FacebookFooter.jsx'
+import LinkedinFooter from '../sectionElements/footer/LinkedinFooter.jsx'
+import PhoneSecundario from '../sectionElements/footer/PhoneSecundario.jsx'
+import CopyrightFooter from '../sectionElements/footer/CopyrightFooter.jsx'
+import InstagramFooter from '../sectionElements/footer/InstagramFooter.jsx'
+import ParagrapfFooter from '../sectionElements/footer/ParagrapfFooter.jsx'
+import ExpedienteFooter from '../sectionElements/footer/ExpedienteFooter.jsx'
+import AdressSecundarioFooter from '../sectionElements/footer/AdressSecundario.jsx'
+import NavegationTextFooter from '../sectionElements/footer/NavegationTextFooter.jsx'
+import LinksNavegationFooter from '../sectionElements/footer/LinksNavegationFooter.jsx'
+import PhoneTerciario from '../sectionElements/footer/PhoneTerciario.jsx'
+import TikTokFooter from '../sectionElements/footer/TikTokFooter.jsx'
+import ExpedienteSecondFooter from '../sectionElements/footer/ExpedienteSecondFooter.jsx'
+import InstagramSecundaryFooter from '../sectionElements/footer/InstagramSecundaryFooter.jsx'
+import Button from '../../components/interactives/Button.jsx'
+import { useNavigate } from 'react-router-dom'
 
 export default function FooterRota({
   colorMode,
@@ -41,26 +41,26 @@ export default function FooterRota({
   expedientesecond,
   instagramSecundary,
 }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   // Define estilos com base no colorMode
-  let footerBackground = "";
-  let textColor = "";
+  let footerBackground = ''
+  let textColor = ''
 
   switch (colorMode) {
-    case "dark":
-      footerBackground = "bg-bgFixedDark";
-      textColor = "text-white";
-      break;
-    case "light":
-      footerBackground = "bg-bgFixedLight";
-      textColor = "text-black";
-      break;
+    case 'dark':
+      footerBackground = 'bg-bgFixedDark'
+      textColor = 'text-white'
+      break
+    case 'light':
+      footerBackground = 'bg-bgFixedLight'
+      textColor = 'text-black'
+      break
     default:
       footerBackground =
-        "bg-gradient-to-b from-bgSectionDark to-bgSectionDark bg-cover bg-center bg-no-repeat";
-      textColor = "text-white";
-      break;
+        'bg-gradient-to-b from-bgSectionDark to-bgSectionDark bg-cover bg-center bg-no-repeat'
+      textColor = 'text-white'
+      break
   }
 
   return (
@@ -100,8 +100,8 @@ export default function FooterRota({
                       aria-label="Política de Privacidade"
                       label="Política de Privacidade"
                       onClick={() => {
-                        navigate("/privacidade");
-                        window.scrollTo(0, 0);
+                        navigate('/privacidade')
+                        window.scrollTo(0, 0)
                       }}
                       animation
                       className="w-[100%]"
@@ -121,8 +121,8 @@ export default function FooterRota({
                 aria-label="Voltar ao Site"
                 label="Voltar ao Site"
                 onClick={() => {
-                  navigate("/");
-                  window.scrollTo(0, 0);
+                  navigate('/servicos')
+                  window.scrollTo(0, 0)
                 }}
                 animation
                 className="w-[100%]"
@@ -138,5 +138,5 @@ export default function FooterRota({
         </SectionWrapper>
       </SectionArea>
     </footer>
-  );
+  )
 }
