@@ -116,22 +116,19 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                   additionalClass="custom-gallery"
                   renderItem={(item, index) => (
                     <picture>
-                      {/* Mobile até 768px */}
                       <source media="(max-width: 768px)" srcSet={item.mobile} />
-
-                      {/* Desktop a partir de 769px */}
                       <source
                         media="(min-width: 769px)"
                         srcSet={item.desktop}
                       />
 
-                      {/* Fallback obrigatório */}
                       <img
                         src={item.desktop}
                         alt={item.originalAlt}
                         className="w-full h-full object-cover"
-                        fetchpriority={index === 0 ? 'high' : 'auto'}
                         loading={index === 0 ? 'eager' : 'lazy'}
+                        fetchpriority={index === 0 ? 'high' : 'auto'}
+                        decoding="async"
                       />
                     </picture>
                   )}
