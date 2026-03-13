@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import Button from '../interactives/Button'
+import PropTypes from "prop-types";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import Button from "../interactives/Button";
 
 export default function FeatureImgOnBgCardButton({
   bgImg,
@@ -19,7 +19,7 @@ export default function FeatureImgOnBgCardButton({
     buttonLink: PropTypes.string,
     buttonColor: PropTypes.any,
     onClick: PropTypes.func,
-  }
+  };
 
   return (
     <MotionDivDownToUp>
@@ -43,12 +43,12 @@ export default function FeatureImgOnBgCardButton({
           </h1>
 
           {/* Subtítulo/descrição */}
-          <h2
+          {/* <h2
             className="text-paragraph2 font-secondFont desktop2:text-paragraph2 text-gray-600 leading-[18px] desktop1:leading-[21px] opacity-80 overflow-hidden flex-1 line-clamp-2"
             title={description}
           >
             {description}
-          </h2>
+          </h2> */}
 
           {/* Botão */}
           <div className="mt-4">
@@ -82,5 +82,5 @@ export default function FeatureImgOnBgCardButton({
         </div>
       </div>
     </MotionDivDownToUp>
-  )
+  );
 }

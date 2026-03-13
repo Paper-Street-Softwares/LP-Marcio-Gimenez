@@ -181,7 +181,7 @@ export default function SidebarSocial({ colorMode }) {
   // Lista de itens da sidebar, com ícones e rotas
   const menuItems = [
     { label: "Home", route: "/", icon: <HomeIcon /> },
-    { label: "Trajetória", route: "/about", icon: <UserSearch /> },
+    { label: "Trajetória", route: "/trajetoria", icon: <UserSearch /> },
     { label: "Áreas de Atuação", route: "/servicos", icon: <ServerIcon /> },
     { label: "Artigos", route: "/artigos", icon: <FileText /> },
   ];

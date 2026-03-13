@@ -1,47 +1,47 @@
-import { useState } from 'react'
-import 'primeicons/primeicons.css'
-import { Dialog } from 'primereact/dialog'
-import content from '../../content/content'
-import 'primereact/resources/primereact.min.css'
-import 'primereact/resources/themes/saga-blue/theme.css'
-import SectionArea from '../sectionElements/SectionArea'
-import ServiceDetailCard from '../cards/ServiceDetailCard'
-import SectionHeader from '../sectionElements/SectionHeader'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import FeatureImgOnBgCardButton from '../cards/FeatureImgOnBgCardButton'
-import { FaWhatsapp } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { useState } from "react";
+import "primeicons/primeicons.css";
+import { Dialog } from "primereact/dialog";
+import content from "../../content/content";
+import "primereact/resources/primereact.min.css";
+import "primereact/resources/themes/saga-blue/theme.css";
+import SectionArea from "../sectionElements/SectionArea";
+import ServiceDetailCard from "../cards/ServiceDetailCard";
+import SectionHeader from "../sectionElements/SectionHeader";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import FeatureImgOnBgCardButton from "../cards/FeatureImgOnBgCardButton";
+import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function FeaturesButton({ colorMode }) {
-  const [visible, setVisible] = useState(false)
-  const [modalTitle, setModalTitle] = useState('')
-  const [modalSubtitle, setModalSubtitle] = useState('')
-  const [modalContent, setModalContent] = useState('')
+  const [visible, setVisible] = useState(false);
+  const [modalTitle, setModalTitle] = useState("");
+  const [modalSubtitle, setModalSubtitle] = useState("");
+  const [modalContent, setModalContent] = useState("");
 
   const onClick = (title, subtitle, content) => {
-    setModalTitle(title)
-    setModalSubtitle(subtitle)
-    setModalContent(content)
-    setVisible(true)
-  }
+    setModalTitle(title);
+    setModalSubtitle(subtitle);
+    setModalContent(content);
+    setVisible(true);
+  };
 
   // Definir classes de cor para SectionArea
   const bgClasses = {
-    dark: 'bg-bgSectionOpacityDark',
-    light: 'bg-bgSectionOpacityLight',
-    default: 'bg-bgSectionDark',
-  }
+    dark: "bg-bgSectionOpacityDark",
+    light: "bg-bgSectionOpacityLight",
+    default: "bg-bgSectionDark",
+  };
   const textClasses = {
-    dark: 'text-white',
-    light: 'text-black',
-    default: 'text-white',
-  }
-  const bgClass = bgClasses[colorMode] || bgClasses.default
-  const textClass = textClasses[colorMode] || textClasses.default
+    dark: "text-white",
+    light: "text-black",
+    default: "text-white",
+  };
+  const bgClass = bgClasses[colorMode] || bgClasses.default;
+  const textClass = textClasses[colorMode] || textClasses.default;
 
   return (
     <>
-      <SectionArea id={'service'} className={` ${bgClass}`}>
+      <SectionArea id={"service"} className={` ${bgClass}`}>
         <SectionHeader
           className={`text-center ${textClass}`}
           // miniTitle={content.texts.features.miniTag}
@@ -56,7 +56,7 @@ export default function FeaturesButton({ colorMode }) {
         <SectionWrapper>
           <div className="flex flex-wrap justify-center desktop1:justify-evenly w-full gap-y-[36px] tablet1:gap-x-[12px] tablet1:gap-y-[12px] desktop1:gap-x-[12px] desktop1:gap-y-[24px] desktop1:gap-0 desktop1:w-[90%]">
             {[1, 2, 3, 4, 5, 6].map((i) => {
-              const card = content.texts.features[`card${i}`]
+              const card = content.texts.features[`card${i}`];
               return (
                 <Link key={i} to={`/${card.slug}`} className="block w-fit">
                   <FeatureImgOnBgCardButton
@@ -68,11 +68,11 @@ export default function FeaturesButton({ colorMode }) {
                     animation
                   />
                 </Link>
-              )
+              );
             })}
           </div>
         </SectionWrapper>
       </SectionArea>
     </>
-  )
+  );
 }
