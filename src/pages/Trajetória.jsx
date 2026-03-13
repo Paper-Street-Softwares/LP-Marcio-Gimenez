@@ -1,7 +1,7 @@
-import AboutCompleto from '../components/sections/AboutCompleto'
-import FormAndLocation from '../components/sections/FormAndLocation'
-import FooterSocial from '../components/sections/FooterSocial'
-import NavbarSocial from '../components/sections/NavbarSocial'
+import AboutCompleto from "../components/sections/AboutCompleto";
+import FormAndLocation from "../components/sections/FormAndLocation";
+import FooterSocial from "../components/sections/FooterSocial";
+import NavbarSocial from "../components/sections/NavbarSocial";
 
 export default function Trajetoria() {
   return (
@@ -18,7 +18,7 @@ export default function Trajetoria() {
         addres={true}
       />
 
-      <button className="bg-bgSectionDark fixed bottom-2 left-8 p-4 rounded-full hover:scale-105 duration-300 transition-all">
+      <button className="bg-bgSectionDark border-white border-2 fixed bottom-2 left-8 p-4 rounded-full hover:scale-105 duration-300 transition-all">
         <a href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,5 +38,5 @@ export default function Trajetoria() {
         </a>
       </button>
     </>
-  )
+  );
 }

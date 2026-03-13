@@ -1,22 +1,22 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import ReactDOM from 'react-dom/client'
-import Index from './pages/Index.jsx'
-import CardsRota from './components/cards/CardsRota.jsx'
-import ScrollToTop from './pages/ScrollToTop.jsx'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import Index from "./pages/Index.jsx";
+import CardsRota from "./components/cards/CardsRota.jsx";
+import ScrollToTop from "./pages/ScrollToTop.jsx";
 
-import './index.css'
-import './styles/backgrounds.css'
-import './styles/shapeDivs.css'
+import "./index.css";
+import "./styles/backgrounds.css";
+import "./styles/shapeDivs.css";
 
-import Privacy from './pages/Privacy.jsx'
-import Form from './pages/Form.jsx'
-import AboutPage from './pages/AboutPage.jsx'
-import ServicesPage from './pages/ServicesPage.jsx'
-import ArticlesPage from './pages/ArticlesPage.jsx'
-import Trajetoria from './pages/Trajetória.jsx'
-import DisableScrollRestoration from './components/DisableScrollRestoration.jsx'
+import Privacy from "./pages/Privacy.jsx";
+import Form from "./pages/Form.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
+import ServicesPage from "./pages/ServicesPage.jsx";
+import ArticlesPage from "./pages/ArticlesPage.jsx";
+import Trajetoria from "./pages/Trajetória.jsx";
+import DisableScrollRestoration from "./components/DisableScrollRestoration.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
     <DisableScrollRestoration />
     <ScrollToTop />
@@ -39,4 +39,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/* <Route path="/whatsapp" element={<WhatsAppLinks form={true} />} /> */}
     </Routes>
   </Router>,
-)
+);
