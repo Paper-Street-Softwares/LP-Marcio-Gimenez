@@ -1,41 +1,41 @@
-import { FaArrowUp } from 'react-icons/fa'
-import { useState, useEffect } from 'react'
+import { FaArrowUp } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 const BackToTopButton = () => {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop =
-        document.documentElement.scrollTop || document.body.scrollTop
+        document.documentElement.scrollTop || document.body.scrollTop;
 
-      setIsVisible(scrollTop > 100)
-    }
+      setIsVisible(scrollTop > 100);
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
   return (
     <button
       className={`${
-        isVisible ? 'block animate-fade-in' : 'hidden'
+        isVisible ? "block animate-fade-in" : "hidden"
       } fixed bottom-8 left-8 p-4 bg-buttonColor text-white border-white border-[2px] rounded-full z-10 focus:outline-none scale-100 hover:scale-95 transition-all duration-500`}
       onClick={scrollToTop}
     >
       <FaArrowUp className="text-white" />
     </button>
-  )
-}
+  );
+};
 
-export default BackToTopButton
+export default BackToTopButton;

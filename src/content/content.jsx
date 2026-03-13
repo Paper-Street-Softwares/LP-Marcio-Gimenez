@@ -1,58 +1,58 @@
-import logo from '../assets/imgs/logo/logo.webp'
-import logoFooter from '../assets/imgs/logo/logoFooter.webp'
+import logo from "../assets/imgs/logo/logo.webp";
+import logoFooter from "../assets/imgs/logo/logoFooter.webp";
 
-import imgFeatures from '../assets/imgs/features/imgServices.webp'
+import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
-import aboutImg1 from '../assets/imgs/about/aboutImg.webp'
+import aboutImg1 from "../assets/imgs/about/aboutImg.webp";
 // import imgAbout1 from '../assets/imgs/about/aboutImg1.jpg'
 // import imgAbout2 from '../assets/imgs/about/aboutImg2.jpg'
 // import imgAbout3 from '../assets/imgs/about/aboutImg3.jpg'
 // import imgAbout4 from '../assets/imgs/about/aboutImg4.jpg'
 // import imgAbout5 from '../assets/imgs/about/aboutImg5.jpg'
 // import aboutSocialImg from '../assets/imgs/about/aboutSocial.png'
-import aboutInstagram from '../assets/imgs/about/imgAboutInstagram.jpg'
+import aboutInstagram from "../assets/imgs/about/imgAboutInstagram.jpg";
 
-import imgSteps from '../assets/imgs/steps/imgSteps.webp'
+import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
-import featuresImg1 from '../assets/imgs/features/imgFeatures1.webp'
-import featuresImg2 from '../assets/imgs/features/imgFeatures2.webp'
-import featuresImg3 from '../assets/imgs/features/imgFeatures3.webp'
-import featuresImg4 from '../assets/imgs/features/imgFeatures4.webp'
-import featuresImg5 from '../assets/imgs/features/imgFeatures6.webp'
-import featuresImg6 from '../assets/imgs/features/imgFeatures5.webp'
+import featuresImg1 from "../assets/imgs/features/imgFeatures1.webp";
+import featuresImg2 from "../assets/imgs/features/imgFeatures2.webp";
+import featuresImg3 from "../assets/imgs/features/imgFeatures3.webp";
+import featuresImg4 from "../assets/imgs/features/imgFeatures4.webp";
+import featuresImg5 from "../assets/imgs/features/imgFeatures6.webp";
+import featuresImg6 from "../assets/imgs/features/imgFeatures5.webp";
 
-import imgFeaturesCardModal1 from '../assets/imgs/features/imgFeaturesCardModal1.webp'
-import imgFeaturesCardModal2 from '../assets/imgs/features/imgFeaturesCardModal2.webp'
-import imgFeaturesCardModal3 from '../assets/imgs/features/imgFeaturesCardModal3.webp'
-import imgFeaturesCardModal4 from '../assets/imgs/features/imgFeaturesCardModal4.webp'
-import imgFeaturesCardModal5 from '../assets/imgs/features/imgFeaturesCardModal6.webp'
-import imgFeaturesCardModal6 from '../assets/imgs/features/imgFeaturesCardModal5.webp'
+import imgFeaturesCardModal1 from "../assets/imgs/features/imgFeaturesCardModal1.webp";
+import imgFeaturesCardModal2 from "../assets/imgs/features/imgFeaturesCardModal2.webp";
+import imgFeaturesCardModal3 from "../assets/imgs/features/imgFeaturesCardModal3.webp";
+import imgFeaturesCardModal4 from "../assets/imgs/features/imgFeaturesCardModal4.webp";
+import imgFeaturesCardModal5 from "../assets/imgs/features/imgFeaturesCardModal6.webp";
+import imgFeaturesCardModal6 from "../assets/imgs/features/imgFeaturesCardModal5.webp";
 
-const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: 'Marcio Gimenez Advocacia | Direito Empresarial e Patrimonial em São Paulo - SP',
-  email: 'contato', // Email desejado pelo cliente
-  emailTwo: 'financeiro@marciogimenez.com.br', // Email desejado pelo cliente
-  emailThree: 'juridico@marciogimenez.com.br', // Email desejado pelo cliente
-  emailFour: 'secretaria@marciogimenez.com.br', // Email desejado pelo cliente
-  emailFive: 'marcio@marciogimenez.com.br', // Email desejado pelo cliente
+  name: "Marcio Gimenez Advocacia | Direito Empresarial e Patrimonial em São Paulo - SP",
+  email: "contato", // Email desejado pelo cliente
+  emailTwo: "financeiro@marciogimenez.com.br", // Email desejado pelo cliente
+  emailThree: "juridico@marciogimenez.com.br", // Email desejado pelo cliente
+  emailFour: "secretaria@marciogimenez.com.br", // Email desejado pelo cliente
+  emailFive: "marcio@marciogimenez.com.br", // Email desejado pelo cliente
 
-  domain: 'marciogimenez.com.br', // Sem "www"
+  domain: "marciogimenez.com.br", // Sem "www"
   phone: {
-    ddd: '11',
-    firstPart: '96301', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0654', // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "96301", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0654", // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -78,16 +78,16 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A Definir</span>,
-  instagramProfile: 'gimenez.jur', // Sem o @
-  facebookProfile: '61579708052117',
-  linkeDinProfile: 'advmg/about/',
-  x: 'A_Definir',
+  instagramProfile: "gimenez.jur", // Sem o @
+  facebookProfile: "61579708052117",
+  linkeDinProfile: "advmg/about/",
+  x: "A_Definir",
   whatsappDefaultMessage:
-    'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
+    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   whatsChatDefaultMessage:
-    'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
-  slogan: '',
-}
+    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
+  slogan: "",
+};
 
 const content = {
   texts: {
@@ -105,32 +105,32 @@ const content = {
         alt: `Logomarca ${infos.name}`,
       },
       menuItems: [
-        'HOME',
-        'ÁREAS DE ATUAÇÃO',
-        'QUEM SOMOS',
-        'ARTIGOS',
-        'PERGUNTAS FREQUENTES',
+        "HOME",
+        "ÁREAS DE ATUAÇÃO",
+        "QUEM SOMOS",
+        "ARTIGOS",
+        "PERGUNTAS FREQUENTES",
       ],
-      menuId: ['home', 'service', 'about', 'blog', 'faq'],
+      menuId: ["home", "service", "about", "blog", "faq"],
 
-      ctaButtonText: 'Contato',
-      ctaButtonTextResponsive: 'Contato',
+      ctaButtonText: "Contato",
+      ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: '',
+      miniTag: "",
       title: (
         <h1 className="mb-[16px]">
           Nem todo problema aceita
           <span className=""> receita pronta</span>
         </h1>
       ),
-      subtitle: '',
+      subtitle: "",
       // heroImgPhone: heroImgPhone, // img da pessoa mobile
       // heroDesktop: heroImgDesktop, //bg com foto da pessoa
       // heroImg: bgHeroImg, //fundo da Hero
       // heroDefaultImage: heroDefaultImg, //imagem da heroDefault Mobile
       // backgroundPerson: backgroundPersonMobile,
-      ctaButtonText: 'Entrar em contato',
+      ctaButtonText: "Entrar em contato",
       obsHero: {
         icon: (
           <svg
@@ -150,43 +150,43 @@ const content = {
             <path d="m16 18 2 2 4-4" />
           </svg>
         ),
-        text: 'Atendimento presencial mediante agendamento e online, preferencialmente por videochamada.',
+        text: "Atendimento presencial mediante agendamento e online, preferencialmente por videochamada.",
       },
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
-      secondaryCta: 'A_Definir',
+        "Botão para chamada de ação para contato pelo whatsapp",
+      secondaryCta: "A_Definir",
       images: {
         // background: bgHeroImg,
         static: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide1: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide2: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide3: {
           img: {},
-          alt: '',
+          alt: "",
         },
       },
     },
     features: {
-      miniTag: '',
-      title: 'ÁREAS DE ATUAÇÃO',
-      subtitle: 'Soluções jurídicas com profundidade e estratégia',
+      miniTag: "",
+      title: "ÁREAS DE ATUAÇÃO",
+      subtitle: "Soluções jurídicas com profundidade e estratégia",
       imgFeatures: imgFeatures,
       // imgDivisor: imgDivisor,
       card1: {
         img: featuresImg1,
-        title: 'Direito Empresarial',
-        slug: 'direitoempresarial',
+        title: "Direito Empresarial",
+        slug: "direitoempresarial",
         subtitle:
-          'O escritório oferece soluções jurídicas estratégicas para empresas de todos os portes, com foco em contratos, governança societária, disputas complexas e expansão de negócios. Nosso trabalho é orientar decisões que fortalecem a estrutura da empresa, reduzem riscos e sustentam o crescimento de forma consistente.',
+          "O escritório oferece soluções jurídicas estratégicas para empresas de todos os portes, com foco em contratos, governança societária, disputas complexas e expansão de negócios. Nosso trabalho é orientar decisões que fortalecem a estrutura da empresa, reduzem riscos e sustentam o crescimento de forma consistente.",
         description: (
           <div>
             O Direito Empresarial é a espinha dorsal do escritório e foi
@@ -321,15 +321,15 @@ const content = {
             <rect width="20" height="14" x="2" y="6" rx="2" />
           </svg>
         ),
-        buttonLabelModal: 'Fale Conosco',
-        buttonLabel: 'Saiba Mais',
+        buttonLabelModal: "Fale Conosco",
+        buttonLabel: "Saiba Mais",
       },
       card2: {
         img: featuresImg2,
-        title: 'Direito Administrativo',
-        slug: 'direitoadministrativo',
+        title: "Direito Administrativo",
+        slug: "direitoadministrativo",
         subtitle:
-          'O escritório atua em licitações, contratos públicos e controle externo, com experiência direta na Administração. Assessoramos empresas e gestores em impugnações de edital, recursos administrativos, defesas formais junto aos Tribunais de Contas e acompanhamento jurídico de contratações públicas de obras e serviços.',
+          "O escritório atua em licitações, contratos públicos e controle externo, com experiência direta na Administração. Assessoramos empresas e gestores em impugnações de edital, recursos administrativos, defesas formais junto aos Tribunais de Contas e acompanhamento jurídico de contratações públicas de obras e serviços.",
         description: (
           <div>
             O escritório possui atuação sólida em Direito Administrativo e conta
@@ -413,7 +413,7 @@ const content = {
             <br />
             <strong>Contencioso Administrativo e Judicial</strong>
             <br />✔ Mandados de segurança, ações anulatórias, medidas cautelares
-            e ações ordinárias envolvendo licitações, penalidades e contratos.{' '}
+            e ações ordinárias envolvendo licitações, penalidades e contratos.{" "}
             <br />
             ✔ Defesa contra sanções como multa, glosa, impedimento de licitar,
             rescisão contratual e declaração de inidoneidade. <br />
@@ -459,15 +459,15 @@ const content = {
             <path d="M16 17H8" />
           </svg>
         ),
-        buttonLabelModal: 'Fale Conosco',
-        buttonLabel: 'Saiba Mais',
+        buttonLabelModal: "Fale Conosco",
+        buttonLabel: "Saiba Mais",
       },
       card3: {
         img: featuresImg3,
-        title: 'Direito Imobiliário',
-        slug: 'direitoimobiliario',
+        title: "Direito Imobiliário",
+        slug: "direitoimobiliario",
         subtitle:
-          'O escritório oferece suporte jurídico completo para construtoras, incorporadoras e investidores, atuando em due diligence de imóveis, análise de riscos, elaboração de instrumentos contratuais e condução de litígios imobiliários. Nossa atuação prioriza segurança jurídica nas negociações e eficiência na gestão de empreendimentos.',
+          "O escritório oferece suporte jurídico completo para construtoras, incorporadoras e investidores, atuando em due diligence de imóveis, análise de riscos, elaboração de instrumentos contratuais e condução de litígios imobiliários. Nossa atuação prioriza segurança jurídica nas negociações e eficiência na gestão de empreendimentos.",
         description: (
           <div>
             Nossa prática de Direito Imobiliário foi desenvolvida e estruturada
@@ -512,7 +512,7 @@ const content = {
             ✔ Estruturação de operações envolvendo permuta física e permuta
             financeira.
             <br />✔ Constituição e execução de garantias imobiliárias (alienação
-            fiduciária, hipoteca, cessão fiduciária, uso, usufruto, superfície).{' '}
+            fiduciária, hipoteca, cessão fiduciária, uso, usufruto, superfície).{" "}
             <br />
             ✔ Suporte jurídico para investidores nacionais e estrangeiros em
             operações de aquisição direta, via SPE ou por estruturas
@@ -596,15 +596,15 @@ const content = {
             <circle cx="7.5" cy="15.5" r="5.5" />
           </svg>
         ),
-        buttonLabelModal: 'Fale Conosco',
-        buttonLabel: 'Saiba Mais',
+        buttonLabelModal: "Fale Conosco",
+        buttonLabel: "Saiba Mais",
       },
       card4: {
         img: featuresImg4,
-        title: 'Direito de Família e Sucessões',
-        slug: 'direitodefamiliaesucessoes',
+        title: "Direito de Família e Sucessões",
+        slug: "direitodefamiliaesucessoes",
         subtitle:
-          'O escritório atua em demandas de família e sucessões com estratégia jurídica, precisão probatória e sigilo. Conduzimos divórcios, guarda, visitas, alimentos, inventários e partilhas complexas, assegurando proteção patrimonial, estabilidade processual e decisões amparadas em técnica e evidências.',
+          "O escritório atua em demandas de família e sucessões com estratégia jurídica, precisão probatória e sigilo. Conduzimos divórcios, guarda, visitas, alimentos, inventários e partilhas complexas, assegurando proteção patrimonial, estabilidade processual e decisões amparadas em técnica e evidências.",
         description: (
           <div>
             O Direito de Família e Sucessões exige mais do que conhecimento
@@ -699,15 +699,15 @@ const content = {
             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
           </svg>
         ),
-        buttonLabelModal: 'Fale Conosco',
-        buttonLabel: 'Saiba Mais',
+        buttonLabelModal: "Fale Conosco",
+        buttonLabel: "Saiba Mais",
       },
       card5: {
         img: featuresImg5,
-        title: 'Direito do Trabalho',
-        slug: 'direitodotrabalho',
+        title: "Direito do Trabalho",
+        slug: "direitodotrabalho",
         subtitle:
-          'O escritório defende empresas em matéria trabalhista com foco em prevenção de litígios, gestão de passivos e conformidade. Estruturamos políticas internas, assessoramos negociações coletivas, litígios estratégicos e fazemos ajustes de rotinas para melhorar segurança jurídica e eficiência operacional.',
+          "O escritório defende empresas em matéria trabalhista com foco em prevenção de litígios, gestão de passivos e conformidade. Estruturamos políticas internas, assessoramos negociações coletivas, litígios estratégicos e fazemos ajustes de rotinas para melhorar segurança jurídica e eficiência operacional.",
         description: (
           <div>
             O escritório possui forte atuação consultiva e contenciosa na área
@@ -837,15 +837,15 @@ const content = {
             <circle cx="9" cy="7" r="4" />
           </svg>
         ),
-        buttonLabelModal: 'Fale Conosco',
-        buttonLabel: 'Saiba Mais',
+        buttonLabelModal: "Fale Conosco",
+        buttonLabel: "Saiba Mais",
       },
       card6: {
         img: featuresImg6,
-        title: 'Imigração e Mobilidade Internacional',
-        slug: 'imigracaoemobilidadeinternacional',
+        title: "Imigração e Mobilidade Internacional",
+        slug: "imigracaoemobilidadeinternacional",
         subtitle:
-          'O escritório atua em imigração, cidadania e mobilidade internacional, com suporte integrado por parceiros nos EUA e Europa. Assessoramos greencards, cidadania italiana e planejamento patrimonial global, além de orientar estrangeiros que desejam investir ou estabelecer residência no Brasil.',
+          "O escritório atua em imigração, cidadania e mobilidade internacional, com suporte integrado por parceiros nos EUA e Europa. Assessoramos greencards, cidadania italiana e planejamento patrimonial global, além de orientar estrangeiros que desejam investir ou estabelecer residência no Brasil.",
         description: (
           <div>
             A crescente mobilidade global exige soluções jurídicas capazes de
@@ -956,47 +956,47 @@ const content = {
             <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
           </svg>
         ),
-        buttonLabelModal: 'Fale Conosco',
-        buttonLabel: 'Saiba Mais',
+        buttonLabelModal: "Fale Conosco",
+        buttonLabel: "Saiba Mais",
       },
       moreFeatures: {
         card1: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card2: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card3: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
       },
     },
     maps: {
-      minitag: 'LOCALIZAÇÃO',
-      title: 'Encontre-nos em São Paulo - SP',
+      minitag: "LOCALIZAÇÃO",
+      title: "Encontre-nos em São Paulo - SP",
       subtitle:
-        'Visite nosso endereço e confira no mapa abaixo como chegar facilmente.',
+        "Visite nosso endereço e confira no mapa abaixo como chegar facilmente.",
       embedsrc:
-        'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2280.4668516957277!2d-46.6830788!3d-23.5912612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5745075e00e5%3A0x7d4ab06a613af7e3!2sAv.%20Pres.%20Juscelino%20Kubitschek%2C%201455%20-%20Vila%20Nova%20Concei%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004543-011!5e1!3m2!1spt-BR!2sbr!4v1753480438590!5m2!1spt-BR!2sbr',
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2280.4668516957277!2d-46.6830788!3d-23.5912612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5745075e00e5%3A0x7d4ab06a613af7e3!2sAv.%20Pres.%20Juscelino%20Kubitschek%2C%201455%20-%20Vila%20Nova%20Concei%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004543-011!5e1!3m2!1spt-BR!2sbr!4v1753480438590!5m2!1spt-BR!2sbr",
     },
     about: {
       imagem: {
         img: aboutImg1,
-        alt: 'Imagem profissional de escritório/advogado(a)',
+        alt: "Imagem profissional de escritório/advogado(a)",
       },
-      miniTag: '',
+      miniTag: "",
       title: <h1 className="text-title5 leading-[35px]">Trajetória</h1>,
-      subtitle: '',
-      labelInstagram: 'Siga-nos no Instagram',
-      labelFacebook: 'Siga-nos no Facebook',
-      labelLinkedin: 'Siga-nos no LinkedIn',
-      labelX: 'Siga-nos no X',
+      subtitle: "",
+      labelInstagram: "Siga-nos no Instagram",
+      labelFacebook: "Siga-nos no Facebook",
+      labelLinkedin: "Siga-nos no LinkedIn",
+      labelX: "Siga-nos no X",
       paragraph: (
         <div className="opacity-55 text-justify">
           Com mais de duas décadas de atuação, o escritório se destaca pela
@@ -1017,7 +1017,7 @@ const content = {
           transformação.
         </div>
       ),
-      buttonModalLabelAbout: 'Saiba mais',
+      buttonModalLabelAbout: "Saiba mais",
       // modal: (
       //   <p>
       //     Toda trajetória sólida nasce da combinação entre vivência prática e
@@ -1081,8 +1081,8 @@ const content = {
       //     reativo, é ferramenta de poder, estabilidade e sofisticação.
       //   </p>
       // ),
-      ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Entre em contato',
+      ctaButtonAriaLabel: "Botão para entrar em contato",
+      ctaButtonText: "Entre em contato",
 
       aboutSocial: {
         img: {
@@ -1090,24 +1090,24 @@ const content = {
           imgSocial: aboutInstagram,
           alt: `Foto do Instagram do ${infos.name}`,
         },
-        miniTag: 'A_Definir',
-        title: 'A_Definir',
-        subtitle: 'A_Definir',
+        miniTag: "A_Definir",
+        title: "A_Definir",
+        subtitle: "A_Definir",
         paragraph: <p></p>,
-        labelInstagram: 'Siga-nos no Instagram',
-        labelFacebook: 'Siga-nos no Facebook',
-        labelLinkedin: 'Siga-nos no LinkedIn',
-        labelX: 'Siga-nos no X',
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
       },
     },
     cta: {
       // backgroundImg: ctaWhatsappImgBg,
-      miniTag: 'FALE CONOSCO',
+      miniTag: "FALE CONOSCO",
       title:
-        'Enfrentando um problema jurídico? Deixe que cuidamos disso para você!',
+        "Enfrentando um problema jurídico? Deixe que cuidamos disso para você!",
       subtitle:
-        'Converse com nossa equipe. Estamos prontos para oferecer a orientação jurídica de que você precisa.',
-      ctaButtonText: 'Entre em contato pelo WhatsApp',
+        "Converse com nossa equipe. Estamos prontos para oferecer a orientação jurídica de que você precisa.",
+      ctaButtonText: "Entre em contato pelo WhatsApp",
     },
     ctaSecondary: {
       // backgroundImg: ctaWhatsappImgBg,
@@ -1115,7 +1115,7 @@ const content = {
       title: (
         <h1 className="">
           <span className="text-gray-600">Dúvidas?</span> Entre em contato
-          conosco para podermos lhe ajudar,{' '}
+          conosco para podermos lhe ajudar,{" "}
           <span className="text-text-gray-600">estamos te esperando.</span>
         </h1>
       ),
@@ -1129,84 +1129,84 @@ const content = {
           WhatsApp
         </h1>
       ),
-      ctaButtonText: 'Falar agora',
+      ctaButtonText: "Falar agora",
     },
     steps: {
-      miniTag: 'PASSO A PASSO',
-      title: 'Como funciona nosso atendimento?',
-      subtitle: '',
+      miniTag: "PASSO A PASSO",
+      title: "Como funciona nosso atendimento?",
+      subtitle: "",
       img: imgSteps,
-      alt: '',
+      alt: "",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Consulta inicial',
+          cardTitle: "Consulta inicial",
           cardDescription:
-            'Realizamos uma reunião para entender seu caso e identificar suas necessidades jurídicas.',
+            "Realizamos uma reunião para entender seu caso e identificar suas necessidades jurídicas.",
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Análise detalhada',
+          cardTitle: "Análise detalhada",
           cardDescription:
-            'Examinamos todos os aspectos do seu caso, revisando documentos e evidências para obter uma visão completa.',
+            "Examinamos todos os aspectos do seu caso, revisando documentos e evidências para obter uma visão completa.",
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Elaboração da estratégia',
+          cardTitle: "Elaboração da estratégia",
           cardDescription:
-            'Criamos uma estratégia jurídica personalizada para proteger seus interesses de maneira eficaz.',
+            "Criamos uma estratégia jurídica personalizada para proteger seus interesses de maneira eficaz.",
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Ação legal',
+          cardTitle: "Ação legal",
           cardDescription:
-            'Iniciamos e conduzimos as ações judiciais ou o serviço contratado, buscando justiça e soluções personalizadas conforme a necessidade do seu caso.',
+            "Iniciamos e conduzimos as ações judiciais ou o serviço contratado, buscando justiça e soluções personalizadas conforme a necessidade do seu caso.",
         },
       },
     },
     blog: {
-      miniTag: 'BLOG',
+      miniTag: "BLOG",
       title: (
         <h1 className="text-title5 leading-[35px]">
           Informação jurídica ao seu alcance
         </h1>
       ),
       subtitle:
-        'Acompanhe conteúdos exclusivos para manter-se sempre informado.',
+        "Acompanhe conteúdos exclusivos para manter-se sempre informado.",
       img: imgSteps,
       blogApiEndpoint:
-        'https://public-api.wordpress.com/rest/v1.1/sites/marciogimenez.wordpress.com/posts/',
-      labelCards: 'Ver mais',
-      label: 'Clique aqui para ver todas as matérias',
-      blogLink: 'https://marciogimenez.wordpress.com/',
+        "https://public-api.wordpress.com/rest/v1.1/sites/marciogimenez.wordpress.com/posts/",
+      labelCards: "Ver matéria",
+      label: "Clique aqui para ver todas as matérias",
+      blogLink: "https://marciogimenez.wordpress.com/",
     },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: "TIRE SUAS DÚVIDAS",
+      title: "Perguntas Frequentes",
+      subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas. ",
       questions: {
         question1: {
-          question: 'Como posso contratar seus serviços?',
+          question: "Como posso contratar seus serviços?",
           answer:
-            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
+            "Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.",
         },
         question2: {
-          question: 'Qual é o prazo médio para resolução de um caso?',
+          question: "Qual é o prazo médio para resolução de um caso?",
           answer:
-            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
+            "O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.",
         },
         question3: {
-          question: 'Quais documentos devo levar para a consulta?',
+          question: "Quais documentos devo levar para a consulta?",
           answer:
-            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
+            "Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.",
         },
         question4: {
-          question: 'Vocês oferecem serviços de consultoria preventiva?',
+          question: "Vocês oferecem serviços de consultoria preventiva?",
           answer:
-            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
+            "Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.",
         },
       },
-      paragraph: 'Clique aqui caso tenha mais dúvidas',
+      paragraph: "Clique aqui caso tenha mais dúvidas",
     },
     contato: {
       title: (
@@ -1215,16 +1215,16 @@ const content = {
         </h1>
       ),
       subtitle:
-        'O primeiro passo para a solução jurídica do seu caso começa aqui. Escolha o canal de sua preferência e inicie sua estratégia conosco.',
+        "O primeiro passo para a solução jurídica do seu caso começa aqui. Escolha o canal de sua preferência e inicie sua estratégia conosco.",
     },
     footer: {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
-      midSectionName: 'Até mais',
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
+      midSectionName: "Até mais",
       footerText:
-        'Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.',
-      footerSocialText: 'Siga a gente nas redes sociais:',
-      footerNavegacaoText: 'NAVEGAÇÃO',
+        "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.",
+      footerSocialText: "Siga a gente nas redes sociais:",
+      footerNavegacaoText: "NAVEGAÇÃO",
     },
     // testimonials: {
     //   miniTag: 'A_Definir',
@@ -1274,11 +1274,11 @@ const content = {
     numbers: {
       // backgroundImg: numbersImgBg,
       number1: 7,
-      number1Description: 'A_Definir',
+      number1Description: "A_Definir",
       number2: 500,
-      number2Description: 'A_Definir',
+      number2Description: "A_Definir",
       number3: 1000,
-      number3Description: 'A_Definir',
+      number3Description: "A_Definir",
     },
     // team: {
     //   title: 'A_Definir',
@@ -1569,15 +1569,15 @@ const content = {
       year: currentYear,
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      footerDivulgacaoText: '© 2025 – Desenvolvido por Paper Street Softwares',
+      footerNavegacaoText: "NAVEGAÇÃO",
+      footerDivulgacaoText: "© 2025 – Desenvolvido por Paper Street Softwares",
     },
   },
-}
+};
 
 export const abstractions = {
   titleModal: <strong>{content.texts.about.title}</strong>,
   subtitleModal: <strong>{content.texts.about.subtitle}</strong>,
-}
+};
 
-export default content
+export default content;

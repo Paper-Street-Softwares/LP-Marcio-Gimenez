@@ -1,16 +1,16 @@
-import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import 'react-image-gallery/styles/css/image-gallery.css'
-import SectionHeader from '../sectionElements/SectionHeader'
-import AboutModal from '../sectionElements/about/AboutModal'
-import content from '../../content/content'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import GalleryAbout from '../sectionElements/about/GalleryAbout'
-import ParagraphSemFading from '../sectionElements/about/ParagraphSemFading'
-import ParagraphWithFading from '../sectionElements/about/ParagraphWithFading'
-import ImageGallery from 'react-image-gallery'
-import 'react-image-gallery/styles/css/image-gallery.css'
+import React from "react";
+import SectionArea from "../sectionElements/SectionArea";
+import "react-image-gallery/styles/css/image-gallery.css";
+import SectionHeader from "../sectionElements/SectionHeader";
+import AboutModal from "../sectionElements/about/AboutModal";
+import content from "../../content/content";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import GalleryAbout from "../sectionElements/about/GalleryAbout";
+import ParagraphSemFading from "../sectionElements/about/ParagraphSemFading";
+import ParagraphWithFading from "../sectionElements/about/ParagraphWithFading";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 export default function AboutCompleto({
   modal = true,
@@ -19,19 +19,19 @@ export default function AboutCompleto({
 }) {
   // Definir classes de tema
   const bgClasses = {
-    dark: 'bg-bgFixedDark',
-    light: 'bg-bgFixedLight',
-    default: 'bg-white',
-  }
+    dark: "bg-bgFixedDark",
+    light: "bg-bgFixedLight",
+    default: "bg-white",
+  };
   const textClasses = {
-    dark: 'text-white',
-    light: 'text-black',
-    default: 'text-primary',
-  }
-  const bgClass = bgClasses[colorMode] || bgClasses.default
-  const titleColor = textClasses[colorMode] || textClasses.default
+    dark: "text-white",
+    light: "text-black",
+    default: "text-primary",
+  };
+  const bgClass = bgClasses[colorMode] || bgClasses.default;
+  const titleColor = textClasses[colorMode] || textClasses.default;
   const subtitleColor =
-    colorMode === 'light' ? 'text-gray-600' : 'text-gray-600'
+    colorMode === "light" ? "text-gray-600" : "text-gray-600";
 
   // const images = [
   //   {
@@ -150,15 +150,15 @@ export default function AboutCompleto({
 
           <div className="flex flex-col mx-auto">
             <div className="flex flex-row-reverse w-full">
-              {' '}
-              <section className="max-w-[360px] w-full mx-auto">
+              {" "}
+              <section className="max-w-[360px] w-full mx-auto hidden desktop1:flex">
                 <img
                   src={content.texts.about.imagem.img}
                   alt={content.texts.about.imagem.alt}
                   className="w-full h-auto object-contain desktop2:w-[400px]"
                 />
               </section>
-              <section className="max-w-[460px] w-full mx-auto">
+              <section className="desktop1:max-w-[460px] w-full mx-auto">
                 <div className="flex flex-col gap-4 opacity-50 font-secondFont">
                   <p className="text-justify">
                     Com mais de duas décadas de atuação, o escritório se destaca
@@ -179,7 +179,7 @@ export default function AboutCompleto({
               </section>
             </div>
 
-            <section className="flex flex-col gap-4 opacity-50 font-secondFont px-6 mt-4">
+            <section className="flex flex-col gap-4 opacity-50 font-secondFont desktop1:px-6 mt-4">
               <p className="text-justify">
                 Nosso propósito é transformar complexidade em clareza,
                 conduzindo clientes com segurança nas relações legais e
@@ -188,7 +188,7 @@ export default function AboutCompleto({
                 jurídica em um mundo em constante transformação.
               </p>
 
-              <p className="text-justify">
+              <p className="text-justify hidden desktop1:flex">
                 Toda trajetória sólida nasce da combinação entre vivência
                 prática e rigor técnico. Foi assim que Marcio Gimenez construiu
                 sua carreira jurídica: unindo clareza em meio à complexidade,
@@ -196,7 +196,7 @@ export default function AboutCompleto({
                 antes de tudo, instrumento de estratégia e proteção patrimonial.
               </p>
 
-              <p className="text-justify">
+              <p className="text-justify hidden desktop1:flex">
                 Durante 14 anos, atuou dentro da Administração Pública
                 assessorando prefeitos, secretários e presidentes de câmaras
                 legislativas. Nesse período, exerceu funções como pregoeiro e
@@ -208,14 +208,14 @@ export default function AboutCompleto({
                 firmeza institucional.
               </p>
 
-              <p className="text-justify">
+              <p className="text-justify hidden desktop1:flex">
                 Essa vivência permitiu compreender as engrenagens
                 administrativas por dentro: como o Estado decide, como aplica
                 suas normas, como se formam os riscos e como se constrói
                 segurança jurídica na prática.
               </p>
 
-              <p className="text-justify">
+              <p className="text-justify hidden desktop1:flex">
                 Ao lado dessa experiência pública, Marcio consolidou atuação
                 robusta no setor privado, assessorando empresas de grande porte,
                 grupos multinacionais e construtoras em operações complexas —
@@ -225,7 +225,7 @@ export default function AboutCompleto({
                 madura e integradora.
               </p>
 
-              <p className="text-justify">
+              <p className="text-justify hidden desktop1:flex">
                 No contencioso, conduziu disputas judiciais estratégicas de alta
                 complexidade, com resultados expressivos em diferentes
                 instâncias. Na consultoria, estruturou dezenas de contratos
@@ -235,28 +235,28 @@ export default function AboutCompleto({
                 e competitividade.
               </p>
 
-              <p className="text-justify">
+              <p className="text-justify hidden desktop1:flex">
                 Dessa combinação de vivências, pública, empresarial e
                 institucional, nasce o Marcio Gimenez Advocacia, concebido para
                 oferecer soluções jurídicas de alto nível, pautadas por rigor
                 técnico, visão estratégica e autoridade institucional.
               </p>
 
-              <p className="text-justify">
+              <p className="text-justify hidden desktop1:flex">
                 O escritório carrega a mesma filosofia que moldou a trajetória
                 do seu fundador: transformar complexidade em clareza, proteger
                 patrimônios, fortalecer empresas e conduzir clientes com
                 segurança em decisões de longo prazo.
               </p>
 
-              <p className="text-justify">
+              <p className="text-justify hidden desktop1:flex">
                 Atendemos empresas, famílias e indivíduos com a mesma
                 intensidade técnica: preservando bens, prevenindo litígios,
                 estruturando operações e garantindo estabilidade jurídica em um
                 mundo que exige soluções precisas, discretas e eficazes.
               </p>
 
-              <p className="text-justify">
+              <p className="text-justify hidden desktop1:flex">
                 Mais do que respostas jurídicas, entregamos consistência,
                 estratégia e proteção patrimonial. Porque o Direito, para nós,
                 não é instrumento reativo, é ferramenta de poder, estabilidade e
@@ -267,5 +267,5 @@ export default function AboutCompleto({
         </div>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
