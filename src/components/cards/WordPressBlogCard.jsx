@@ -1,6 +1,7 @@
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import BlogButton from '../interactives/BlogButton'
-import Button from '../interactives/BlogButton'
+import content from "../../content/content";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import BlogButton from "../interactives/BlogButton";
+import Button from "../interactives/BlogButton";
 
 export default function WordPressBlogCard({ img, title, subtitle, link }) {
   return (
@@ -19,17 +20,17 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
           >
             {title}
           </h1>
-          <h2
+          {/* <h2
             className="text-paragraph2 opacity-80 font-secondFont desktop2:text-paragraph3 mb-[32px] text-gray-600 leading-[18px] desktop1:leading-[21px]  "
             title="blogSubtitle"
           >
             {subtitle}
-          </h2>
+          </h2> */}
           <div className="flex ">
             <Button
               removeAnchor={true}
               color="bg-buttonColor"
-              label="Ver matéria completa"
+              label={content.texts.blog.labelCards}
               buttonLink={link}
               className="text-labelButtons"
               size="small"
@@ -55,5 +56,5 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
         </div>
       </MotionDivDownToUp>
     </div>
-  )
+  );
 }

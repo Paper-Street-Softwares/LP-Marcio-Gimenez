@@ -1,21 +1,21 @@
-import { useState, useEffect } from 'react'
-import WordPressBlogCard from '../cards/WordPressBlogCard'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import SectionHeader from '../sectionElements/SectionHeader'
-import content from '../../content/content'
-import Paragraphs from '../sectionElements/Paragraphs'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import { useState, useEffect } from "react";
+import WordPressBlogCard from "../cards/WordPressBlogCard";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import SectionHeader from "../sectionElements/SectionHeader";
+import content from "../../content/content";
+import Paragraphs from "../sectionElements/Paragraphs";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function BlogPosts() {
-  const [posts, setPosts] = useState([])
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     fetch(content.texts.blog.blogApiEndpoint)
       .then((response) => response.json())
       .then((data) => setPosts(data.posts)) // Ajustado para pegar a chave correta
-      .catch((error) => console.error('Erro ao buscar posts:', error))
-  }, [])
+      .catch((error) => console.error("Erro ao buscar posts:", error));
+  }, []);
 
   return (
     <div>
@@ -47,9 +47,9 @@ function BlogPosts() {
                         <img
                           src={post.featured_image}
                           alt="Imagem do post"
-                          width={168}
-                          height={123}
-                          className=""
+                          // width={168}
+                          // height={123}
+                          className="w-full"
                         />
                       )
                     }
@@ -61,7 +61,7 @@ function BlogPosts() {
                         dangerouslySetInnerHTML={{
                           __html:
                             post.excerpt.length > 100
-                              ? post.excerpt.substring(0, 100) + '...'
+                              ? post.excerpt.substring(0, 100) + "..."
                               : post.excerpt,
                         }}
                       />
@@ -83,7 +83,7 @@ function BlogPosts() {
         </SectionWrapper>
       </SectionArea>
     </div>
-  )
+  );
 
   // return (
   //   <div>
@@ -107,4 +107,4 @@ function BlogPosts() {
   // );
 }
 
-export default BlogPosts
+export default BlogPosts;
