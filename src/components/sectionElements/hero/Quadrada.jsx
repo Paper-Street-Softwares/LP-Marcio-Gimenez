@@ -1,52 +1,52 @@
-import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
-import content from '../../../content/content'
-import Button from '../../interactives/Button'
-import { FaWhatsapp } from 'react-icons/fa'
-import '../../../styles/shapeDivs.css'
-import ImageGallery from 'react-image-gallery'
-import heroImg1 from '../../../assets/imgs/hero/imgHero1.webp'
-import heroImg2 from '../../../assets/imgs/hero/imgHero2.webp'
-import heroImg3 from '../../../assets/imgs/hero/imgHero3.webp'
-import heroImg4 from '../../../assets/imgs/hero/imgHero4.webp'
-import heroImg1Mobile from '../../../assets/imgs/hero/imgHero1Mobile.webp'
-import heroImg2Mobile from '../../../assets/imgs/hero/imgHero2Mobile.webp'
-import heroImg3Mobile from '../../../assets/imgs/hero/imgHero3Mobile.webp'
-import heroImg4Mobile from '../../../assets/imgs/hero/imgHero4Mobile.webp'
+import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
+import content from "../../../content/content";
+import Button from "../../interactives/Button";
+import { FaWhatsapp } from "react-icons/fa";
+import "../../../styles/shapeDivs.css";
+import ImageGallery from "react-image-gallery";
+import heroImg1 from "../../../assets/imgs/hero/imgHero1.webp";
+import heroImg2 from "../../../assets/imgs/hero/imgHero2.webp";
+import heroImg3 from "../../../assets/imgs/hero/imgHero3.webp";
+import heroImg4 from "../../../assets/imgs/hero/imgHero4.webp";
+import heroImg1Mobile from "../../../assets/imgs/hero/imgHero1Mobile.webp";
+import heroImg2Mobile from "../../../assets/imgs/hero/imgHero2Mobile.webp";
+import heroImg3Mobile from "../../../assets/imgs/hero/imgHero3Mobile.webp";
+import heroImg4Mobile from "../../../assets/imgs/hero/imgHero4Mobile.webp";
 // import heroImg5 from "../../../assets/imgs/hero/imgHero5.webp";
-import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Quadrada({ appDownloadButtons, colorMode }) {
   const backgroundClasses = {
-    dark: 'bg-bgFixedDark',
-    light: 'bg-bgFixedLight',
-    default: 'from-bgSectionDark to-darker',
-  }
+    dark: "bg-bgFixedDark",
+    light: "bg-bgFixedLight",
+    default: "from-bgSectionDark to-darker",
+  };
 
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
     {
       desktop: heroImg1,
       mobile: heroImg1Mobile,
-      originalAlt: 'Primeira ilustrativa',
+      originalAlt: "Primeira ilustrativa",
     },
     {
       desktop: heroImg2,
       mobile: heroImg2Mobile,
-      originalAlt: 'Segunda ilustrativa',
+      originalAlt: "Segunda ilustrativa",
     },
     {
       desktop: heroImg3,
       mobile: heroImg3Mobile,
-      originalAlt: 'Terceira ilustrativa',
+      originalAlt: "Terceira ilustrativa",
     },
     {
       desktop: heroImg4,
       mobile: heroImg4Mobile,
-      originalAlt: 'Quarta ilustrativa',
+      originalAlt: "Quarta ilustrativa",
     },
-  ]
+  ];
 
   // const images = [
   //   {
@@ -77,15 +77,15 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
   // ]
 
   const captions = [
-    'Segurança Jurídica construída com experiência e técnica',
-    'O mundo corporativo exige conhecimento e estratégia para sustentar grandes negócios',
-    'Com 14 anos de experiência no setor público, o escritório alinha conhecimento jurídico e experiência administrativa',
-    'A solidez de um empreendimento nasce do rigor jurídico que o ampara',
-    'Soluções jurídicas que atravessam fronteiras',
-  ]
+    "Segurança Jurídica construída com experiência e técnica",
+    "O mundo corporativo exige conhecimento e estratégia para sustentar grandes negócios",
+    "Com 14 anos de experiência no setor público, o escritório alinha conhecimento jurídico e experiência administrativa",
+    "A solidez de um empreendimento nasce do rigor jurídico que o ampara",
+    "Soluções jurídicas que atravessam fronteiras",
+  ];
 
-  const bgGradient = backgroundClasses[colorMode] || backgroundClasses.default
-  const titleColor = colorMode === 'light' ? 'text-black' : 'text-white'
+  const bgGradient = backgroundClasses[colorMode] || backgroundClasses.default;
+  const titleColor = colorMode === "light" ? "text-black" : "text-white";
 
   return (
     <div
@@ -126,8 +126,8 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                         src={item.desktop}
                         alt={item.originalAlt}
                         className="w-full h-full object-cover"
-                        loading={index === 0 ? 'eager' : 'lazy'}
-                        fetchpriority={index === 0 ? 'high' : 'auto'}
+                        loading={index === 0 ? "eager" : "lazy"}
+                        fetchpriority={index === 0 ? "high" : "auto"}
                         decoding="async"
                       />
                     </picture>
@@ -154,7 +154,6 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                     }
                   `}
                 </style>
-                <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
               </div>
 
               {/* Texto sobreposto com animação suave */}
@@ -177,5 +176,5 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
