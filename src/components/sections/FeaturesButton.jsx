@@ -54,7 +54,7 @@ export default function FeaturesButton({ colorMode }) {
           miniTitle={false}
         />
         <SectionWrapper>
-          <div className="flex flex-wrap justify-center desktop1:justify-evenly w-full gap-y-[36px] tablet1:gap-x-[12px] tablet1:gap-y-[12px] desktop1:gap-x-[12px] desktop1:gap-y-[24px] desktop1:gap-0 desktop1:w-[90%]">
+          <div className="flex flex-wrap justify-center desktop1:justify-evenly w-full gap-y-[36px] tablet1:gap-x-[10px] tablet1:gap-y-[12px] desktop1:gap-x-[12px] desktop1:gap-y-[24px] desktop1:gap-0 desktop1:w-[90%]">
             {[1, 2, 3, 4, 5, 6].map((i) => {
               const card = content.texts.features[`card${i}`];
               return (
