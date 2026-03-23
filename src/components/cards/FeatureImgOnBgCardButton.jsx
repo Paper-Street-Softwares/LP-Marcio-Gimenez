@@ -23,7 +23,7 @@ export default function FeatureImgOnBgCardButton({
 
   return (
     <MotionDivDownToUp>
-      <div className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[222px] font-mainFont flex flex-col desktop1:max-w-[350px] desktop1:w-[260px] desktop2:w-[300px] desktop3:w-[400px] h-[527px] shadow-custom-opacity shadow-shadowBlogs/0 bg-bgSectionLight border rounded-sm p-[10px] ">
+      <div className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] tablet2:w-[222px] font-mainFont flex flex-col desktop1:max-w-[350px] desktop1:w-[260px] desktop2:w-[300px] desktop3:w-[400px] tablet2:h-[400px] desktop1:h-[500px] shadow-custom-opacity shadow-shadowBlogs/0 bg-bgSectionLight border rounded-sm p-[10px] ">
         {/* Imagem */}
         <div
           style={{ backgroundImage: `url(${bgImg})` }}
@@ -36,7 +36,7 @@ export default function FeatureImgOnBgCardButton({
         <div className="flex flex-col flex-1 mt-4 justify-between">
           {/* Título */}
           <h1
-            className="text-title1 text-gray-600 leading-[25px] mb-[12px] font-bold"
+            className="text-title1 tablet2:text-paragraph5 text-gray-600 leading-[25px] mb-[12px] font-bold"
             title={title}
           >
             {title}

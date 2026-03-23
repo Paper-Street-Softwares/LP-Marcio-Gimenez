@@ -1,27 +1,27 @@
-import { useParams } from 'react-router-dom'
-import content from '../../content/content'
-import ServiceDetailCard from './ServiceDetailCard'
-import { FaWhatsapp } from 'react-icons/fa'
-import FooterRota from '../sections/FooterRota'
-import NavbarRota from '../sections/NavbarRota'
-import FooterSocial from '../sections/FooterSocial'
+import { useParams } from "react-router-dom";
+import content from "../../content/content";
+import ServiceDetailCard from "./ServiceDetailCard";
+import { FaWhatsapp } from "react-icons/fa";
+import FooterRota from "../sections/FooterRota";
+import NavbarRota from "../sections/NavbarRota";
+import FooterSocial from "../sections/FooterSocial";
 
 export default function CardsRota({ colorMode }) {
-  const { cardSlug } = useParams() // usar slug em vez de title
+  const { cardSlug } = useParams(); // usar slug em vez de title
 
   // Encontrar o card correspondente pelo slug
   const card = Object.values(content.texts.features)
     .filter((c) => c?.slug)
-    .find((c) => c.slug === cardSlug)
+    .find((c) => c.slug === cardSlug);
 
-  if (!card) return <p>Feature não encontrada</p>
+  if (!card) return <p>Feature não encontrada</p>;
 
   return (
     <div
       className={` ${
-        colorMode === 'dark'
-          ? 'bg-bgSectionOpacityDark text-white'
-          : 'bg-bgSectionOpacityLight text-black'
+        colorMode === "dark"
+          ? "bg-bgSectionOpacityDark text-white"
+          : "bg-bgSectionOpacityLight text-black"
       }`}
     >
       <NavbarRota />
@@ -44,5 +44,5 @@ export default function CardsRota({ colorMode }) {
         addres={true}
       />
     </div>
-  )
+  );
 }
