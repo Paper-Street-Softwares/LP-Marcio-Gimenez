@@ -1,13 +1,13 @@
-import SectionArea from '../components/sectionElements/SectionArea'
-import BlogPosts from '../components/sections/BlogPosts'
-import FooterSocial from '../components/sections/FooterSocial'
-import NavbarSocial from '../components/sections/NavbarSocial'
+import SectionArea from "../components/sectionElements/SectionArea";
+import BlogPosts from "../components/sections/BlogPosts";
+import FooterSocial from "../components/sections/FooterSocial";
+import NavbarSocial from "../components/sections/NavbarSocial";
 
 export default function ArticlesPage() {
   return (
     <>
       <NavbarSocial />
-      <div className="pt-[100px] tablet1:pt-[200px] desktop1:pt-[100px] bg-bgSectionDark" />
+      <div className="pt-[70px] tablet1:pt-[90px] desktop1:pt-[90px] bg-bgSectionDark" />
       <BlogPosts />
       <FooterSocial colorMode="default" />
 
@@ -31,5 +31,5 @@ export default function ArticlesPage() {
         </a>
       </button>
     </>
-  )
+  );
 }

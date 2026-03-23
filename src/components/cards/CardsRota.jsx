@@ -25,7 +25,7 @@ export default function CardsRota({ colorMode }) {
       }`}
     >
       <NavbarRota />
-      <div className=" pt-[180px] pb-[46px] w-[90%] max-w-[1215px] m-auto">
+      <div className="pt-[150px] tablet1:pt-[170px] pb-[46px] w-[90%] max-w-[1215px] m-auto">
         <h1 className="text-2xl font-bold mb-4">{card.title}</h1>
         <ServiceDetailCard
           img={card.imgModal}
