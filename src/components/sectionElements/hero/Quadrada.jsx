@@ -94,7 +94,7 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
     >
       <div className="relative z-10 flex w-full items-left">
         <div className="w-full text-secondary justify-evenly">
-          <div className="h-[125px] phone2:h-[125px] phone3:h-[140px] tablet1:h-[150px] desktop1:h-[110px] desktop3:h-[120px]" />
+          <div className="h-[70px] phone2:h-[80px] phone3:h-[80px] tablet1:h-[90px] desktop1:h-[90px]" />
 
           <div className="flex desktop1:justify-between mx-auto items-center">
             {/* Imagem principal */}
