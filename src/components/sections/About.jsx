@@ -1,16 +1,16 @@
-import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import 'react-image-gallery/styles/css/image-gallery.css'
-import SectionHeader from '../sectionElements/SectionHeader'
-import AboutModal from '../sectionElements/about/AboutModal'
-import content from '../../content/content'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import GalleryAbout from '../sectionElements/about/GalleryAbout'
-import ParagraphSemFading from '../sectionElements/about/ParagraphSemFading'
-import ParagraphWithFading from '../sectionElements/about/ParagraphWithFading'
-import ImageGallery from 'react-image-gallery'
-import 'react-image-gallery/styles/css/image-gallery.css'
+import React from "react";
+import SectionArea from "../sectionElements/SectionArea";
+import "react-image-gallery/styles/css/image-gallery.css";
+import SectionHeader from "../sectionElements/SectionHeader";
+import AboutModal from "../sectionElements/about/AboutModal";
+import content from "../../content/content";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import GalleryAbout from "../sectionElements/about/GalleryAbout";
+import ParagraphSemFading from "../sectionElements/about/ParagraphSemFading";
+import ParagraphWithFading from "../sectionElements/about/ParagraphWithFading";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 // import img1 from '../../assets/imgs/about/imgGaleria1.webp'
 // import img2 from '../../assets/imgs/about/imgGaleria2.webp'
 // import img3 from '../../assets/imgs/about/imgGaleria3.webp'
@@ -22,19 +22,19 @@ export default function About({
 }) {
   // Definir classes de tema
   const bgClasses = {
-    dark: 'bg-bgFixedDark',
-    light: 'bg-bgFixedLight',
-    default: 'bg-white',
-  }
+    dark: "bg-bgFixedDark",
+    light: "bg-bgFixedLight",
+    default: "bg-white",
+  };
   const textClasses = {
-    dark: 'text-white',
-    light: 'text-black',
-    default: 'text-bgSectionDark',
-  }
-  const bgClass = bgClasses[colorMode] || bgClasses.default
-  const titleColor = textClasses[colorMode] || textClasses.default
+    dark: "text-white",
+    light: "text-black",
+    default: "text-bgSectionDark",
+  };
+  const bgClass = bgClasses[colorMode] || bgClasses.default;
+  const titleColor = textClasses[colorMode] || textClasses.default;
   const subtitleColor =
-    colorMode === 'light' ? 'text-gray-600' : 'text-gray-600'
+    colorMode === "light" ? "text-gray-600" : "text-gray-600";
 
   // const images = [
   //   {
@@ -59,7 +59,7 @@ export default function About({
       <SectionWrapper className="flex flex-col desktop1:flex-row-reverse gap-[40px] desktop1:gap-x-[40px] desktop2:gap-0 desktop1:justify-between">
         <div className="desktop1:w-full ">
           <SectionHeader
-            className="text-center m-auto"
+            className="m-auto text-center"
             // miniTitle={content.texts.about.miniTag}
             sectionHeaderTitle={content.texts.about.title}
             sectionHeaderSubtitle={content.texts.about.subtitle}
@@ -70,14 +70,12 @@ export default function About({
             miniTitleBgColor={false}
             animation={false}
           />
-          <div className="flex flex-col gap-8 desktop1:gap-0 desktop1:flex-row-reverse justify-between">
-            <div className="relative w-[90%] desktop1:w-[600px] aspect-[3/1] flex justify-center m-auto desktop1:m-0">
+          <div className="flex flex-col justify-between gap-8 desktop1:gap-0 desktop1:flex-row-reverse">
+            <div className="desktop1:w-[600px] flex justify-center desktop1:m-0 ">
               <img
                 src={content.texts.about.imagem.img}
                 alt={content.texts.about.imagem.alt}
-                className="w-[90%]"
-                width={526}
-                height={351}
+                className="h-auto p-8 pt-0"
               />
             </div>
             <div className="text-center desktop1:text-start desktop1:w-[50%] ">
@@ -92,5 +90,5 @@ export default function About({
         </div>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }

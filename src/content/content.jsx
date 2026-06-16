@@ -4,6 +4,7 @@ import logoFooter from "../assets/imgs/logo/logoFooter.webp";
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 import aboutImg1 from "../assets/imgs/about/aboutImg.webp";
+import imagemTrajetoria from "../assets/imgs/about/trajetoria.webp";
 // import imgAbout1 from '../assets/imgs/about/aboutImg1.jpg'
 // import imgAbout2 from '../assets/imgs/about/aboutImg2.jpg'
 // import imgAbout3 from '../assets/imgs/about/aboutImg3.jpg'
@@ -990,6 +991,10 @@ const content = {
         img: aboutImg1,
         alt: "Imagem profissional de escritório/advogado(a)",
       },
+      imagemTrajetoria: {
+        img: imagemTrajetoria,
+        alt: "Imagem profissional de escritório/advogado(a)",
+      },
       miniTag: "",
       title: <h1 className="text-title5 leading-[35px]">Trajetória</h1>,
       subtitle: "",
@@ -998,7 +1003,7 @@ const content = {
       labelLinkedin: "Siga-nos no LinkedIn",
       labelX: "Siga-nos no X",
       paragraph: (
-        <div className="opacity-55 text-justify">
+        <div className="text-justify opacity-55">
           Com mais de duas décadas de atuação, o escritório se destaca pela
           combinação de rigor técnico e visão estratégica, oferecendo soluções
           jurídicas que aliam experiência administrativa e prática empresarial.
@@ -1120,12 +1125,12 @@ const content = {
         </h1>
       ),
       subtitleDireita: (
-        <p className="gap-3 flex font-mainFont opacity-60 mt-1 text-gray-600">
+        <p className="flex gap-3 mt-1 text-gray-600 font-mainFont opacity-60">
           <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
         </p>
       ),
       titleDireita: (
-        <h1 className="text-title5 my-3 font-mainFont text-gray-600">
+        <h1 className="my-3 text-gray-600 text-title5 font-mainFont">
           WhatsApp
         </h1>
       ),
